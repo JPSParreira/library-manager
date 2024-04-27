@@ -1,0 +1,599 @@
+<mxfile host="app.diagrams.net" modified="2024-04-27T18:42:15.828Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36 Edg/124.0.0.0" etag="NJF9PJaf2sqUj64aYFD9" version="24.3.1" type="device">
+  <diagram id="23iRSUPoRavnBvh4doch" name="Page-1">
+    <mxGraphModel dx="6997" dy="2903" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-295" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-216" y="703" width="600" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-289" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-902" y="703" width="600" height="266" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-290" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-443" y="912" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-225" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="-648" y="2136" width="720" height="533" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-200" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=none;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="-648" y="1584" width="720" height="533" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-193" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-533" y="1920" width="487" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-19" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-562" y="-342" width="600" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-22" value="Lista de emprestimos" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-549" y="-327" width="373" height="471" as="geometry" />
+        </mxCell>
+        <mxCell id="2" value="" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+          <mxGeometry x="-1218" y="-342" width="600" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-9" value="JanelaPrincipal" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1207" y="-367" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-10" value="Configuracoes" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-763" y="31" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-11" value="Sair" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-763" y="106" width="128" height="38" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-12" value="Emprestimos" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1035" y="-156" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-13" value="Livros" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1199" y="-319" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-14" value="Reservas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1196" y="-239" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-15" value="Socios" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1035" y="-236" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-16" value="Pagamentos" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1055" y="-324" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-17" value="Estatisticas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1196" y="-159" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-20" value="JanelaEmprestimos" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-562" y="-372" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-21" value="" style="html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=2;shape=mxgraph.ios7.misc.scroll_(vertical);fillColor=#a0a0a0;" vertex="1" parent="1">
+          <mxGeometry x="-190" y="-186" width="6" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-23" value="Emprestimo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-119" y="-311" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-24" value="Devolucao" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-117" y="-239" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-25" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-107" y="109" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-26" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="115" y="-345" width="600" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-28" value="JanelaLivros" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="107" y="-372" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-30" value="Adicionar Livro" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="568" y="-324" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-31" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="571" y="106" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-32" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="788" y="-345" width="600" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-33" value="JanelaSocios" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="791" y="-372" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-34" value="Adicionar Socio" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1241" y="-324" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-35" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1244" y="106" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-36" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1438" y="-351" width="600" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-37" value="JanelaReserva" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1441" y="-378" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-38" value="Reservar Livro" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1891" y="-330" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-39" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1894" y="100" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-40" value="Anular Reserva" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1891" y="-253" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-41" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2095" y="-353" width="600" height="874" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-42" value="JanelaEstisticas" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2098" y="-380" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-44" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2546" y="463" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-46" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2167" y="-322" width="359" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-47" value="Livro&amp;nbsp;" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2102" y="-324" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-49" value="Pesquisar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2546" y="-326.5" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-50" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2120.5" y="-270" width="549" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-53" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2170" y="-120.5" width="359" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-54" value="Utente" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2105" y="-122.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-55" value="Pesquisar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2549" y="-125" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-56" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2123.5" y="-68.5" width="549" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-57" value="Top 10" style="rounded=0;whiteSpace=wrap;html=1;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="2120.5" y="190" width="549" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-58" value="Autor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2123.5" y="151" width="130.5" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-59" value="Genero" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2268" y="151" width="130.5" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-60" value="subgenero" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2430" y="149" width="130.5" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-61" value="Pesquisar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2583" y="149" width="84" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-63" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2761" y="-353" width="600" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-64" value="JanelaPagamentos" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="2764" y="-380" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-65" value="Pagamentos Emprestimos" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3214" y="-332" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-66" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3217" y="98" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-68" value="Pagamentos Multas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3214" y="-251" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-69" value="Pagamentos Anuidades" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="3217" y="-176" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-70" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2777" y="-337" width="411" height="469" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-71" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="805" y="-328" width="411" height="469" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-72" value="Notificar Socios com divida" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1244" y="27" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-73" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/boxicons-regular-vol-1/24/bx-check-square-128.png" vertex="1" parent="1">
+          <mxGeometry x="1244" y="3" width="19" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-74" value="Filtrar por devedores" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1259" y="-3" width="129" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-85" value="" style="endArrow=none;html=1;rounded=0;" edge="1" parent="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="-1220" y="454" as="sourcePoint" />
+            <mxPoint x="3424" y="422" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-86" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-584.5" y="1046" width="600" height="348" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-87" value="Lista de emprestimos" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-571.5" y="1061" width="420.5" height="311" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-88" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1430" y="1067" width="638" height="177" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-89" value="JanelaPrincipal" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1233" y="1037" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-90" value="Configuracoes" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-942" y="1087" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-91" value="Sair" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-942" y="1165" width="128" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-92" value="Emprestimos" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1405" y="1085.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-95" value="Socios" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1083" y="1087" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-97" value="Estatisticas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1405" y="1165.5" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-98" value="JanelaEmprestimos" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-584.5" y="1016" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-99" value="" style="html=1;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;verticalAlign=top;shadow=0;dashed=0;strokeWidth=2;shape=mxgraph.ios7.misc.scroll_(vertical);fillColor=#a0a0a0;" vertex="1" parent="1">
+          <mxGeometry x="-212.5" y="1202" width="6" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-201" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NTMEfr_3e5SVXF3FYlu_-100" target="NTMEfr_3e5SVXF3FYlu_-200">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="134" y="1107" />
+              <mxPoint x="134" y="1850" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-100" value="Novo Emprestimo" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-131.5" y="1074" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-101" value="Devolucao" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-129.5" y="1146" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-102" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-129.5" y="1335" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-105" value="Adicionar Livro" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1087" y="1167" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-107" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="165" y="1048" width="600" height="500" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-108" value="JanelaSocios" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="168" y="1021" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-287" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="NTMEfr_3e5SVXF3FYlu_-109" target="NTMEfr_3e5SVXF3FYlu_-261">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-109" value="Adicionar Socio" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="618" y="1069" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-110" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="621" y="1499" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-115" value="Anular Reserva" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-441" y="738" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-116" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1983" y="1417" width="600" height="874" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-117" value="JanelaEstisticas" style="text;html=1;align=left;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1986" y="1390" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-118" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2434" y="2233" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-119" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2055" y="1448" width="359" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-120" value="Livro&amp;nbsp;" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1990" y="1446" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-121" value="Pesquisar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2434" y="1443.5" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-122" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2008.5" y="1500" width="549" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-123" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2058" y="1649.5" width="359" height="26" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-124" value="Utente" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1993" y="1647.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-125" value="Pesquisar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2437" y="1645" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-126" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2011.5" y="1701.5" width="549" height="126" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-127" value="Top 10" style="rounded=0;whiteSpace=wrap;html=1;rotation=0;" vertex="1" parent="1">
+          <mxGeometry x="2008.5" y="1960" width="549" height="250" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-128" value="Autor" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2011.5" y="1921" width="130.5" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-129" value="Genero" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2156" y="1921" width="130.5" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-130" value="subgenero" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2318" y="1919" width="130.5" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-131" value="Pesquisar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="2471" y="1919" width="84" height="24" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-132" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="182" y="1065" width="412" height="469" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-133" value="Notificar Socios com divida" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="621" y="1420" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-134" value="" style="shape=image;html=1;verticalAlign=top;verticalLabelPosition=bottom;labelBackgroundColor=#ffffff;imageAspect=0;aspect=fixed;image=https://cdn2.iconfinder.com/data/icons/boxicons-regular-vol-1/24/bx-check-square-128.png" vertex="1" parent="1">
+          <mxGeometry x="621" y="1396" width="19" height="19" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-135" value="Filtrar por devedores" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="636" y="1390" width="129" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-136" value="Pagamentos Anuidades" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-174" y="731" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-145" value="Lista de reservas" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-883" y="727" width="420.5" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-161" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1392" y="1370" width="600" height="279" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-162" value="JanelaDefinicoes" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1375" y="1340" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-166" value="" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=30;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1381" y="1390" width="408" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-167" value="Nr de dias de emprestimo" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NTMEfr_3e5SVXF3FYlu_-166">
+          <mxGeometry y="30" width="408" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-168" value="valor multa por dia" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NTMEfr_3e5SVXF3FYlu_-166">
+          <mxGeometry y="60" width="408" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-169" value="nr maximo de livros por socio" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NTMEfr_3e5SVXF3FYlu_-166">
+          <mxGeometry y="90" width="408" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-174" value="Valor da anuidade" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;" vertex="1" parent="NTMEfr_3e5SVXF3FYlu_-166">
+          <mxGeometry y="120" width="408" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-175" value="Entity" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-928" y="1402" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-176" value="Entity" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-928" y="1439" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-177" value="Entity" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-928" y="1475" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-178" value="Entity" style="whiteSpace=wrap;html=1;align=center;" vertex="1" parent="1">
+          <mxGeometry x="-928" y="1512" width="100" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-179" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-949" y="1602.5" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-181" value="Guardar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1087" y="1602.5" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-182" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-578" y="1668" width="593.5" height="176" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-183" value="JanelaNovoEmprestimo" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-571.5" y="1638" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-184" value="Livro" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-565" y="1690" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-186" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-490.5" y="1690" width="479" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-187" value="Nr de Socio" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-565" y="1730" width="102" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-188" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-453" y="1730" width="441.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-189" value="Não" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-279" y="2003" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-190" value="Sim" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-417" y="2003" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-192" value="&lt;h1 class=&quot;indIKd GW0XC cS4Vcb-pGL6qe-fwJd0c&quot; style=&quot;font-family: &amp;quot;Google Sans&amp;quot;, arial, sans-serif; font-size: 18px; font-weight: 400; margin: 0px; padding: 0px; color: var(--uv-styles-color-text-emphasis); line-height: 24px; flex: 1 1 auto; overflow: hidden; text-decoration-line: none; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;&quot;&gt;&amp;nbsp;JOptionPane :&lt;/h1&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-561" y="1878" width="183.5" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-195" value="&lt;h1 class=&quot;indIKd GW0XC cS4Vcb-pGL6qe-fwJd0c&quot; style=&quot;font-family: &amp;quot;Google Sans&amp;quot;, arial, sans-serif; font-size: 18px; font-weight: 400; margin: 0px; padding: 0px; color: var(--uv-styles-color-text-emphasis); line-height: 24px; flex: 1 1 auto; overflow: hidden; text-decoration-line: none; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;&quot;&gt;&amp;nbsp;O livro ja se encontra emprestado, pretende reservar ?&lt;/h1&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-524" y="1940" width="446" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-196" value="Guardar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-279.5" y="1785" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-197" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-141.5" y="1785" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-210" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-572.5" y="2224" width="593.5" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-211" value="JanelaDevolverEmprestimo" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-551" y="2194" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-212" value="Cod Emprestimo" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-559.5" y="2246" width="100.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-213" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-452" y="2246" width="446" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-216" value="Submeter" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-275" y="2304" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-217" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-137" y="2304" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-220" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-561" y="2435" width="539" height="146" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-221" value="Não" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-279.5" y="2532" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-222" value="Sim" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-426.5" y="2532" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-223" value="&lt;h1 class=&quot;indIKd GW0XC cS4Vcb-pGL6qe-fwJd0c&quot; style=&quot;font-family: &amp;quot;Google Sans&amp;quot;, arial, sans-serif; font-size: 18px; font-weight: 400; margin: 0px; padding: 0px; color: var(--uv-styles-color-text-emphasis); line-height: 24px; flex: 1 1 auto; overflow: hidden; text-decoration-line: none; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2;&quot;&gt;&amp;nbsp;JOptionPane :&lt;/h1&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-555" y="2393" width="183.5" height="45" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-224" value="&lt;h1 class=&quot;indIKd GW0XC cS4Vcb-pGL6qe-fwJd0c&quot; style=&quot;font-family: &amp;quot;Google Sans&amp;quot;, arial, sans-serif; font-weight: 400; margin: 0px; padding: 0px; color: var(--uv-styles-color-text-emphasis); line-height: 24px; flex: 1 1 auto; overflow: hidden; text-decoration-line: none; text-overflow: ellipsis; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; font-size: 14px;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;O sócio X entregou o livro com X dias de atraso.&lt;/font&gt;&lt;/h1&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;div&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Valor da multa Y €&lt;/font&gt;&lt;/div&gt;&lt;/div&gt;&lt;div style=&quot;font-size: 14px;&quot;&gt;&lt;span style=&quot;background-color: initial; color: var(--uv-styles-color-text-emphasis); font-family: &amp;quot;Google Sans&amp;quot;, arial, sans-serif;&quot;&gt;&lt;font style=&quot;font-size: 14px;&quot;&gt;Pretende efetuar o pagamento?&lt;/font&gt;&lt;/span&gt;&lt;br&gt;&lt;/div&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-551" y="2459" width="522" height="33" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-228" value="Pagamentos Multas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="23" y="738" width="128" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-229" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1.003;entryY=0.074;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="NTMEfr_3e5SVXF3FYlu_-101" target="NTMEfr_3e5SVXF3FYlu_-225">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="153" y="1179" />
+              <mxPoint x="153" y="2175" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-260" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" edge="1" parent="1" source="NTMEfr_3e5SVXF3FYlu_-230" target="NTMEfr_3e5SVXF3FYlu_-105">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-230" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-2290" y="1041.5" width="593.5" height="484.5" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-231" value="JanelaNovoLivro" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2283.5" y="1016.5" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-232" value="Titulo" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2233.5" y="1068.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-233" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-2167" y="1068.5" width="443.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-236" value="Guardar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1997" y="1468" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-237" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1859" y="1468" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-238" value="Editora" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2233.5" y="1113" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-239" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-2167" y="1113" width="443.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-240" value="Quantidade" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1926" y="1301" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-241" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-1859.5" y="1301" width="128.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-242" value="Autor" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2235.5" y="1161" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-243" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-2169" y="1161" width="443.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-246" value="Género" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2235.5" y="1209" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-247" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-2169" y="1209" width="443.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-248" value="Sub-Género" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2263" y="1254" width="87.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-249" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-2169" y="1254" width="443.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-250" value="Nr Edicao" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1930" y="1353" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-251" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-1863.5" y="1353" width="132.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-252" value="Ano" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2233.5" y="1304" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-253" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-2167" y="1304" width="144" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-254" value="ISBN" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2233.5" y="1353" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-255" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-2167" y="1353" width="145" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-256" value="Prateleira" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-1930" y="1402" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-257" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-1863.5" y="1402" width="132.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-258" value="Estante" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-2233.5" y="1402" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-259" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="-2167" y="1402" width="145" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-261" value="" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="884" y="1067.5" width="593.5" height="277.5" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-262" value="JanelaCriarSocio" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="882" y="1041.5" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-263" value="Nome" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="940.5" y="1094.5" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-264" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="1007" y="1094.5" width="443.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-265" value="Guardar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1182.5" y="1289" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-266" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="1320.5" y="1289" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-267" value="morada" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="940.5" y="1139" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-268" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="1007" y="1139" width="443.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-271" value="email" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="938.5" y="1187" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-272" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="1005" y="1187" width="443.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-273" value="NIF / CC" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="938.5" y="1235" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-274" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="1005" y="1235" width="168" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-275" value="Telefone" style="text;html=1;align=right;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="1183.5" y="1235" width="87.5" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-276" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.comboBox;strokeColor=#999999;fillColor=#ddeeff;align=left;fillColor2=#aaddff;mainText=;fontColor=#666666;fontSize=17;spacingLeft=3;" vertex="1" parent="1">
+          <mxGeometry x="1277.5" y="1235" width="171" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-292" value="JanelaReservas" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-902" y="673" width="110" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-293" value="Reservas" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1254" y="1087" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-294" value="Pagamentos" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1254" y="1167" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-296" value="Voltar" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="231" y="750.5" width="128" height="35" as="geometry" />
+        </mxCell>
+        <mxCell id="NTMEfr_3e5SVXF3FYlu_-299" value="JanelaPagamentos" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-216" y="673" width="110" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
