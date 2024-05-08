@@ -11,7 +11,7 @@ Requisitos não funcionais:
 
 Requisitos funcionais:
 ======================
-1. O sistema deve permitir alterar os valores padrão da aplicação.
+1. O sistema deve permitir alterar os valores padrão da aplicação (Máximo de dias para emprestimo,Valor de multa diário,Máximo de empréstimos ativos por sócio,Valor anuidade).
 2. O sistema deve permitir listar os empréstimos activos. 
 3. O sistema deve permitir adicionar um novo empréstimo de um livro. 
 4. O sistema deve permitir a devolução de um livro. 
