@@ -28,7 +28,7 @@ Requisitos funcionais:
 15. O sistema deve permitir notificar por email os sócios que tiverem valores em dívida. 
 16. O sistema deve permitir realizar o pagamento das anuidades dos sócios. 
 17. O sistema deve permitir realizar o pagamento das multas dos sócios.
-
+18. O sistema deve permitir adicionar editoras.
 
 
 
