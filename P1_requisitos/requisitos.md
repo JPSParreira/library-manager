@@ -24,7 +24,7 @@ Requisitos funcionais:
 11. O sistema deve permitir anular uma reserva. 
 12. O sistema deve permitir pesquisar um livro e ver a sua disponibilidade. 
 13. O sistema deve permitir pesquisar o histórico de empréstimos de um sócio. 
-14. O sistema deve permitir consultar o top 10 fos livros mais requisitados no geral ou filtrados por autor, género e sub-género. 
+14. O sistema deve permitir consultar o top 10 dos livros mais requisitados no geral ou filtrados por autor, género e sub-género. 
 15. O sistema deve permitir notificar por email os sócios que tiverem valores em dívida. 
 16. O sistema deve permitir realizar o pagamento das anuidades dos sócios. 
 17. O sistema deve permitir realizar o pagamento das multas dos sócios.
