@@ -26,10 +26,8 @@ Requisitos funcionais:
 13. O sistema deve permitir pesquisar o histórico de empréstimos de um sócio. 
 14. O sistema deve permitir consultar o top 10 dos livros mais requisitados no geral ou filtrados por autor, género e sub-género. 
 15. O sistema deve permitir notificar por email os sócios que tiverem valores em dívida. 
-16. O sistema deve permitir realizar o pagamento das anuidades dos sócios. 
-17. O sistema deve permitir realizar o pagamento das multas dos sócios.
-18. O sistema deve permitir adicionar editoras.
-
+16. O sistema deve permitir realizar pagamentos.
+17. O sistema deve permitir adicionar fornecedores.
 
 
 

@@ -23,3 +23,4 @@
     15.1 Pagar multa
     15.2 Pagar anuidade
 16. Adicionar editora
+17. Adicionar distribuidor
