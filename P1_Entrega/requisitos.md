@@ -5,9 +5,8 @@ Requisitos não funcionais:
 3. A aplicação requer o Java Runtime Environment (JRE) para ser executada.
 4. A interface do gráfica da aplicação deve ser intuitiva e fácil de usar.
 5. A aplicação deve ser responsiva, garantindo que as operações sejam concluídas dentro de um tempo razoável.
-6. A aplicação deve ser compatível com diferentes resoluções de tela acima de 1280x720.
-7. A aplicação deve ser fácil de entender e modificar para futuras atualizações.
-8. A aplicacção deve ter a documentação adequada.
+6. A aplicação deve ser fácil de entender e modificar para futuras atualizações.
+7. A aplicacção deve ter a documentação adequada.
 
 Requisitos funcionais:
 ======================
@@ -24,7 +23,7 @@ Requisitos funcionais:
 11. O sistema deve permitir anular uma reserva. 
 12. O sistema deve permitir pesquisar um livro e ver a sua disponibilidade. 
 13. O sistema deve permitir pesquisar o histórico de empréstimos de um sócio. 
-14. O sistema deve permitir consultar o top 10 dos livros mais requisitados no geral ou filtrados por autor, género e sub-género. 
+14. O sistema deve permitir consultar o top 10 dos livros mais requisitados no geral ou filtrados por autor, género ou sub-género. 
 15. O sistema deve permitir notificar por email os sócios que tiverem valores em dívida. 
 16. O sistema deve permitir realizar pagamentos.
 17. O sistema deve permitir adicionar fornecedores.
