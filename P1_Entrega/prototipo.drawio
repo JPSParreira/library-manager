@@ -105,22 +105,22 @@
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PDVYzoY3RleATE-HyURN-113" value="Livro 1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-111" vertex="1">
+        <mxCell id="PDVYzoY3RleATE-HyURN-113" value="Exemplar 1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-111" vertex="1">
           <mxGeometry width="218" height="20" relative="1" as="geometry">
             <mxPoint y="30" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PDVYzoY3RleATE-HyURN-114" value="Livro 2" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-111" vertex="1">
+        <mxCell id="PDVYzoY3RleATE-HyURN-114" value="Exemplar 2" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-111" vertex="1">
           <mxGeometry width="218" height="20" relative="1" as="geometry">
             <mxPoint y="50" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PDVYzoY3RleATE-HyURN-115" value="Livro 3" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;fillColor=#ddeeff;strokeColor=none;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-111" vertex="1">
+        <mxCell id="PDVYzoY3RleATE-HyURN-115" value="Exemplar 3" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;fillColor=#ddeeff;strokeColor=none;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-111" vertex="1">
           <mxGeometry width="218" height="20" relative="1" as="geometry">
             <mxPoint y="70" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PDVYzoY3RleATE-HyURN-116" value="Livro 4" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-111" vertex="1">
+        <mxCell id="PDVYzoY3RleATE-HyURN-116" value="Exemplar 4" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-111" vertex="1">
           <mxGeometry width="218" height="20" relative="1" as="geometry">
             <mxPoint y="90" as="offset" />
           </mxGeometry>
@@ -390,22 +390,22 @@
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PDVYzoY3RleATE-HyURN-444" value="Livro 1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-442" vertex="1">
+        <mxCell id="PDVYzoY3RleATE-HyURN-444" value="Exemplar 1" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-442" vertex="1">
           <mxGeometry width="218" height="20" relative="1" as="geometry">
             <mxPoint y="30" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PDVYzoY3RleATE-HyURN-445" value="Livro 2" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-442" vertex="1">
+        <mxCell id="PDVYzoY3RleATE-HyURN-445" value="Exemplar 2" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-442" vertex="1">
           <mxGeometry width="218" height="20" relative="1" as="geometry">
             <mxPoint y="50" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PDVYzoY3RleATE-HyURN-446" value="Livro 3" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;fillColor=#ddeeff;strokeColor=none;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-442" vertex="1">
+        <mxCell id="PDVYzoY3RleATE-HyURN-446" value="Exemplar 3" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;fillColor=#ddeeff;strokeColor=none;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-442" vertex="1">
           <mxGeometry width="218" height="20" relative="1" as="geometry">
             <mxPoint y="70" as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="PDVYzoY3RleATE-HyURN-447" value="Livro 4" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-442" vertex="1">
+        <mxCell id="PDVYzoY3RleATE-HyURN-447" value="Exemplar 4" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.anchor;fontSize=15;fontColor=#666666;align=left;spacingLeft=5;resizeWidth=1;whiteSpace=wrap;" parent="PDVYzoY3RleATE-HyURN-442" vertex="1">
           <mxGeometry width="218" height="20" relative="1" as="geometry">
             <mxPoint y="90" as="offset" />
           </mxGeometry>
