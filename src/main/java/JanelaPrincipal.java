@@ -44,6 +44,7 @@ public class JanelaPrincipal extends JFrame {
     }
 
     public void configuracoesButtonActionPerformed(ActionEvent e) {
+        JanelaConfiguracoes janelaConfiguracoes = new JanelaConfiguracoes("Configurações");
     }
 
     public void pesquisarButtonActionPerformed(ActionEvent e) {
