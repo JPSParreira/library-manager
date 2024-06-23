@@ -1,5 +1,4 @@
 public class Estante {
-
     private int numero;
     private Prateleira[] prateleiras;
 
@@ -11,8 +10,21 @@ public class Estante {
         }
     }
 
+    public int getNumero() {
+        return numero;
+    }
+
+    public Prateleira[] getPrateleiras() {
+        return prateleiras;
+    }
+
+    public Prateleira getPrateleira(int numero) {
+        return prateleiras[numero - 1];
+    }
+
     private class Prateleira {
         private int numero;
+        private boolean ocupada;
 
         public Prateleira(int numero) {
             this.numero = numero;
@@ -22,5 +34,8 @@ public class Estante {
             return numero;
         }
 
+        public boolean isOcupada() {
+            return ocupada;
+        }
     }
 }
