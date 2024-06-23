@@ -1,5 +1,9 @@
+import Titulo.Genero;
+
 import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionEvent;
+import java.util.LinkedList;
 
 public class JanelaPrincipal extends JFrame {
 
@@ -14,6 +18,19 @@ public class JanelaPrincipal extends JFrame {
     private JButton adicionarTituloButton;
 
     public static void main(String[] args) {
+        try {
+            for (UIManager.LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+                if ("Nimbus".equals(info.getName())) {
+                    UIManager.setLookAndFeel(info.getClassName());
+                    UIManager.put("nimbusBase", new Color(243,243,243));
+                    UIManager.put("nimbusBlueGrey", new Color(243,243,243));
+                    UIManager.put("control", new Color(243,243,243));
+                    break;
+                }
+            }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
         new JanelaPrincipal("JanelaPrincipal").setVisible(true);
     }
 
@@ -54,9 +71,15 @@ public class JanelaPrincipal extends JFrame {
     }
 
     public void adicionarExemplarButtonActionPerformed(ActionEvent e) {
+        var janelaAdicionarExemplar = new JanelaAdicionarExemplar("Adicionar Exemplar");
+        janelaAdicionarExemplar.setModal(true);
+        janelaAdicionarExemplar.setVisible(true);
     }
 
     public void adicionarTituloButtonActionPerformed(ActionEvent e) {
+        var janelaCriarTitulo = new JanelaCriarTitulo("Criar Título");
+        janelaCriarTitulo.setModal(true);
+        janelaCriarTitulo.setVisible(true);
     }
 
 }

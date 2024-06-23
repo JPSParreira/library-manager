@@ -1,8 +1,10 @@
 import Titulo.*;
-import Titulo.Exemplar.Editora;
-import Titulo.Exemplar.Fornecedor;
+import Titulo.Exemplar.*;
 
+import javax.swing.*;
+import java.awt.*;
 import java.util.LinkedList;
+import java.util.List;
 
 public class GestorBiblioteca {
     /* Configs */
@@ -150,5 +152,46 @@ public class GestorBiblioteca {
 
     public void setValorAnuidade(float valorAnuidade) {
         this.valorAnuidade = valorAnuidade;
+    }
+
+    public LinkedList<Genero> getGeneros() {
+        return generos;
+    }
+
+    public Genero getGenero(String nome) {
+        for (Genero genero : generos) {
+            if (genero.getNome().equals(nome)) {
+                return genero;
+            }
+        }
+        return null;
+    }
+
+    public LinkedList<Titulo> getTitulos() {
+        return titulos;
+    }
+
+    public LinkedList<Autor> getAutores() {
+        return autores;
+    }
+
+    public void addTitulo(String titulo, String autor, Genero genero, Subgenero subGenero) {
+
+        Autor newAutor = null;
+        for (Autor a : autores) {
+            if (a.getNome().equalsIgnoreCase(autor)) {
+                newAutor = a;
+                break;
+            }
+        }
+        if (newAutor == null) {
+            newAutor = new Autor(autor);
+            autores.add(newAutor);
+        }
+
+        Titulo newTitle = new Titulo(titulo, newAutor, genero, subGenero);
+
+        titulos.add((newTitle));
+        newAutor.addTitulo(newTitle);
     }
 }

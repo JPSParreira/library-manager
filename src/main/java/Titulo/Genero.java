@@ -31,4 +31,17 @@ public class Genero {
 
         subgeneros.add(subgenero);
     }
+
+    public LinkedList<Subgenero> getSubgeneros() {
+        return subgeneros;
+    }
+
+    public Subgenero getSubgenero(String nome) {
+        for (Subgenero subgenero : subgeneros) {
+            if (subgenero.getNome().equals(nome)) {
+                return subgenero;
+            }
+        }
+        return null;
+    }
 }
