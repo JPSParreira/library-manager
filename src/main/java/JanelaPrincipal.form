@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="JanelaPrincipal">
-  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+  <grid id="27dc6" binding="janelaPrincipal" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
     <margin top="0" left="0" bottom="0" right="0"/>
     <constraints>
-      <xy x="20" y="20" width="874" height="292"/>
+      <xy x="20" y="20" width="1234" height="309"/>
     </constraints>
     <properties>
       <enabled value="false"/>
@@ -14,105 +14,185 @@
         <constraints>
           <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="200" height="100"/>
-            <preferred-size width="300" height="150"/>
-            <maximum-size width="400" height="200"/>
+            <preferred-size width="200" height="100"/>
+            <maximum-size width="200" height="100"/>
           </grid>
         </constraints>
         <properties>
+          <background color="-16184304"/>
+          <enabled value="true"/>
+          <font/>
+          <foreground color="-3618616"/>
+          <hideActionText value="true"/>
+          <horizontalAlignment value="0"/>
           <horizontalTextPosition value="0"/>
           <text value="Empréstimos"/>
         </properties>
+        <clientProperties>
+          <hideActionText class="java.lang.Boolean" value="true"/>
+          <html.disable class="java.lang.Boolean" value="true"/>
+        </clientProperties>
       </component>
       <component id="3093c" class="javax.swing.JButton" binding="reservasButton" default-binding="true">
         <constraints>
           <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="200" height="100"/>
-            <preferred-size width="300" height="150"/>
-            <maximum-size width="400" height="200"/>
+            <preferred-size width="200" height="100"/>
+            <maximum-size width="200" height="100"/>
           </grid>
         </constraints>
         <properties>
+          <background color="-16184304"/>
+          <enabled value="true"/>
+          <font/>
+          <foreground color="-3618616"/>
+          <hideActionText value="true"/>
+          <horizontalAlignment value="0"/>
           <horizontalTextPosition value="0"/>
           <text value="Reservas"/>
         </properties>
+        <clientProperties>
+          <hideActionText class="java.lang.Boolean" value="true"/>
+          <html.disable class="java.lang.Boolean" value="true"/>
+        </clientProperties>
       </component>
       <component id="1fcad" class="javax.swing.JButton" binding="sociosButton">
         <constraints>
           <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="200" height="100"/>
-            <preferred-size width="300" height="150"/>
-            <maximum-size width="400" height="200"/>
+            <preferred-size width="200" height="100"/>
+            <maximum-size width="200" height="100"/>
           </grid>
         </constraints>
         <properties>
+          <background color="-16184304"/>
+          <enabled value="true"/>
+          <font/>
+          <foreground color="-3618616"/>
+          <hideActionText value="true"/>
+          <horizontalAlignment value="0"/>
           <horizontalTextPosition value="0"/>
           <text value="Sócios"/>
         </properties>
+        <clientProperties>
+          <hideActionText class="java.lang.Boolean" value="true"/>
+          <html.disable class="java.lang.Boolean" value="true"/>
+        </clientProperties>
       </component>
       <component id="f3993" class="javax.swing.JButton" binding="configuracoesButton">
         <constraints>
           <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="200" height="100"/>
-            <preferred-size width="300" height="150"/>
-            <maximum-size width="400" height="200"/>
+            <preferred-size width="200" height="100"/>
+            <maximum-size width="200" height="100"/>
           </grid>
         </constraints>
         <properties>
+          <background color="-16184304"/>
+          <enabled value="true"/>
+          <font/>
+          <foreground color="-3618616"/>
+          <hideActionText value="true"/>
+          <horizontalAlignment value="0"/>
           <horizontalTextPosition value="0"/>
           <text value="Configurações"/>
         </properties>
+        <clientProperties>
+          <hideActionText class="java.lang.Boolean" value="true"/>
+          <html.disable class="java.lang.Boolean" value="true"/>
+        </clientProperties>
       </component>
       <component id="4c080" class="javax.swing.JButton" binding="pesquisarButton" default-binding="true">
         <constraints>
           <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="200" height="100"/>
-            <preferred-size width="300" height="150"/>
-            <maximum-size width="400" height="200"/>
+            <preferred-size width="200" height="100"/>
+            <maximum-size width="200" height="100"/>
           </grid>
         </constraints>
         <properties>
+          <background color="-16184304"/>
+          <enabled value="true"/>
+          <font/>
+          <foreground color="-3618616"/>
+          <hideActionText value="true"/>
+          <horizontalAlignment value="0"/>
           <horizontalTextPosition value="0"/>
           <text value="Pesquisar"/>
         </properties>
+        <clientProperties>
+          <hideActionText class="java.lang.Boolean" value="true"/>
+          <html.disable class="java.lang.Boolean" value="true"/>
+        </clientProperties>
       </component>
       <component id="55b6" class="javax.swing.JButton" binding="estatisticasButton">
         <constraints>
           <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="200" height="100"/>
-            <preferred-size width="300" height="150"/>
-            <maximum-size width="400" height="200"/>
+            <preferred-size width="200" height="100"/>
+            <maximum-size width="200" height="100"/>
           </grid>
         </constraints>
         <properties>
+          <background color="-16184304"/>
+          <enabled value="true"/>
+          <font/>
+          <foreground color="-3618616"/>
+          <hideActionText value="true"/>
+          <horizontalAlignment value="0"/>
           <horizontalTextPosition value="0"/>
           <text value="Estatísticas" noi18n="true"/>
         </properties>
+        <clientProperties>
+          <hideActionText class="java.lang.Boolean" value="true"/>
+          <html.disable class="java.lang.Boolean" value="true"/>
+        </clientProperties>
       </component>
       <component id="f9b93" class="javax.swing.JButton" binding="adicionarExemplarButton" default-binding="true">
         <constraints>
           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="200" height="100"/>
-            <preferred-size width="300" height="150"/>
-            <maximum-size width="400" height="200"/>
+            <preferred-size width="200" height="100"/>
+            <maximum-size width="200" height="100"/>
           </grid>
         </constraints>
         <properties>
+          <background color="-16184304"/>
+          <enabled value="true"/>
+          <font/>
+          <foreground color="-3618616"/>
+          <hideActionText value="true"/>
+          <horizontalAlignment value="0"/>
           <horizontalTextPosition value="0"/>
           <text value="Adicionar Exemplar"/>
         </properties>
+        <clientProperties>
+          <hideActionText class="java.lang.Boolean" value="true"/>
+          <html.disable class="java.lang.Boolean" value="true"/>
+        </clientProperties>
       </component>
       <component id="8f8" class="javax.swing.JButton" binding="adicionarTituloButton">
         <constraints>
           <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false">
             <minimum-size width="200" height="100"/>
-            <preferred-size width="300" height="150"/>
-            <maximum-size width="400" height="200"/>
+            <preferred-size width="200" height="100"/>
+            <maximum-size width="200" height="100"/>
           </grid>
         </constraints>
         <properties>
+          <background color="-16184304"/>
+          <enabled value="true"/>
+          <font/>
+          <foreground color="-3618616"/>
+          <hideActionText value="true"/>
+          <horizontalAlignment value="0"/>
           <horizontalTextPosition value="0"/>
           <text value="Adicionar Título"/>
         </properties>
+        <clientProperties>
+          <hideActionText class="java.lang.Boolean" value="true"/>
+          <html.disable class="java.lang.Boolean" value="true"/>
+        </clientProperties>
       </component>
     </children>
   </grid>
