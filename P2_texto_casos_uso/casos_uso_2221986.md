@@ -1,8 +1,8 @@
 Criar exemplar
 ===============================
 CAMINHO PRINCIPAL:
-1. O utilizador clica no botão "Adicionar Exemplar" da "Janela Principal".
-2. O sistema cria e apresenta a janela "Adicionar Exemplar" com os seguintes campos:
+1. O utilizador clica no botão "Adicionar Titulo.Titulo.Exemplar" da "Janela Principal".
+2. O sistema cria e apresenta a janela "Adicionar Titulo.Titulo.Exemplar" com os seguintes campos:
     Título, mandatório, do tipo dropdown.
     Editora, mandatório, do tipo dropdown.
     Distribuidor, mandatório, do tipo dropdown.
@@ -17,11 +17,11 @@ CAMINHO PRINCIPAL:
     O campo Ano está preenchido e é um inteiro positivo.
     O campo Edição está preenchido, tem entre 3 e 30 caracteres e não é exclusivamente composto por espaços em branco.
     O campo ISBN está preenchido, é um inteiro positivo e tem 13 dígitos.
-5. O sistema cria um novo "Exemplar", adiciona-o à lista de exemplares do sistema, apresenta a mensagem de sucesso S01 (Título = Título do exemplar), fecha a janela atual "Adicionar Exemplar" e retorna à janela anterior "Janela Principal".
+5. O sistema cria um novo "Titulo.Titulo.Exemplar", adiciona-o à lista de exemplares do sistema, apresenta a mensagem de sucesso S01 (Título = Título do exemplar), fecha a janela atual "Adicionar Titulo.Titulo.Exemplar" e retorna à janela anterior "Janela Principal".
 
 CAMINHOS ALTERNATIVOS:
 3.1. O utilizador clica no botão "Voltar".
-    3.1.1. O sistema fecha a janela atual "Adicionar Exemplar" e retorna à janela anterior "Janela Principal".
+    3.1.1. O sistema fecha a janela atual "Adicionar Titulo.Titulo.Exemplar" e retorna à janela anterior "Janela Principal".
 3.2 O utilizador clina no botao "+" para adiconar uma nova editora.
     3.2.1 É executado o caso de uso "Criar Editora".
 3.3 O utilizador clina no botao "+" para adiconar um novo distribuidor.
@@ -50,7 +50,7 @@ CAMINHOS ALTERNATIVOS:
     4.11.1. O sistema apresenta a mensagem de erro ERR_ISBN_03.
 
 MENSAGENS DO SISTEMA:
-S01: Exemplar <Título> adicionado com sucesso.
+S01: Titulo.Titulo.Exemplar <Título> adicionado com sucesso.
 
 ERR_TITULO_01: O campo "Título" é mandatório.
 ERR_EDITORA_01: O campo "Editora" é mandatório.
@@ -70,13 +70,13 @@ CAMINHO PRINCIPAL:
 1. O utilizador clica no botão "Adicionar Título" da "Janela Principal".
 2. O sistema cria e apresenta a janela "JanelaCriarTitulo" com os seguintes campos:
     Título, mandatório, do tipo texto
-    Autor, mandatório, do tipo texto.
-    Género, mandatório, dropdown do tipo Genero.
-    Subgénero, mandatório, dropdown do tipo Subgenero.
-3. O utilizador preenche os campos Título, Autor, Género e Subgénero, e clica no botão "Submeter".
+    Titulo.Titulo.Autor, mandatório, do tipo texto.
+    Género, mandatório, dropdown do tipo Titulo.Genero.
+    Subgénero, mandatório, dropdown do tipo Titulo.Subgenero.
+3. O utilizador preenche os campos Título, Titulo.Titulo.Autor, Género e Subgénero, e clica no botão "Submeter".
 4. O sistema valida que:
     O campo Título está preenchido, tem entre 3 e 50 caracteres e não é exclusivamente composto por espaços em branco, é unico no sistema.
-    O campo Autor está preenchido, tem entre 3 e 50 caracteres e não é exclusivamente composto por espaços em branco.
+    O campo Titulo.Titulo.Autor está preenchido, tem entre 3 e 50 caracteres e não é exclusivamente composto por espaços em branco.
     O campo Género está preenchido e é válido.
     O campo Subgénero está preenchido e é válido.
 5. O sistema cria um novo "Título", adiciona-o à lista de títulos do sistema, apresenta a mensagem de sucesso S01 (Título = Título do título), fecha a janela atual "JanelaCriarTitulo" e retorna à janela anterior "Janela Principal".
@@ -92,11 +92,11 @@ CAMINHOS ALTERNATIVOS:
     4.3.1. O sistema apresenta a mensagem de erro ERR_TITULO_03.
 4.4. O campo "Título" já existe no sistema.
     4.4.1 O sistema apresenta a mensagem de erro ERR_TITULO_04.
-4.5. O campo "Autor" não está preenchido.
+4.5. O campo "Titulo.Titulo.Autor" não está preenchido.
     4.4.1. O sistema apresenta a mensagem de erro ERR_AUTOR_01.
-4.6. O campo "Autor" tem menos de 3 caracteres.
+4.6. O campo "Titulo.Titulo.Autor" tem menos de 3 caracteres.
     4.5.1. O sistema apresenta a mensagem de erro ERR_AUTOR_02.
-4.7. O campo "Autor" tem mais de 50 caracteres.
+4.7. O campo "Titulo.Titulo.Autor" tem mais de 50 caracteres.
     4.6.1. O sistema apresenta a mensagem de erro ERR_AUTOR_03.
 4.8. O campo "Género" não está preenchido.
     4.7.1. O sistema apresenta a mensagem de erro ERR_GENERO_01.
@@ -112,9 +112,9 @@ ERR_TITULO_01: O campo "Título" é mandatório.
 ERR_TITULO_02: O campo "Título" deve ter no mínimo 3 caracteres.
 ERR_TITULO_03: O campo "Título" deve ter no máximo 50 caracteres.
 ERR_TITULO_04: O campo "Título" já existe no sistema.
-ERR_AUTOR_01: O campo "Autor" é mandatório.
-ERR_AUTOR_02: O campo "Autor" deve ter no mínimo 3 caracteres.
-ERR_AUTOR_03: O campo "Autor" deve ter no máximo 50 caracteres.
+ERR_AUTOR_01: O campo "Titulo.Titulo.Autor" é mandatório.
+ERR_AUTOR_02: O campo "Titulo.Titulo.Autor" deve ter no mínimo 3 caracteres.
+ERR_AUTOR_03: O campo "Titulo.Titulo.Autor" deve ter no máximo 50 caracteres.
 ERR_GENERO_01: O campo "Género" é mandatório.
 ERR_SUBGENER_01: O campo "Subgénero" é mandatório.
 
@@ -186,7 +186,7 @@ CAMINHO PRINCIPAL:
 
 1. O utilizador clica no botão "Estatisticas" na "Janela Principal".
 2. O sistema cria e apresenta a janela "Estatisticas" com um lista com a informação dos 10 titulos mais empresados e ainda com os seguintes campos:
-    Autor, do tipo lista.
+    Titulo.Titulo.Autor, do tipo lista.
     Género, do tipo lista.
     Subgénero, do tipo lista.
 3. O utilizador clica no botão "Procurar", sem qualquer campo preenchido para obter o top 10 de titulos mais emprestados.
@@ -195,7 +195,7 @@ CAMINHO PRINCIPAL:
 CAMINHOS ALTERNATIVOS:
 3.1. O utilizador clica no botão "Voltar".
     3.1.1. O sistema fecha a janela atual "Estatisticas" e retorna à janela anterior "Janela Principal".
-3.2 O utilizador preenche o campo Autor e clica no botão "Procurar".
+3.2 O utilizador preenche o campo Titulo.Titulo.Autor e clica no botão "Procurar".
     3.2.1 É executado o caso de uso "Consultar top 10 por autor".
 3.3 O utilizador preenche o campo Género e clica no botão "Procurar".
     3.3.1 É executado o caso de uso "Consultar top 10 por genero".
@@ -204,7 +204,7 @@ CAMINHOS ALTERNATIVOS:
 
 Consultar top 10 por autor (auxiliar)
 ===============================
-ENQUADRAMENTO: O utilizador preenche o campo Autor e clica no botão "Procurar".
+ENQUADRAMENTO: O utilizador preenche o campo Titulo.Titulo.Autor e clica no botão "Procurar".
 
 CAMINHO PRINCIPAL:
 1. O sistema consulta a lista de titulos e seleciona apenas os titulos do autor introduzido. Posteriormente, verifica quais os 10 titulos mais emprestados dessa seleção, e atualiza a lista de titulos.

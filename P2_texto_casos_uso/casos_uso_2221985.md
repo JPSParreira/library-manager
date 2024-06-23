@@ -21,7 +21,7 @@ N/A
 
 • - CRIAR EMPRÉSTIMO - •
 - Caminho Principal
-1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Exemplar" e "Adicionar Título".
+1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Titulo.Titulo.Exemplar" e "Adicionar Título".
 2. O utilizador clica no botão "Empréstimos".
 3. O sistema efetua o caso de uso "Listar Empréstimos" e apresenta a "Janela Empréstimos" com a "Lista de Empréstimos" e com os botões "Novo Empréstimo", "Devolução" e "Voltar".
 4. O utilizador clica no botão "Novo Empréstimo".
@@ -61,7 +61,7 @@ N/A
 
 • - CRIAR DEVOLUÇÃO - •
 - Caminho Principal
-1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Exemplar" e "Adicionar Título".
+1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Titulo.Titulo.Exemplar" e "Adicionar Título".
 2. O utilizador clica no botão "Empréstimos".
 3. O sistema efetua o caso de uso "Listar Empréstimos" e apresenta a "Janela Empréstimos" com a "Lista de Empréstimos" e com os botões "Novo Empréstimo", "Devolução" e "Voltar".
 4. O utilizador clica no botão "Devolução".
@@ -113,7 +113,7 @@ N/A
 
 • - ANULAR RESERVA - •
 - Caminho Principal
-1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Exemplar" e "Adicionar Título".
+1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Titulo.Titulo.Exemplar" e "Adicionar Título".
 2. O utilizador clica no botão "Reservas".
 3. O sistema efetua o caso de uso "Listar Reservas" e apresenta a "Janela de Reservas" com a "Lista de Reservas" e com os botões "Anular Reserva" e "Voltar".
 4. O utilizador clica no botão "Anular Reserva".
@@ -139,7 +139,7 @@ N/A
 
 • - MODIFICAR VALORES DE CONFIGURAÇÃO - •
 - Caminho Principal
-1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Exemplar" e "Adicionar Título".
+1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Titulo.Titulo.Exemplar" e "Adicionar Título".
 2. O utilizador clica no botão "Configurações".
 3. O sistema apresenta a "Janela de Configurações" com os campos "Máximo de dias para empréstimo", "Valor da multa diário", "Máximo de empréstimos ativos por sócio" e "Valor da anuidade" e com os botões "Submeter" e "Voltar".
 4. O utilizador altera os valores que pretende e clica no botão "Submeter".
