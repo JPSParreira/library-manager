@@ -1,4 +1,6 @@
 import Titulo.*;
+import Titulo.Exemplar.Editora;
+import Titulo.Exemplar.Fornecedor;
 
 import java.util.LinkedList;
 

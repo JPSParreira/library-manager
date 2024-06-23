@@ -1,34 +1,34 @@
 Criar exemplar
 ===============================
 CAMINHO PRINCIPAL:
-1. O utilizador clica no botão "Adicionar Titulo.Titulo.Exemplar" da "Janela Principal".
-2. O sistema cria e apresenta a janela "Adicionar Titulo.Titulo.Exemplar" com os seguintes campos:
+1. O utilizador clica no botão "Adicionar Titulo.Titulo.Exemplar.Exemplar" da "Janela Principal".
+2. O sistema cria e apresenta a janela "Adicionar Titulo.Titulo.Exemplar.Exemplar" com os seguintes campos:
     Título, mandatório, do tipo dropdown.
-    Editora, mandatório, do tipo dropdown.
+    Titulo.Exemplar.Editora, mandatório, do tipo dropdown.
     Distribuidor, mandatório, do tipo dropdown.
     Ano, mandatório, do tipo inteiro positivo.
     Edição, mandatório, do tipo texto, com mínimo de 3 caracteres e máximo de 30.
     ISBN, mandatório, do tipo inteiro positivo, com 13 dígitos.
-3. O utilizador preenche os campos Título, Editora, Distribuidor, Ano, Edição e ISBN, e clica no botão "Submeter".
+3. O utilizador preenche os campos Título, Titulo.Exemplar.Editora, Distribuidor, Ano, Edição e ISBN, e clica no botão "Submeter".
 4. O sistema valida que:
     O campo Título está preenchido e é válido (existente no sistema).
-    O campo Editora está preenchido e é válido (existente no sistema).
+    O campo Titulo.Exemplar.Editora está preenchido e é válido (existente no sistema).
     O campo Distribuidor está preenchido e é válido (existente no sistema).
     O campo Ano está preenchido e é um inteiro positivo.
     O campo Edição está preenchido, tem entre 3 e 30 caracteres e não é exclusivamente composto por espaços em branco.
     O campo ISBN está preenchido, é um inteiro positivo e tem 13 dígitos.
-5. O sistema cria um novo "Titulo.Titulo.Exemplar", adiciona-o à lista de exemplares do sistema, apresenta a mensagem de sucesso S01 (Título = Título do exemplar), fecha a janela atual "Adicionar Titulo.Titulo.Exemplar" e retorna à janela anterior "Janela Principal".
+5. O sistema cria um novo "Titulo.Titulo.Exemplar.Exemplar", adiciona-o à lista de exemplares do sistema, apresenta a mensagem de sucesso S01 (Título = Título do exemplar), fecha a janela atual "Adicionar Titulo.Titulo.Exemplar.Exemplar" e retorna à janela anterior "Janela Principal".
 
 CAMINHOS ALTERNATIVOS:
 3.1. O utilizador clica no botão "Voltar".
-    3.1.1. O sistema fecha a janela atual "Adicionar Titulo.Titulo.Exemplar" e retorna à janela anterior "Janela Principal".
+    3.1.1. O sistema fecha a janela atual "Adicionar Titulo.Titulo.Exemplar.Exemplar" e retorna à janela anterior "Janela Principal".
 3.2 O utilizador clina no botao "+" para adiconar uma nova editora.
-    3.2.1 É executado o caso de uso "Criar Editora".
+    3.2.1 É executado o caso de uso "Criar Titulo.Exemplar.Editora".
 3.3 O utilizador clina no botao "+" para adiconar um novo distribuidor.
     3.3.1 É executado o caso de uso "Criar Distribuidor".
 4.1. O campo "Título" não está preenchido.
     4.1.1. O sistema apresenta a mensagem de erro ERR_TITULO_01.
-4.2. O campo "Editora" não está preenchido.
+4.2. O campo "Titulo.Exemplar.Editora" não está preenchido.
     4.2.1. O sistema apresenta a mensagem de erro ERR_EDITORA_01.
 4.3. O campo "Distribuidor" não está preenchido.
     4.3.1. O sistema apresenta a mensagem de erro ERR_DISTRIBUIDOR_01.
@@ -50,10 +50,10 @@ CAMINHOS ALTERNATIVOS:
     4.11.1. O sistema apresenta a mensagem de erro ERR_ISBN_03.
 
 MENSAGENS DO SISTEMA:
-S01: Titulo.Titulo.Exemplar <Título> adicionado com sucesso.
+S01: Titulo.Titulo.Exemplar.Exemplar <Título> adicionado com sucesso.
 
 ERR_TITULO_01: O campo "Título" é mandatório.
-ERR_EDITORA_01: O campo "Editora" é mandatório.
+ERR_EDITORA_01: O campo "Titulo.Exemplar.Editora" é mandatório.
 ERR_DISTRIBUIDOR_01: O campo "Distribuidor" é mandatório.
 ERR_ANO_01: O campo "Ano" é mandatório.
 ERR_ANO_02: O campo "Ano" deve ser um inteiro positivo.
@@ -123,15 +123,15 @@ Criar editora (auxiliar)
 ENQUADRAMENTO: O utilizador clica no botão "+" da janela 'AdicionarTitulo' para adicionar uma nova editora.
 
 CAMINHO PRINCIPAL:
-1. O sistema cria e apresenta o dialogo "Adicionar Editora" com o campo para introdução do nome da editora, mandatório, do tipo texto.
+1. O sistema cria e apresenta o dialogo "Adicionar Titulo.Exemplar.Editora" com o campo para introdução do nome da editora, mandatório, do tipo texto.
 2. O utilizador preenche o campo Nome da editora e clica no botão "Submeter".
 3. O sistema valida que:
     O campo Nome está preenchido, tem entre 3 e 50 caracteres e não é exclusivamente composto por espaços em branco, é unico no sistema.
-4. O sistema cria uma nova "Editora", adiciona-a à lista de editoras do sistema, apresenta a mensagem de sucesso S01 (Nome = Nome da editora), fecha o dialogo atual e retorna à janela anterior.
+4. O sistema cria uma nova "Titulo.Exemplar.Editora", adiciona-a à lista de editoras do sistema, apresenta a mensagem de sucesso S01 (Nome = Nome da editora), fecha o dialogo atual e retorna à janela anterior.
 
 CAMINHOS ALTERNATIVOS:
 2.1. O utilizador clica no botão "Cancel".
-    2.1.1. O sistema fecha o dialogo atual "Adicionar Editora" e retorna à janela anterior.
+    2.1.1. O sistema fecha o dialogo atual "Adicionar Titulo.Exemplar.Editora" e retorna à janela anterior.
 3.1. O campo "Nome" não está preenchido.
     3.1.1. O sistema apresenta a mensagem de erro ERR_NOME_01.
 3.2. O campo "Nome" tem menos de 3 caracteres.
@@ -142,7 +142,7 @@ CAMINHOS ALTERNATIVOS:
     3.4.1 O sistema apresenta a mensagem de erro ERR_NOME_04.
 
 MENSAGENS DO SISTEMA:
-S01: Editora <Nome> adicionada com sucesso.
+S01: Titulo.Exemplar.Editora <Nome> adicionada com sucesso.
 
 ERR_NOME_01: O campo "Nome" é mandatório.
 ERR_NOME_02: O campo "Nome" deve ter no mínimo 3 caracteres.

@@ -174,7 +174,7 @@
           <hideActionText value="false"/>
           <horizontalAlignment value="0"/>
           <horizontalTextPosition value="0"/>
-          <text value="Adicionar Titulo.Titulo.Exemplar"/>
+          <text value="Adicionar Titulo.Titulo.Exemplar.Exemplar"/>
         </properties>
         <clientProperties>
           <hideActionText class="java.lang.Boolean" value="false"/>

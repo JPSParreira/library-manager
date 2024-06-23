@@ -1,4 +1,4 @@
-package Titulo;
+package Titulo.Exemplar;
 
 public class Exemplar {
 }

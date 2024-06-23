@@ -1,7 +1,9 @@
-public class Editora {
+package Titulo.Exemplar;
+
+public class Fornecedor {
     private String nome;
 
-    public Editora(String nome) {
+    public Fornecedor(String nome) {
         this.nome = nome;
     }
 
@@ -12,4 +14,5 @@ public class Editora {
     public void setNome(String nome) {
         this.nome = nome;
     }
+
 }

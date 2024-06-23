@@ -1,5 +1,7 @@
 package Titulo;
 
+import Titulo.Exemplar.Exemplar;
+
 import java.util.LinkedList;
 
 public class Titulo {
