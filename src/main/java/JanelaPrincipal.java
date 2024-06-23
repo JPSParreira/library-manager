@@ -35,6 +35,7 @@ public class JanelaPrincipal extends JFrame {
     }
 
     public void emprestimosButtonActionPerformed(ActionEvent e) {
+        JanelaEmprestimos janelaEmprestimos = new JanelaEmprestimos("Empréstimos");
     }
 
     public void reservasButtonActionPerformed(ActionEvent e) {

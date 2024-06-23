@@ -151,4 +151,8 @@ public class GestorBiblioteca {
     public void setValorAnuidade(float valorAnuidade) {
         this.valorAnuidade = valorAnuidade;
     }
+
+    public LinkedList<Emprestimo> getListaEmprestimos() {
+        return emprestimos;
+    }
 }
