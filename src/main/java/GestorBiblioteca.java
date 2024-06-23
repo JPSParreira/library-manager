@@ -45,7 +45,7 @@ public class GestorBiblioteca {
         generos = fillGeneros();
 
         estantes = new LinkedList<>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 1; i <= 20; i++) {
             estantes.add(new Estante(i, 50));
         }
 

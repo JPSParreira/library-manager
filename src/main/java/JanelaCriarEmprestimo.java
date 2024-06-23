@@ -2,7 +2,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import Titulo.Titulo;
 
-public class JanelaCriarEmprestimo {
+public class JanelaCriarEmprestimo extends JDialog {
     private JComboBox comboBoxTitulo;
     private JPanel janelaCriarEmprestimo;
     private JComboBox comboBoxSocio;
@@ -12,12 +12,11 @@ public class JanelaCriarEmprestimo {
     private JLabel socioLabel;
 
     public JanelaCriarEmprestimo(String title) {
-        JFrame frame = new JFrame(title);
-        frame.setContentPane(janelaCriarEmprestimo);
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        frame.pack();
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
+        this.setTitle(title);
+        setContentPane(janelaCriarEmprestimo);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        pack();
+        setLocationRelativeTo(null);
 
 //        DefaultComboBoxModel<Titulo> modelTitulo = new DefaultComboBoxModel<>();
 //        for (Titulo titulo : GestorBiblioteca.instance.getTitulos()) {
@@ -40,7 +39,6 @@ public class JanelaCriarEmprestimo {
     }
 
     public void voltarButtonActionPerformed(ActionEvent e) {
-        JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(janelaCriarEmprestimo);
-        frame.dispose();
+        this.setVisible(false);
     }
 }

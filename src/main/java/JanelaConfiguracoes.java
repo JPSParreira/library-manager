@@ -11,13 +11,11 @@ public class JanelaConfiguracoes extends JDialog {
     private JButton submeterButton;
 
     public JanelaConfiguracoes(String title) {
-        JFrame frame = new JFrame(title);
-        frame.setContentPane(janelaConfiguracoes);
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        frame.pack();
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
-
+        setTitle(title);
+        setContentPane(janelaConfiguracoes);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
+        pack();
+        setLocationRelativeTo(null);
 
         maxDias.setText(String.valueOf(GestorBiblioteca.instance.getMaxDias()));
         valorMulta.setText(String.valueOf(GestorBiblioteca.instance.getValorMulta()));
@@ -73,12 +71,10 @@ public class JanelaConfiguracoes extends JDialog {
             return;
         }
         JOptionPane.showMessageDialog(null, "Configurações guardadas com sucesso.");
-        JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(janelaConfiguracoes);
-        frame.dispose();
+        this.setVisible(false);
     }
 
     public void voltarButtonActionPerformed(ActionEvent e) {
-        JFrame frame = (JFrame) SwingUtilities.getWindowAncestor(janelaConfiguracoes);
-        frame.dispose();
+        this.setVisible(false);
     }
 }

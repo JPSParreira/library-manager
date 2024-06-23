@@ -16,11 +16,6 @@ public class JanelaAdicionarExemplar extends JDialog {
         pack();
         setLocationRelativeTo(null);
 
-        LinkedList<Genero> generos = GestorBiblioteca.instance.getGeneros();
-        for (Genero genero : generos) {
-            comboGenero.addItem(genero.getNome());
-        }
-        comboGenero.setSelectedItem(null);
     }
 
 }

@@ -52,7 +52,9 @@ public class JanelaPrincipal extends JFrame {
     }
 
     public void emprestimosButtonActionPerformed(ActionEvent e) {
-        JanelaEmprestimos janelaEmprestimos = new JanelaEmprestimos("Empréstimos");
+        var janelaEmprestimos = new JanelaEmprestimos("Empréstimos");
+        janelaEmprestimos.setModal(true);
+        janelaEmprestimos.setVisible(true);
     }
 
     public void reservasButtonActionPerformed(ActionEvent e) {
@@ -62,7 +64,9 @@ public class JanelaPrincipal extends JFrame {
     }
 
     public void configuracoesButtonActionPerformed(ActionEvent e) {
-        JanelaConfiguracoes janelaConfiguracoes = new JanelaConfiguracoes("Configurações");
+        var janelaConfiguracoes = new JanelaConfiguracoes("Configurações");
+        janelaConfiguracoes.setModal(true);
+        janelaConfiguracoes.setVisible(true);
     }
 
     public void pesquisarButtonActionPerformed(ActionEvent e) {
