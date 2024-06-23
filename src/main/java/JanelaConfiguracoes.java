@@ -1,7 +1,7 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
-public class JanelaConfiguracoes {
+public class JanelaConfiguracoes extends JDialog {
     private JPanel janelaConfiguracoes;
     private JTextField maxDias;
     private JTextField valorMulta;
@@ -17,6 +17,7 @@ public class JanelaConfiguracoes {
         frame.pack();
         frame.setLocationRelativeTo(null);
         frame.setVisible(true);
+
 
         maxDias.setText(String.valueOf(GestorBiblioteca.instance.getMaxDias()));
         valorMulta.setText(String.valueOf(GestorBiblioteca.instance.getValorMulta()));

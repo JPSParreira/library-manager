@@ -6,24 +6,26 @@ import java.util.LinkedList;
 
 public class Titulo {
 
-    private String nome;
+    private String titulo;
     private Autor autor;
     private Genero genero;
+    private Subgenero subgenero;
     private LinkedList<Exemplar> exemplares;
 
-    public Titulo(String nome, Autor autor, Genero genero) {
-        this.nome = nome;
+    public Titulo(String nome, Autor autor, Genero genero, Subgenero subgenero) {
+        this.titulo = nome;
         this.autor = autor;
         this.genero = genero;
+        this.subgenero = subgenero;
         exemplares = new LinkedList<>();
     }
 
-    public String getNome() {
-        return nome;
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setTitulo(String titulo) {
+        this.titulo = titulo;
     }
 
     public Autor getAutor() {
