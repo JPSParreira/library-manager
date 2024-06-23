@@ -1,5 +1,6 @@
 
 • - LISTAR EMPRÉSTIMOS (Auxiliar) - •
+Enquadramento: O utilizador clica no botão "Empréstimos" na "Janela Principal".
 - Caminho Principal
 1. O sistema percorre a lista de empréstimos e apresenta a "Janela de Empréstimos" com a "Lista de Empréstimos" e com os botões "Novo Empréstimo", "Devolução" e "Voltar".
 
@@ -9,6 +10,7 @@ N/A
 /--------------------/
 
 • - LISTAR RESERVAS (Auxiliar) - •
+Enquadramento: O utilizador clica no botão "Reservas" na "Janela Principal".
 - Caminho Principal
 1. O sistema percorre a lista de reservas e apresenta a "Janela de Reservas" com a "Lista de Reservas" e com os botões "Anular Reserva" e "Voltar".
 
@@ -98,6 +100,7 @@ N/A
 /--------------------/
 
 • - CRIAR RESERVA (Auxiliar) - •
+Enquadramento: O utilizador tenta criar um empréstimo de um livro que existe, mas não está disponível e clica em "Sim" na messageBox.
 - Caminho Principal
 1. O sistema grava a reserva do livro junto com o sócio e apresenta a messageBox com a mensagem "Reserva criada com sucesso! Assim que o livro estiver disponível será avisado!" e o botão "OK".
 2. O utilizador clica no botão "OK".
