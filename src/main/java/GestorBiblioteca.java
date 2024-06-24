@@ -6,6 +6,10 @@ import Titulo.Exemplar.*;
 import java.util.LinkedList;
 
 public class GestorBiblioteca {
+    /* Globals */
+    private static int socioIdCounter = 0;
+    private static int emprestimoIdCounter = 0;
+    private static int reservaIdCounter = 0;
 
     // Configurações
     private int maximoDiasEmprestimo;
@@ -26,11 +30,12 @@ public class GestorBiblioteca {
     private LinkedList<Estante> estantes;
     private LinkedList<Emprestimo> emprestimos;
     private LinkedList<Reserva> reservas;
-
     private LinkedList<Socio> socios;
 
+    /* Singleton */
     public static final GestorBiblioteca instance = new GestorBiblioteca();
 
+    /* Construtor */
     private GestorBiblioteca() {
         maximoDiasEmprestimo = 15;
         valorMultaPorDia = 1f;
@@ -42,6 +47,7 @@ public class GestorBiblioteca {
         autores = new LinkedList<>();
 
         editoras = new LinkedList<>();
+
         fornecedores = new LinkedList<>();
 
         generos = fillGeneros();
@@ -52,11 +58,33 @@ public class GestorBiblioteca {
         }
 
         emprestimos = new LinkedList<>();
+
         reservas = new LinkedList<>();
 
-        socios = new LinkedList<>();
+        socios = populateSocios();
 
         seedApp();
+    }
+
+    /* Globals */
+    public int getSocioidCounter() {
+        return socioIdCounter;
+    }
+
+    public void incrementSocioidCounter() {
+        socioIdCounter++;
+    }
+
+    public int getEmprestimoIdCounter() {
+        return emprestimoIdCounter;
+    }
+
+    public void incrementEmprestimoIdCounter() {
+        emprestimoIdCounter++;
+    }
+
+    public int getReservaIdCounter() {
+        return reservaIdCounter;
     }
 
     //Seed dados da aplicação
@@ -120,7 +148,11 @@ public class GestorBiblioteca {
         }
     }
 
-    //Configurações
+    public void incrementReservaIdCounter() {
+        reservaIdCounter++;
+    }
+
+    /* Configurações */
     public int getMaxDias() {
         return maximoDiasEmprestimo;
     }
@@ -151,11 +183,6 @@ public class GestorBiblioteca {
 
     public void setValorAnuidade(float valorAnuidade) {
         this.valorAnuidade = valorAnuidade;
-    }
-
-    //Emprestimos
-    public LinkedList<Emprestimo> getListaEmprestimos() {
-        return emprestimos;
     }
 
     //Generos
@@ -272,15 +299,6 @@ public class GestorBiblioteca {
         return titulos;
     }
 
-    public Titulo getTitulo(String t) {
-        for (Titulo titulo : titulos) {
-            if (titulo.getTitulo().equalsIgnoreCase(t)) {
-                return titulo;
-            }
-        }
-        return null;
-    }
-
     public void addTitulo(String titulo, String autor, Genero genero, Subgenero subGenero) {
 
         Autor newAutor = null;
@@ -304,6 +322,19 @@ public class GestorBiblioteca {
     //Editora
     public LinkedList<Editora> getEditoras() {
         return editoras;
+    }
+
+    public void addDistribuidor(Distribuidor d) {
+        fornecedores.add(d);
+    }
+
+    public Titulo getTitulo(String t) {
+        for (Titulo titulo : titulos) {
+            if (titulo.getTitulo().equalsIgnoreCase(t)) {
+                return titulo;
+            }
+        }
+        return null;
     }
 
     public Editora getEditora(String textEditora) {
@@ -333,12 +364,25 @@ public class GestorBiblioteca {
         return null;
     }
 
-    public LinkedList<Socio> getSocios() {
+    private LinkedList<Socio> populateSocios() {
+        LinkedList<Socio> socios = new LinkedList<>();
+        Socio socio1 = new Socio("João", "Rua do João", "joao@mail.pt", 123456789, 912345677);
+        Socio socio2 = new Socio("Maria", "Rua da Maria", "maria@mail.pt", 987654321, 987654321);
+        Socio socio3 = new Socio("Manuel", "Rua do Manuel", "manuel@mail.pt", 128456789, 912345678);
+        Socio socio4 = new Socio("Ana", "Rua da Ana", "ana@mail.pt", 987654321, 987654321);
+        Socio socio5 = new Socio("Rui", "Rua do Rui", "rui@mail.pt", 125456789, 912345679);
+
+        socios.add(socio1);
+        socios.add(socio2);
+        socios.add(socio3);
+        socios.add(socio4);
+        socios.add(socio5);
+
         return socios;
     }
 
-    public void addDistribuidor(Distribuidor d) {
-        fornecedores.add(d);
+    public LinkedList<Socio> getSocios() {
+        return socios;
     }
 
     //Biblioteca.Estante / Biblioteca.Prateleira
@@ -375,6 +419,15 @@ public class GestorBiblioteca {
             }
         }
         return null;
+    }
+
+
+    //Emprestimos
+    public LinkedList<Emprestimo> populateEmprestimos() {
+        return emprestimos;
+    }
+    public LinkedList<Emprestimo> getListaEmprestimos() {
+        return emprestimos;
     }
 }
 

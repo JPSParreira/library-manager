@@ -1,23 +1,62 @@
 import java.util.Date;
 
 public class Emprestimo {
-    private static int idCounter = 0;
-    private int id;
+    private int idEmprestimo;
     private int idSocio;
-    private int idExemplar;
+    private long ISBN;
     private Date dataEmprestimo;
     private Date dataDevolucao;
     private boolean devolvido;
     private float multa;
 
-    public Emprestimo(int id, int idSocio, int idExemplar) {
-        this.id = id;
+    public Emprestimo(int id, int idSocio, long ISBN) {
+        GestorBiblioteca.instance.incrementEmprestimoIdCounter();
+        this.idEmprestimo = GestorBiblioteca.instance.getEmprestimoIdCounter();
         this.idSocio = idSocio;
-        this.idExemplar = idExemplar;
+        this.ISBN = ISBN;
         this.dataEmprestimo = new Date();
         this.dataDevolucao = null;
         this.devolvido = false;
         this.multa = 0.0f;
-        idCounter++;
+    }
+
+    public int getIdEmprestimo() {
+        return idEmprestimo;
+    }
+
+    public int getIdSocio() {
+        return idSocio;
+    }
+
+    public long getISBN() {
+        return ISBN;
+    }
+
+    public Date getDataEmprestimo() {
+        return dataEmprestimo;
+    }
+
+    public Date getDataDevolucao() {
+        return dataDevolucao;
+    }
+
+    public boolean isDevolvido() {
+        return devolvido;
+    }
+
+    public float getMulta() {
+        return multa;
+    }
+
+    public void setDataDevolucao(Date dataDevolucao) {
+        this.dataDevolucao = dataDevolucao;
+    }
+
+    public void setDevolvido(boolean devolvido) {
+        this.devolvido = devolvido;
+    }
+
+    public void setMulta(float multa) {
+        this.multa = multa;
     }
 }
