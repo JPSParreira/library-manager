@@ -270,6 +270,10 @@ public class GestorBiblioteca {
         return null;
     }
 
+    public LinkedList<Socio> getSocios() {
+        return socios;
+    }
+
     public void addDistribuidor(Distribuidor d) {
         fornecedores.add(d);
     }
