@@ -51,68 +51,6 @@ public class GestorBiblioteca {
     }
 
     public void seedApp(){
-        //region Seed Titles
-        addTitulo("Harry Potter e a Pedra Filosofal", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("Harry Potter e a Câmara dos Segredos", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("Harry Potter e o Prisioneiro de Azkaban", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("Harry Potter e o Cálice de Fogo", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("Harry Potter e a Ordem da Fénix", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("Harry Potter e o Príncipe Misterioso", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("Harry Potter e os Talismãs da Morte", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("O Senhor dos Anéis: A Irmandade do Anel", "J.R.R. Tolkien", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("O Senhor dos Anéis: As Duas Torres", "J.R.R. Tolkien", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("O Senhor dos Anéis: O Regresso do Rei", "J.R.R. Tolkien", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("O Hobbit", "J.R.R. Tolkien", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("O Silmarillion", "J.R.R. Tolkien", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("A Guerra dos Tronos", "George R.R. Martin", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("A Fúria dos Reis", "George R.R. Martin", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("A Tormenta de Espadas", "George R.R. Martin", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("O Festim dos Corvos", "George R.R. Martin", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("A Dança dos Dragões", "George R.R. Martin", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
-        addTitulo("O Código Da Vinci", "Dan Brown", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
-        addTitulo("Anjos e Demónios", "Dan Brown", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
-        addTitulo("Inferno", "Dan Brown", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
-        addTitulo("O Símbolo Perdido", "Dan Brown", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
-        addTitulo("Fortaleza Digital", "Dan Brown", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
-        addTitulo("O Processo", "Franz Kafka", getGenero("Drama"), getGenero("Drama").getSubgenero("Drama Psicológico"));
-        addTitulo("O Castelo", "Franz Kafka", getGenero("Drama"), getGenero("Drama").getSubgenero("Drama Psicológico"));
-        addTitulo("A Metamorfose", "Franz Kafka", getGenero("Drama"), getGenero("Drama").getSubgenero("Drama Psicológico"));
-        addTitulo("O Julgamento", "Franz Kafka", getGenero("Drama"), getGenero("Drama").getSubgenero("Drama Psicológico"));
-        addTitulo("O Processo", "Franz Kafka", getGenero("Drama"), getGenero("Drama").getSubgenero("Drama Psicológico"));
-        addTitulo("O Nome da Rosa", "Umberto Eco", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
-        addTitulo("O Pêndulo de Foucault", "Umberto Eco", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
-        addTitulo("O Cemitério de Praga", "Umberto Eco", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
-        addTitulo("O Iluminado", "Stephen King", getGenero("Terror"), getGenero("Terror").getSubgenero("Terror Sobrenatural"));
-        addTitulo("Carrie", "Stephen King", getGenero("Terror"), getGenero("Terror").getSubgenero("Terror Sobrenatural"));
-        addTitulo("It", "Stephen King", getGenero("Terror"), getGenero("Terror").getSubgenero("Terror Sobrenatural"));
-        addTitulo("A Coisa", "Stephen King", getGenero("Terror"), getGenero("Terror").getSubgenero("Terror Sobrenatural"));
-        addTitulo("O Cemitério", "Stephen King", getGenero("Terror"), getGenero("Terror").getSubgenero("Terror Sobrenatural"));
-        //endregion
-
-        //region Seed Editoras / Distribuidores
-        for (int i = 0; i < 10; i++) {
-            addEditora(new Editora("Editora " + i));
-            addDistribuidor(new Distribuidor("Distribuidor " + i));
-        }
-        //endregion
-
-        //region Seed Exemplares
-        for (Titulo t : titulos) {
-            for (int i = 0; i < 10; i++) {
-                t.addExemplar(new Exemplar(1234567890123L, 2000, "1ª Edição", t, getEditora("Editora 0"), getDistribuidor("Distribuidor 0") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 1"), getDistribuidor("Distribuidor 1") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 2"), getDistribuidor("Distribuidor 2") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "3ª Edição", t, getEditora("Editora 3"), getDistribuidor("Distribuidor 3") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "2ª Edição", t, getEditora("Editora 4"), getDistribuidor("Distribuidor 4") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 5"), getDistribuidor("Distribuidor 5") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 6"), getDistribuidor("Distribuidor 6") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "4ª Edição", t, getEditora("Editora 7"), getDistribuidor("Distribuidor 7") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 8"), getDistribuidor("Distribuidor 8") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 9"), getDistribuidor("Distribuidor 9") ));
-            }
-        }
-        //endregion
-
         //region Seed Estantes / Prateleiras
         for (int i = 1; i <= 20; i++) {
             estantes.add(new Estante(i, 50));
@@ -203,6 +141,68 @@ public class GestorBiblioteca {
         terror.addSubgenero(new Subgenero("Terror Psicológico"));
         terror.addSubgenero(new Subgenero("Terror Gore"));
         generos.add(terror);
+        //endregion
+
+        //region Seed Titles
+        addTitulo("Harry Potter e a Pedra Filosofal", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("Harry Potter e a Câmara dos Segredos", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("Harry Potter e o Prisioneiro de Azkaban", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("Harry Potter e o Cálice de Fogo", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("Harry Potter e a Ordem da Fénix", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("Harry Potter e o Príncipe Misterioso", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("Harry Potter e os Talismãs da Morte", "J.K. Rowling", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("O Senhor dos Anéis: A Irmandade do Anel", "J.R.R. Tolkien", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("O Senhor dos Anéis: As Duas Torres", "J.R.R. Tolkien", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("O Senhor dos Anéis: O Regresso do Rei", "J.R.R. Tolkien", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("O Hobbit", "J.R.R. Tolkien", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("O Silmarillion", "J.R.R. Tolkien", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("A Guerra dos Tronos", "George R.R. Martin", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("A Fúria dos Reis", "George R.R. Martin", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("A Tormenta de Espadas", "George R.R. Martin", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("O Festim dos Corvos", "George R.R. Martin", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("A Dança dos Dragões", "George R.R. Martin", getGenero("Fantasia"), getGenero("Fantasia").getSubgenero("Alta Fantasia"));
+        addTitulo("O Código Da Vinci", "Dan Brown", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
+        addTitulo("Anjos e Demónios", "Dan Brown", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
+        addTitulo("Inferno", "Dan Brown", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
+        addTitulo("O Símbolo Perdido", "Dan Brown", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
+        addTitulo("Fortaleza Digital", "Dan Brown", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
+        addTitulo("O Processo", "Franz Kafka", getGenero("Drama"), getGenero("Drama").getSubgenero("Drama Psicológico"));
+        addTitulo("O Castelo", "Franz Kafka", getGenero("Drama"), getGenero("Drama").getSubgenero("Drama Psicológico"));
+        addTitulo("A Metamorfose", "Franz Kafka", getGenero("Drama"), getGenero("Drama").getSubgenero("Drama Psicológico"));
+        addTitulo("O Julgamento", "Franz Kafka", getGenero("Drama"), getGenero("Drama").getSubgenero("Drama Psicológico"));
+        addTitulo("O Processo", "Franz Kafka", getGenero("Drama"), getGenero("Drama").getSubgenero("Drama Psicológico"));
+        addTitulo("O Nome da Rosa", "Umberto Eco", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
+        addTitulo("O Pêndulo de Foucault", "Umberto Eco", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
+        addTitulo("O Cemitério de Praga", "Umberto Eco", getGenero("Mistério"), getGenero("Mistério").getSubgenero("Mistério Policial"));
+        addTitulo("O Iluminado", "Stephen King", getGenero("Terror"), getGenero("Terror").getSubgenero("Terror Sobrenatural"));
+        addTitulo("Carrie", "Stephen King", getGenero("Terror"), getGenero("Terror").getSubgenero("Terror Sobrenatural"));
+        addTitulo("It", "Stephen King", getGenero("Terror"), getGenero("Terror").getSubgenero("Terror Sobrenatural"));
+        addTitulo("A Coisa", "Stephen King", getGenero("Terror"), getGenero("Terror").getSubgenero("Terror Sobrenatural"));
+        addTitulo("O Cemitério", "Stephen King", getGenero("Terror"), getGenero("Terror").getSubgenero("Terror Sobrenatural"));
+        //endregion
+
+        //region Seed Editoras / Distribuidores
+        for (int i = 0; i < 10; i++) {
+            addEditora(new Editora("Editora " + i));
+            addDistribuidor(new Distribuidor("Distribuidor " + i));
+        }
+        //endregion
+
+        //region Seed Exemplares
+        for (Titulo t : titulos) {
+            for (int i = 0; i < 10; i++) {
+                t.addExemplar(new Exemplar(1234567890123L, 2000, "1ª Edição", t, getEditora("Editora 0"), getDistribuidor("Distribuidor 0") ));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 1"), getDistribuidor("Distribuidor 1") ));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 2"), getDistribuidor("Distribuidor 2") ));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "3ª Edição", t, getEditora("Editora 3"), getDistribuidor("Distribuidor 3") ));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "2ª Edição", t, getEditora("Editora 4"), getDistribuidor("Distribuidor 4") ));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 5"), getDistribuidor("Distribuidor 5") ));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 6"), getDistribuidor("Distribuidor 6") ));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "4ª Edição", t, getEditora("Editora 7"), getDistribuidor("Distribuidor 7") ));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 8"), getDistribuidor("Distribuidor 8") ));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 9"), getDistribuidor("Distribuidor 9") ));
+            }
+        }
         //endregion
     }
 
