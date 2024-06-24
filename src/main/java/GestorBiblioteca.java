@@ -1,10 +1,7 @@
 import Titulo.*;
 import Titulo.Exemplar.*;
 
-import javax.swing.*;
-import java.awt.*;
 import java.util.LinkedList;
-import java.util.List;
 
 public class GestorBiblioteca {
     /* Configs */
@@ -19,8 +16,8 @@ public class GestorBiblioteca {
     private LinkedList<Genero> generos;
 
     /* Exemplar */
-    private LinkedList<Editora> editores;
-    private LinkedList<Fornecedor> fornecedores;
+    private LinkedList<Editora> editoras;
+    private LinkedList<Distribuidor> fornecedores;
 
     /* Biblioteca */
     private LinkedList<Estante> estantes;
@@ -38,9 +35,10 @@ public class GestorBiblioteca {
         valorAnuidade = 20.0f;
 
         titulos = new LinkedList<>();
+
         autores = new LinkedList<>();
 
-        editores = new LinkedList<>();
+        editoras = new LinkedList<>();
         fornecedores = new LinkedList<>();
 
         generos = fillGeneros();
@@ -56,68 +54,92 @@ public class GestorBiblioteca {
         socios = new LinkedList<>();
     }
 
-    public LinkedList<Genero> fillGeneros(){
+    public LinkedList<Genero> fillGeneros() {
         LinkedList<Genero> listaGeneros = new LinkedList<>();
 
-        Genero ficcao = new Genero("Ficção");
-        ficcao.addSubgenero(new Subgenero("Aventura"));
-        ficcao.addSubgenero(new Subgenero("Distopia"));
-        ficcao.addSubgenero(new Subgenero("Realismo Mágico"));
-        listaGeneros.add(ficcao);
+        Genero acao = new Genero("Ação");
+        acao.addSubgenero(new Subgenero("Ação e Aventura"));
+        acao.addSubgenero(new Subgenero("Thriller de Ação"));
+        acao.addSubgenero(new Subgenero("Ação Militar"));
+        acao.addSubgenero(new Subgenero("Ação Espionagem"));
+        listaGeneros.add(acao);
 
-        Genero naoFiccao = new Genero("Não-Ficção");
-        naoFiccao.addSubgenero(new Subgenero("Biografia"));
-        naoFiccao.addSubgenero(new Subgenero("Ensaios"));
-        naoFiccao.addSubgenero(new Subgenero("Jornalismo"));
-        listaGeneros.add(naoFiccao);
+        Genero aventura = new Genero("Aventura");
+        aventura.addSubgenero(new Subgenero("Aventura Épica"));
+        aventura.addSubgenero(new Subgenero("Aventura de Sobrevivência"));
+        aventura.addSubgenero(new Subgenero("Aventura Histórica"));
+        aventura.addSubgenero(new Subgenero("Aventura de Exploração"));
+        listaGeneros.add(aventura);
 
-        Genero romance = new Genero("Romance");
-        romance.addSubgenero(new Subgenero("Histórico"));
-        romance.addSubgenero(new Subgenero("Contemporâneo"));
-        romance.addSubgenero(new Subgenero("Paranormal"));
-        listaGeneros.add(romance);
-
-        Genero misterio = new Genero("Mistério");
-        misterio.addSubgenero(new Subgenero("Detetive"));
-        misterio.addSubgenero(new Subgenero("Suspense"));
-        misterio.addSubgenero(new Subgenero("Crime"));
-        listaGeneros.add(misterio);
-
-        Genero fantasia = new Genero("Fantasia");
-        fantasia.addSubgenero(new Subgenero("Épica"));
-        fantasia.addSubgenero(new Subgenero("Urbana"));
-        fantasia.addSubgenero(new Subgenero("Sombria"));
-        listaGeneros.add(fantasia);
-
-        Genero terror = new Genero("Terror");
-        terror.addSubgenero(new Subgenero("Psicológico"));
-        terror.addSubgenero(new Subgenero("Sobrenatural"));
-        terror.addSubgenero(new Subgenero("Gótico"));
-        listaGeneros.add(terror);
-
-        Genero poesia = new Genero("Poesia");
-        poesia.addSubgenero(new Subgenero("Lírica"));
-        poesia.addSubgenero(new Subgenero("Épica"));
-        poesia.addSubgenero(new Subgenero("Visual"));
-        listaGeneros.add(poesia);
+        Genero comedia = new Genero("Comédia");
+        comedia.addSubgenero(new Subgenero("Comédia Romântica"));
+        comedia.addSubgenero(new Subgenero("Comédia Satírica"));
+        comedia.addSubgenero(new Subgenero("Comédia de Situação"));
+        comedia.addSubgenero(new Subgenero("Comédia de Humor Negro"));
+        listaGeneros.add(comedia);
 
         Genero drama = new Genero("Drama");
-        drama.addSubgenero(new Subgenero("Tragédia"));
-        drama.addSubgenero(new Subgenero("Comédia"));
-        drama.addSubgenero(new Subgenero("Histórico"));
+        drama.addSubgenero(new Subgenero("Drama Familiar"));
+        drama.addSubgenero(new Subgenero("Drama Psicológico"));
+        drama.addSubgenero(new Subgenero("Drama Social"));
+        drama.addSubgenero(new Subgenero("Drama Histórico"));
         listaGeneros.add(drama);
 
-        Genero literaturaInfantil = new Genero("Literatura Infantil");
-        literaturaInfantil.addSubgenero(new Subgenero("Contos de Fadas"));
-        literaturaInfantil.addSubgenero(new Subgenero("Aventura"));
-        literaturaInfantil.addSubgenero(new Subgenero("Educativa"));
-        listaGeneros.add(literaturaInfantil);
+        Genero fantasia = new Genero("Fantasia");
+        fantasia.addSubgenero(new Subgenero("Alta Fantasia"));
+        fantasia.addSubgenero(new Subgenero("Fantasia Urbana"));
+        fantasia.addSubgenero(new Subgenero("Fantasia Sombria"));
+        fantasia.addSubgenero(new Subgenero("Fantasia Mitológica"));
+        listaGeneros.add(fantasia);
 
-        Genero autoajuda = new Genero("Autoajuda");
-        autoajuda.addSubgenero(new Subgenero("Motivacional"));
-        autoajuda.addSubgenero(new Subgenero("Saúde e Bem-Estar"));
-        autoajuda.addSubgenero(new Subgenero("Finanças Pessoais"));
-        listaGeneros.add(autoajuda);
+        Genero ficcaoCientifica = new Genero("Ficção Científica");
+        ficcaoCientifica.addSubgenero(new Subgenero("Distopia"));
+        ficcaoCientifica.addSubgenero(new Subgenero("Space Opera"));
+        ficcaoCientifica.addSubgenero(new Subgenero("Cyberpunk"));
+        ficcaoCientifica.addSubgenero(new Subgenero("Ficção Científica Militar"));
+        listaGeneros.add(ficcaoCientifica);
+
+        Genero historia = new Genero("História");
+        historia.addSubgenero(new Subgenero("História Antiga"));
+        historia.addSubgenero(new Subgenero("História Medieval"));
+        historia.addSubgenero(new Subgenero("História Moderna"));
+        historia.addSubgenero(new Subgenero("História Contemporânea"));
+        listaGeneros.add(historia);
+
+        Genero horror = new Genero("Horror");
+        horror.addSubgenero(new Subgenero("Horror Gótico"));
+        horror.addSubgenero(new Subgenero("Horror Psicológico"));
+        horror.addSubgenero(new Subgenero("Horror de Monstros"));
+        horror.addSubgenero(new Subgenero("Horror Cósmico"));
+        listaGeneros.add(horror);
+
+        Genero misterio = new Genero("Mistério");
+        misterio.addSubgenero(new Subgenero("Mistério Policial"));
+        misterio.addSubgenero(new Subgenero("Mistério de Cozy"));
+        misterio.addSubgenero(new Subgenero("Mistério Jurídico"));
+        misterio.addSubgenero(new Subgenero("Mistério Paranormal"));
+        listaGeneros.add(misterio);
+
+        Genero romance = new Genero("Romance");
+        romance.addSubgenero(new Subgenero("Romance Histórico"));
+        romance.addSubgenero(new Subgenero("Romance Contemporâneo"));
+        romance.addSubgenero(new Subgenero("Romance Paranormal"));
+        romance.addSubgenero(new Subgenero("Romance de Época"));
+        listaGeneros.add(romance);
+
+        Genero suspense = new Genero("Suspense");
+        suspense.addSubgenero(new Subgenero("Suspense Psicológico"));
+        suspense.addSubgenero(new Subgenero("Suspense Jurídico"));
+        suspense.addSubgenero(new Subgenero("Suspense de Espionagem"));
+        suspense.addSubgenero(new Subgenero("Suspense de Crime"));
+        listaGeneros.add(suspense);
+
+        Genero terror = new Genero("Terror");
+        terror.addSubgenero(new Subgenero("Terror Sobrenatural"));
+        terror.addSubgenero(new Subgenero("Terror Corporal"));
+        terror.addSubgenero(new Subgenero("Terror Psicológico"));
+        terror.addSubgenero(new Subgenero("Terror Gore"));
+        listaGeneros.add(terror);
 
         return listaGeneros;
     }
@@ -194,4 +216,48 @@ public class GestorBiblioteca {
         titulos.add((newTitle));
         newAutor.addTitulo(newTitle);
     }
+
+    public LinkedList<Editora> getEditoras() {
+        return editoras;
+    }
+
+    public LinkedList<Distribuidor> getDistribuidores() {
+        return fornecedores;
+    }
+
+    public void addDistribuidor(Distribuidor d) {
+        fornecedores.add(d);
+    }
+
+    public void addEditora(Editora e) {
+        editoras.add(e);
+    }
+
+    public Titulo getTitulo(String t) {
+        for (Titulo titulo : titulos) {
+            if (titulo.getTitulo().equalsIgnoreCase(t)) {
+                return titulo;
+            }
+        }
+        return null;
+    }
+
+    public Editora getEditora(String textEditora) {
+        for (Editora e : editoras) {
+            if (e.getNome().equalsIgnoreCase(textEditora)) {
+                return e;
+            }
+        }
+        return null;
+    }
+
+    public Distribuidor getDistribuidor(String textDistribuidor) {
+        for (Distribuidor d : fornecedores) {
+            if (d.getNome().equalsIgnoreCase(textDistribuidor)) {
+                return d;
+            }
+        }
+        return null;
+    }
 }
+

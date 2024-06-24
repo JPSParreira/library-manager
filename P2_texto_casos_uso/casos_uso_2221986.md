@@ -1,30 +1,30 @@
 Criar exemplar
 ===============================
 CAMINHO PRINCIPAL:
-1. O utilizador clica no botão "Adicionar Exemplar.Exemplar" da "Janela Principal".
-2. O sistema cria e apresenta a janela "Adicionar Exemplar.Exemplar" com os seguintes campos:
+1. O utilizador clica no botão "Adicionar Exemplar" da "Janela Principal".
+2. O sistema cria e apresenta a janela "Adicionar Exemplar" com os seguintes campos:
     Título, mandatório, do tipo dropdown.
     Editora, mandatório, do tipo dropdown.
     Distribuidor, mandatório, do tipo dropdown.
-    Ano, mandatório, do tipo inteiro positivo.
-    Edição, mandatório, do tipo texto, com mínimo de 3 caracteres e máximo de 30.
-    ISBN, mandatório, do tipo inteiro positivo, com 13 dígitos.
+    Ano, mandatório, do tipo inteiro.
+    Edição, mandatório, do tipo texto.
+    ISBN, mandatório, do tipo inteiro.
 3. O utilizador preenche os campos Título, Editora, Distribuidor, Ano, Edição e ISBN, e clica no botão "Submeter".
 4. O sistema valida que:
     O campo Título está preenchido e é válido (existente no sistema).
     O campo Editora está preenchido e é válido (existente no sistema).
     O campo Distribuidor está preenchido e é válido (existente no sistema).
-    O campo Ano está preenchido e é um inteiro positivo.
+    O campo Ano está preenchido, tem 4 digitos e está entre o ano 1000 e o ano atual.
     O campo Edição está preenchido, tem entre 3 e 30 caracteres e não é exclusivamente composto por espaços em branco.
     O campo ISBN está preenchido, é um inteiro positivo e tem 13 dígitos.
-5. O sistema cria um novo "Exemplar.Exemplar", adiciona-o à lista de exemplares do sistema, apresenta a mensagem de sucesso S01 (Título = Título do exemplar), fecha a janela atual "Adicionar Exemplar.Exemplar" e retorna à janela anterior "Janela Principal".
+5. O sistema cria um novo "Exemplar", adiciona-o à lista de exemplares do sistema, apresenta a mensagem de sucesso S01 (Título = Título do exemplar), fecha a janela atual "Adicionar Exemplar" e retorna à janela anterior "Janela Principal".
 
 CAMINHOS ALTERNATIVOS:
 3.1. O utilizador clica no botão "Voltar".
-    3.1.1. O sistema fecha a janela atual "Adicionar Exemplar.Exemplar" e retorna à janela anterior "Janela Principal".
-3.2 O utilizador clina no botao "+" para adiconar uma nova editora.
+    3.1.1. O sistema fecha a janela atual "Adicionar Exemplar" e retorna à janela anterior "Janela Principal".
+3.2 O utilizador clica no botao "+" para adiconar uma nova editora.
     3.2.1 É executado o caso de uso "Criar Editora".
-3.3 O utilizador clina no botao "+" para adiconar um novo distribuidor.
+3.3 O utilizador clica no botao "+" para adiconar um novo distribuidor.
     3.3.1 É executado o caso de uso "Criar Distribuidor".
 4.1. O campo "Título" não está preenchido.
     4.1.1. O sistema apresenta a mensagem de erro ERR_TITULO_01.
@@ -34,29 +34,32 @@ CAMINHOS ALTERNATIVOS:
     4.3.1. O sistema apresenta a mensagem de erro ERR_DISTRIBUIDOR_01.
 4.4. O campo "Ano" não está preenchido.
     4.4.1. O sistema apresenta a mensagem de erro ERR_ANO_01.
-4.5. O campo "Ano" não é um inteiro positivo.
+4.5. O campo "Ano" não é um ano válido.
     4.5.1. O sistema apresenta a mensagem de erro ERR_ANO_02.
-4.6. O campo "Edição" não está preenchido.
-    4.6.1. O sistema apresenta a mensagem de erro ERR_EDICAO_01.
-4.7. O campo "Edição" tem menos de 3 caracteres.
-    4.7.1. O sistema apresenta a mensagem de erro ERR_EDICAO_02.
-4.8. O campo "Edição" tem mais de 30 caracteres.
-    4.8.1. O sistema apresenta a mensagem de erro ERR_EDICAO_03.
-4.9. O campo "ISBN" não está preenchido.
-    4.9.1. O sistema apresenta a mensagem de erro ERR_ISBN_01.
-4.10. O campo "ISBN" não é um inteiro positivo.
-    4.10.1. O sistema apresenta a mensagem de erro ERR_ISBN_02.
-4.11. O campo "ISBN" não tem 13 dígitos.
-    4.11.1. O sistema apresenta a mensagem de erro ERR_ISBN_03.
+4.6. O campo "Ano" não tem 4 dígitos.
+    4.6.1. O sistema apresenta a mensagem de erro ERR_ANO_03.
+4.7. O campo "Edição" não está preenchido.
+   4.7.1. O sistema apresenta a mensagem de erro ERR_EDICAO_01.
+4.8. O campo "Edição" tem menos de 3 caracteres.
+   4.8.1. O sistema apresenta a mensagem de erro ERR_EDICAO_02.
+4.9. O campo "Edição" tem mais de 30 caracteres.
+   4.9.1. O sistema apresenta a mensagem de erro ERR_EDICAO_03.
+4.10. O campo "ISBN" não está preenchido.
+   4.10.1. O sistema apresenta a mensagem de erro ERR_ISBN_01.
+4.11. O campo "ISBN" não é um inteiro positivo.
+   4.11.1. O sistema apresenta a mensagem de erro ERR_ISBN_02.
+4.12. O campo "ISBN" não tem 13 dígitos.
+    4.12.1. O sistema apresenta a mensagem de erro ERR_ISBN_03.
 
 MENSAGENS DO SISTEMA:
-S01: Exemplar.Exemplar <Título> adicionado com sucesso.
+S01: Exemplar <Título> adicionado com sucesso.
 
 ERR_TITULO_01: O campo "Título" é mandatório.
 ERR_EDITORA_01: O campo "Editora" é mandatório.
 ERR_DISTRIBUIDOR_01: O campo "Distribuidor" é mandatório.
 ERR_ANO_01: O campo "Ano" é mandatório.
-ERR_ANO_02: O campo "Ano" deve ser um inteiro positivo.
+ERR_ANO_02: O campo "Ano" não é válido.
+ERR_ANO_03: O campo "Ano" deve ter 4 dígitos.
 ERR_EDICAO_01: O campo "Edição" é mandatório.
 ERR_EDICAO_02: O campo "Edição" deve ter no mínimo 3 caracteres.
 ERR_EDICAO_03: O campo "Edição" deve ter no máximo 30 caracteres.
@@ -144,10 +147,10 @@ CAMINHOS ALTERNATIVOS:
 MENSAGENS DO SISTEMA:
 S01: Editora <Nome> adicionada com sucesso.
 
-ERR_NOME_01: O campo "Nome" é mandatório.
-ERR_NOME_02: O campo "Nome" deve ter no mínimo 3 caracteres.
-ERR_NOME_03: O campo "Nome" deve ter no máximo 50 caracteres.
-ERR_NOME_04: O campo "Nome" já existe no sistema.
+ERR_NOME_01: O campo "Editora" é mandatório.
+ERR_NOME_02: O campo "Editora" deve ter no mínimo 3 caracteres.
+ERR_NOME_03: O campo "Editora" deve ter no máximo 50 caracteres.
+ERR_NOME_04: O campo "Editora" já existe no sistema.
 
 Criar distribuidor (auxiliar)
 ===============================
@@ -175,10 +178,10 @@ CAMINHOS ALTERNATIVOS:
 MENSAGENS DO SISTEMA:
 S01: Distribuidor <Nome> adicionado com sucesso.
 
-ERR_NOME_01: O campo "Nome" é mandatório.
-ERR_NOME_02: O campo "Nome" deve ter no mínimo 3 caracteres.
-ERR_NOME_03: O campo "Nome" deve ter no máximo 50 caracteres.
-ERR_NOME_04: O campo "Nome" já existe no sistema.
+ERR_NOME_01: O campo "Distribuidor" é mandatório.
+ERR_NOME_02: O campo "Distribuidor" deve ter no mínimo 3 caracteres.
+ERR_NOME_03: O campo "Distribuidor" deve ter no máximo 50 caracteres.
+ERR_NOME_04: O campo "Distribuidor" já existe no sistema.
 
 Consultar top 10 geral
 ===============================

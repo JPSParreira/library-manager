@@ -97,7 +97,7 @@ public class JanelaCriarTitulo extends JDialog {
     }
 
     public void btnVoltarActionPerformed(ActionEvent e) {
-        JanelaCriarTitulo.this.setVisible(false);
+        this.setVisible(false);
     }
 
     public void comboGeneroActionPerformed(ActionEvent e) {

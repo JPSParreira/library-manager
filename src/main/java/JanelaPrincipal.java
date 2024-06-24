@@ -1,9 +1,6 @@
-import Titulo.Genero;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
-import java.util.LinkedList;
 
 public class JanelaPrincipal extends JFrame {
 
@@ -62,6 +59,8 @@ public class JanelaPrincipal extends JFrame {
 
     public void configuracoesButtonActionPerformed(ActionEvent e) {
         JanelaConfiguracoes janelaConfiguracoes = new JanelaConfiguracoes("Configurações");
+        janelaConfiguracoes.setModal(true);
+        janelaConfiguracoes.setVisible(true);
     }
 
     public void pesquisarButtonActionPerformed(ActionEvent e) {
@@ -71,7 +70,7 @@ public class JanelaPrincipal extends JFrame {
     }
 
     public void adicionarExemplarButtonActionPerformed(ActionEvent e) {
-        var janelaAdicionarExemplar = new JanelaAdicionarExemplar("Adicionar Exemplar");
+        var janelaAdicionarExemplar = new JanelaCriarExemplar("Adicionar Exemplar");
         janelaAdicionarExemplar.setModal(true);
         janelaAdicionarExemplar.setVisible(true);
     }

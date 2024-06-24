@@ -1,9 +1,9 @@
 package Titulo.Exemplar;
 
-public class Fornecedor {
+public class Distribuidor {
     private String nome;
 
-    public Fornecedor(String nome) {
+    public Distribuidor(String nome) {
         this.nome = nome;
     }
 

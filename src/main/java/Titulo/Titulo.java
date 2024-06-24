@@ -60,4 +60,7 @@ public class Titulo {
         exemplares.add(exemplar);
     }
 
+    public int countExemplares() {
+        return exemplares.size();
+    }
 }

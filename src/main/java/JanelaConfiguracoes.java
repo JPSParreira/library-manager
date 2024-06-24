@@ -11,12 +11,12 @@ public class JanelaConfiguracoes extends JDialog {
     private JButton submeterButton;
 
     public JanelaConfiguracoes(String title) {
-        JFrame frame = new JFrame(title);
-        frame.setContentPane(janelaConfiguracoes);
-        frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
-        frame.pack();
-        frame.setLocationRelativeTo(null);
-        frame.setVisible(true);
+        setTitle(title);
+        setContentPane(janelaConfiguracoes);
+        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        pack();
+        setLocationRelativeTo(null);
+        setVisible(true);
 
 
         maxDias.setText(String.valueOf(GestorBiblioteca.instance.getMaxDias()));
