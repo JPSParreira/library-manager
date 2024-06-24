@@ -238,10 +238,6 @@ public class GestorBiblioteca {
         return titulos;
     }
 
-    public LinkedList<Autor> getAutores() {
-        return autores;
-    }
-
     public void addTitulo(String titulo, String autor, Genero genero, Subgenero subGenero) {
 
         Autor newAutor = null;
@@ -267,16 +263,8 @@ public class GestorBiblioteca {
         return editoras;
     }
 
-    public LinkedList<Distribuidor> getDistribuidores() {
-        return fornecedores;
-    }
-
     public void addDistribuidor(Distribuidor d) {
         fornecedores.add(d);
-    }
-
-    public void addEditora(Editora e) {
-        editoras.add(e);
     }
 
     public Titulo getTitulo(String t) {
