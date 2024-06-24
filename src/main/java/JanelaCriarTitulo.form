@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="JanelaCriarTitulo">
+  <grid id="27dc6" binding="janelaCriarTitulo" layout-manager="GridLayoutManager" row-count="9" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="20" left="20" bottom="20" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="700" height="400"/>
+    </constraints>
+    <properties>
+      <enabled value="true"/>
+      <minimumSize width="700" height="350"/>
+      <preferredSize width="700" height="250"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <component id="8dfda" class="javax.swing.JButton" binding="btnVoltar">
+        <constraints>
+          <grid row="8" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="150" height="50"/>
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Voltar"/>
+        </properties>
+      </component>
+      <vspacer id="1e6a">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="59c11" class="javax.swing.JButton" binding="btnSubmeter">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="150" height="50"/>
+            <preferred-size width="150" height="50"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Submeter"/>
+        </properties>
+      </component>
+      <hspacer id="2c759">
+        <constraints>
+          <grid row="8" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="be506" class="javax.swing.JTextField" binding="textTitulo">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="550" height="30"/>
+            <preferred-size width="550" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <alignmentX value="1.0"/>
+        </properties>
+      </component>
+      <component id="af12e" class="javax.swing.JTextField" binding="textAutor">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="550" height="30"/>
+            <preferred-size width="550" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <alignmentX value="1.0"/>
+        </properties>
+      </component>
+      <component id="db532" class="javax.swing.JComboBox" binding="comboGenero">
+        <constraints>
+          <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="550" height="30"/>
+            <preferred-size width="550" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <alignmentX value="1.0"/>
+          <autoscrolls value="true"/>
+          <editable value="false"/>
+        </properties>
+      </component>
+      <component id="bb887" class="javax.swing.JComboBox" binding="comboSubGenero">
+        <constraints>
+          <grid row="6" column="1" row-span="1" col-span="3" vsize-policy="0" hsize-policy="2" anchor="8" fill="1" indent="0" use-parent-layout="false">
+            <minimum-size width="550" height="30"/>
+            <preferred-size width="550" height="30"/>
+          </grid>
+        </constraints>
+        <properties>
+          <alignmentX value="1.0"/>
+          <autoscrolls value="true"/>
+        </properties>
+      </component>
+      <component id="6e18c" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Autor*"/>
+        </properties>
+      </component>
+      <component id="87a38" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Género*"/>
+        </properties>
+      </component>
+      <component id="232b8" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Sub-Género*"/>
+        </properties>
+      </component>
+      <component id="bd23b" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Título*"/>
+        </properties>
+      </component>
+      <vspacer id="72f25">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="2ef2b">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <vspacer id="15360">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+    </children>
+  </grid>
+</form>
