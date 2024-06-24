@@ -263,5 +263,9 @@ public class GestorBiblioteca {
         }
         return null;
     }
+
+    public LinkedList<Socio> getSocios() {
+        return socios;
+    }
 }
 
