@@ -1,7 +1,6 @@
 import java.util.Date;
 
 public class Emprestimo {
-    private static int idCounter = 0;
     private int id;
     private int idSocio;
     private int idExemplar;
@@ -11,13 +10,13 @@ public class Emprestimo {
     private float multa;
 
     public Emprestimo(int id, int idSocio, int idExemplar) {
-        this.id = id;
+        GestorBiblioteca.instance.incrementEmprestimoIdCounter();
+        this.id = GestorBiblioteca.instance.getEmprestimoIdCounter();
         this.idSocio = idSocio;
         this.idExemplar = idExemplar;
         this.dataEmprestimo = new Date();
         this.dataDevolucao = null;
         this.devolvido = false;
         this.multa = 0.0f;
-        idCounter++;
     }
 }

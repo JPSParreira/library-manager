@@ -1,9 +1,18 @@
-import Titulo.*;
-import Titulo.Exemplar.*;
+import Titulo.Autor;
+import Titulo.Exemplar.Distribuidor;
+import Titulo.Exemplar.Editora;
+import Titulo.Genero;
+import Titulo.Subgenero;
+import Titulo.Titulo;
 
 import java.util.LinkedList;
 
 public class GestorBiblioteca {
+    /* Id counters */
+    private static int socioIdCounter = 0;
+    private static int emprestimoIdCounter = 0;
+    private static int reservaIdCounter = 0;
+
     /* Configs */
     private int maximoDiasEmprestimo;
     private float valorMultaPorDia;
@@ -39,6 +48,7 @@ public class GestorBiblioteca {
         autores = new LinkedList<>();
 
         editoras = new LinkedList<>();
+
         fornecedores = new LinkedList<>();
 
         generos = fillGeneros();
@@ -49,10 +59,68 @@ public class GestorBiblioteca {
         }
 
         emprestimos = new LinkedList<>();
+
         reservas = new LinkedList<>();
 
-        socios = new LinkedList<>();
+        socios = populateSocios();
     }
+
+    public int getSocioidCounter() {
+        return socioIdCounter;
+    }
+
+    public void incrementSocioidCounter() {
+        socioIdCounter++;
+    }
+
+    public int getEmprestimoIdCounter() {
+        return emprestimoIdCounter;
+    }
+
+    public void incrementEmprestimoIdCounter() {
+        emprestimoIdCounter++;
+    }
+
+    public int getReservaIdCounter() {
+        return reservaIdCounter;
+    }
+
+    public void incrementReservaIdCounter() {
+        reservaIdCounter++;
+    }
+
+    public int getMaxDias() {
+        return maximoDiasEmprestimo;
+    }
+
+    public void setMaxDias(int maximoDiasEmprestimo) {
+        this.maximoDiasEmprestimo = maximoDiasEmprestimo;
+    }
+
+    public float getValorMulta() {
+        return valorMultaPorDia;
+    }
+
+    public void setValorMulta(float valorMultaPorDia) {
+        this.valorMultaPorDia = valorMultaPorDia;
+    }
+
+    public int getMaxEmprestimos() {
+        return maximoLivrosEmprestados;
+    }
+
+    public void setMaxEmprestimos(int maximoLivrosEmprestados) {
+        this.maximoLivrosEmprestados = maximoLivrosEmprestados;
+    }
+
+    public float getValorAnuidade() {
+        return valorAnuidade;
+    }
+
+    public void setValorAnuidade(float valorAnuidade) {
+        this.valorAnuidade = valorAnuidade;
+    }
+
 
     public LinkedList<Genero> fillGeneros() {
         LinkedList<Genero> listaGeneros = new LinkedList<>();
@@ -144,38 +212,6 @@ public class GestorBiblioteca {
         return listaGeneros;
     }
 
-    public int getMaxDias() {
-        return maximoDiasEmprestimo;
-    }
-
-    public void setMaxDias(int maximoDiasEmprestimo) {
-        this.maximoDiasEmprestimo = maximoDiasEmprestimo;
-    }
-
-    public float getValorMulta() {
-        return valorMultaPorDia;
-    }
-
-    public void setValorMulta(float valorMultaPorDia) {
-        this.valorMultaPorDia = valorMultaPorDia;
-    }
-
-    public int getMaxEmprestimos() {
-        return maximoLivrosEmprestados;
-    }
-
-    public void setMaxEmprestimos(int maximoLivrosEmprestados) {
-        this.maximoLivrosEmprestados = maximoLivrosEmprestados;
-    }
-
-    public float getValorAnuidade() {
-        return valorAnuidade;
-    }
-
-    public void setValorAnuidade(float valorAnuidade) {
-        this.valorAnuidade = valorAnuidade;
-    }
-
     public LinkedList<Emprestimo> getListaEmprestimos() {
         return emprestimos;
     }
@@ -262,6 +298,23 @@ public class GestorBiblioteca {
             }
         }
         return null;
+    }
+
+    private LinkedList<Socio> populateSocios() {
+        LinkedList<Socio> socios = new LinkedList<>();
+        Socio socio1 = new Socio("João", "Rua do João", "joao@mail.pt", 123456789, 912345677);
+        Socio socio2 = new Socio("Maria", "Rua da Maria", "maria@mail.pt", 987654321, 987654321);
+        Socio socio3 = new Socio("Manuel", "Rua do Manuel", "manuel@mail.pt", 128456789, 912345678);
+        Socio socio4 = new Socio("Ana", "Rua da Ana", "ana@mail.pt", 987654321, 987654321);
+        Socio socio5 = new Socio("Rui", "Rua do Rui", "rui@mail.pt", 125456789, 912345679);
+
+        socios.add(socio1);
+        socios.add(socio2);
+        socios.add(socio3);
+        socios.add(socio4);
+        socios.add(socio5);
+
+        return socios;
     }
 
     public LinkedList<Socio> getSocios() {
