@@ -44,7 +44,7 @@ public class GestorBiblioteca {
         generos = fillGeneros();
 
         estantes = new LinkedList<>();
-        for (int i = 0; i < 20; i++) {
+        for (int i = 1; i <= 20; i++) {
             estantes.add(new Estante(i, 50));
         }
 
@@ -174,6 +174,10 @@ public class GestorBiblioteca {
 
     public void setValorAnuidade(float valorAnuidade) {
         this.valorAnuidade = valorAnuidade;
+    }
+
+    public LinkedList<Emprestimo> getListaEmprestimos() {
+        return emprestimos;
     }
 
     public LinkedList<Genero> getGeneros() {

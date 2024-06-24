@@ -1,3 +1,5 @@
+import Titulo.Genero;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -49,6 +51,9 @@ public class JanelaPrincipal extends JFrame {
     }
 
     public void emprestimosButtonActionPerformed(ActionEvent e) {
+        var janelaEmprestimos = new JanelaEmprestimos("Empréstimos");
+        janelaEmprestimos.setModal(true);
+        janelaEmprestimos.setVisible(true);
     }
 
     public void reservasButtonActionPerformed(ActionEvent e) {
@@ -58,7 +63,7 @@ public class JanelaPrincipal extends JFrame {
     }
 
     public void configuracoesButtonActionPerformed(ActionEvent e) {
-        JanelaConfiguracoes janelaConfiguracoes = new JanelaConfiguracoes("Configurações");
+        var janelaConfiguracoes = new JanelaConfiguracoes("Configurações");
         janelaConfiguracoes.setModal(true);
         janelaConfiguracoes.setVisible(true);
     }
