@@ -16,14 +16,14 @@ public class JanelaEmprestimos extends JDialog {
         pack();
         setLocationRelativeTo(null);
 
-        DefaultListModel<Emprestimo> model = new DefaultListModel<>();
-        for (Emprestimo emprestimo : GestorBiblioteca.instance.getListaEmprestimos()) {
-            model.addElement(emprestimo);
-        }
-
-        listaEmprestimos = new JList<>(model);
-        listaEmprestimos.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-        containerEmprestimos.setViewportView(listaEmprestimos);
+//        DefaultListModel<Emprestimo> model = new DefaultListModel<>();
+//        for (Emprestimo emprestimo : GestorBiblioteca.instance.getListaEmprestimos()) {
+//            model.addElement(emprestimo);
+//        }
+//
+//        listaEmprestimos = new JList<>(model);
+//        listaEmprestimos.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
+//        containerEmprestimos.setViewportView(listaEmprestimos);
 
         voltarButton.addActionListener(this::voltarButtonActionPerformed);
         novoEmprestimoButton.addActionListener(this::novoEmprestimoButtonActionPerformed);

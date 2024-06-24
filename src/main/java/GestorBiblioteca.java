@@ -6,6 +6,9 @@ import Titulo.Exemplar.*;
 import java.util.LinkedList;
 
 public class GestorBiblioteca {
+    /* Singleton */
+    public static final GestorBiblioteca instance = new GestorBiblioteca();
+
     // Configurações
     private int maximoDiasEmprestimo;
     private float valorMultaPorDia;
@@ -26,9 +29,6 @@ public class GestorBiblioteca {
     private LinkedList<Emprestimo> emprestimos;
     private LinkedList<Reserva> reservas;
     private LinkedList<Socio> socios;
-
-    /* Singleton */
-    public static final GestorBiblioteca instance = new GestorBiblioteca();
 
     /* Construtor */
     private GestorBiblioteca() {
@@ -395,11 +395,13 @@ public class GestorBiblioteca {
 
 
     //Emprestimos
-    public LinkedList<Emprestimo> populateEmprestimos() {
-        return emprestimos;
-    }
-    public LinkedList<Emprestimo> getListaEmprestimos() {
-        return emprestimos;
-    }
+    //TODO
+
+    //Reservas
+    //TODO
+
+    //Socios
+    //TODO
+
 }
 
