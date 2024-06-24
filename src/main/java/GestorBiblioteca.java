@@ -6,12 +6,10 @@ import Titulo.Exemplar.*;
 import java.util.LinkedList;
 
 public class GestorBiblioteca {
-    /* Id counters */
+    // Id counters
     private static int socioIdCounter = 0;
     private static int emprestimoIdCounter = 0;
     private static int reservaIdCounter = 0;
-
-    /* Configs */
 
     // Configurações
     private int maximoDiasEmprestimo;
@@ -89,40 +87,6 @@ public class GestorBiblioteca {
         reservaIdCounter++;
     }
 
-    public int getMaxDias() {
-        return maximoDiasEmprestimo;
-    }
-
-    public void setMaxDias(int maximoDiasEmprestimo) {
-        this.maximoDiasEmprestimo = maximoDiasEmprestimo;
-    }
-
-    public float getValorMulta() {
-        return valorMultaPorDia;
-    }
-
-    public void setValorMulta(float valorMultaPorDia) {
-        this.valorMultaPorDia = valorMultaPorDia;
-    }
-
-    public int getMaxEmprestimos() {
-        return maximoLivrosEmprestados;
-    }
-
-    public void setMaxEmprestimos(int maximoLivrosEmprestados) {
-        this.maximoLivrosEmprestados = maximoLivrosEmprestados;
-    }
-
-    public float getValorAnuidade() {
-        return valorAnuidade;
-    }
-
-    public void setValorAnuidade(float valorAnuidade) {
-        this.valorAnuidade = valorAnuidade;
-    }
-
-
-    //Configurações
     public int getMaxDias() {
         return maximoDiasEmprestimo;
     }
@@ -249,10 +213,6 @@ public class GestorBiblioteca {
         listaGeneros.add(terror);
 
         return listaGeneros;
-    }
-
-    public LinkedList<Emprestimo> getListaEmprestimos() {
-        return emprestimos;
     }
 
     public LinkedList<Genero> getGeneros() {
