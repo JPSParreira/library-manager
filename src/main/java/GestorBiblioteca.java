@@ -336,10 +336,6 @@ public class GestorBiblioteca {
         return socios;
     }
 
-    public void addDistribuidor(Distribuidor d) {
-        fornecedores.add(d);
-    }
-
     //Biblioteca.Estante / Biblioteca.Prateleira
     public int getPrateleirasOcupadas(Estante e) {
         if (e == null) {
