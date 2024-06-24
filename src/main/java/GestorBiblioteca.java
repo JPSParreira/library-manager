@@ -6,11 +6,6 @@ import Titulo.Exemplar.*;
 import java.util.LinkedList;
 
 public class GestorBiblioteca {
-    /* Globals */
-    private static int socioIdCounter = 0;
-    private static int emprestimoIdCounter = 0;
-    private static int reservaIdCounter = 0;
-
     // Configurações
     private int maximoDiasEmprestimo;
     private float valorMultaPorDia;
@@ -64,27 +59,6 @@ public class GestorBiblioteca {
         socios = populateSocios();
 
         seedApp();
-    }
-
-    /* Globals */
-    public int getSocioidCounter() {
-        return socioIdCounter;
-    }
-
-    public void incrementSocioidCounter() {
-        socioIdCounter++;
-    }
-
-    public int getEmprestimoIdCounter() {
-        return emprestimoIdCounter;
-    }
-
-    public void incrementEmprestimoIdCounter() {
-        emprestimoIdCounter++;
-    }
-
-    public int getReservaIdCounter() {
-        return reservaIdCounter;
     }
 
     //Seed dados da aplicação

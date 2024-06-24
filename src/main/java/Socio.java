@@ -1,6 +1,7 @@
 import java.util.Date;
 
 public class Socio {
+    private static int socioIdCounter = 0;
     private int idSocio;
     private String nome;
     private String morada;
@@ -14,8 +15,8 @@ public class Socio {
 
 
     public Socio(String nome, String morada, String email, long nif, long telemovel) {
-        GestorBiblioteca.instance.incrementSocioidCounter();
-        this.idSocio = GestorBiblioteca.instance.getSocioidCounter();
+        socioIdCounter++;
+        this.idSocio = socioIdCounter;
         this.nome = nome;
         this.morada = morada;
         this.email = email;
