@@ -121,13 +121,17 @@
           <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
         </constraints>
       </vspacer>
-      <component id="9d019" class="javax.swing.JTable" binding="table1" default-binding="true">
+      <component id="9d019" class="javax.swing.JTable" binding="table">
         <constraints>
           <grid row="6" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
             <preferred-size width="150" height="50"/>
           </grid>
         </constraints>
-        <properties/>
+        <properties>
+          <rowHeight value="30"/>
+          <rowMargin value="2"/>
+          <rowSelectionAllowed value="false"/>
+        </properties>
       </component>
     </children>
   </grid>

@@ -1,4 +1,7 @@
 import javax.swing.*;
+import javax.swing.table.DefaultTableModel;
+import javax.swing.table.JTableHeader;
+import javax.swing.table.TableColumn;
 import java.awt.event.ActionEvent;
 
 public class JanelaEstatisticas extends JDialog {
@@ -8,7 +11,8 @@ public class JanelaEstatisticas extends JDialog {
     private JComboBox comboBoxAutores;
     private JComboBox comboBoxGenero;
     private JComboBox comboBoxSubGenero;
-    private JTable table1;
+    private JTable table;
+
     private GestorBiblioteca gb = GestorBiblioteca.instance;
 
     public JanelaEstatisticas(String title) {

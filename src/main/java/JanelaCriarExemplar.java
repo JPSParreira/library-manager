@@ -1,3 +1,4 @@
+import Biblioteca.Estante;
 import Biblioteca.Prateleira;
 import Titulo.Exemplar.Editora;
 import Titulo.Exemplar.Distribuidor;
@@ -176,8 +177,13 @@ public class JanelaCriarExemplar extends JDialog {
         Exemplar exemplar = new Exemplar(isbn, ano, edicao, titulo, editora, distribuidor);
         titulo.addExemplar(exemplar);
 
-        Prateleira prateleiraLivre = gb.getPrateleiraLivre(gb.getEstanteLivre());
+        Estante estanteLivre = gb.getEstanteLivre();
+        Prateleira prateleiraLivre = gb.getPrateleiraLivre(estanteLivre);
+
         prateleiraLivre.addExemplar(exemplar);
+
+        exemplar.setEstante(estanteLivre);
+        exemplar.setPrateleira(prateleiraLivre);
 
         JOptionPane.showMessageDialog(null, "Exemplar adicionado com sucesso.", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
         this.setVisible(false);
