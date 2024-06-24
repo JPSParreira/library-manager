@@ -7,10 +7,11 @@ public class Socio {
     private String email;
     private long nif;
     private long telemovel;
+    private Date dataInscricao;
     private int numEmprestimosAtivos;
     private float multasEmDivida;
     private float anuidadesEmDivida;
-    private Date dataInscricao;
+
 
     public Socio(String nome, String morada, String email, long nif, long telemovel) {
         GestorBiblioteca.instance.incrementSocioidCounter();
@@ -20,9 +21,61 @@ public class Socio {
         this.email = email;
         this.nif = nif;
         this.telemovel = telemovel;
+        this.dataInscricao = new Date();
         this.numEmprestimosAtivos = 0;
         this.multasEmDivida = 0.0f;
         this.anuidadesEmDivida = GestorBiblioteca.instance.getValorAnuidade();
-        this.dataInscricao = new Date();
+    }
+
+    public int getIdSocio() {
+        return idSocio;
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
+    public String getMorada() {
+        return morada;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public long getNif() {
+        return nif;
+    }
+
+    public long getTelemovel() {
+        return telemovel;
+    }
+
+    public Date getDataInscricao() {
+        return dataInscricao;
+    }
+
+    public int getNumEmprestimosAtivos() {
+        return numEmprestimosAtivos;
+    }
+
+    public float getMultasEmDivida() {
+        return multasEmDivida;
+    }
+
+    public float getAnuidadesEmDivida() {
+        return anuidadesEmDivida;
+    }
+
+    public void setNumEmprestimosAtivos(int numEmprestimosAtivos) {
+        this.numEmprestimosAtivos = numEmprestimosAtivos;
+    }
+
+    public void setMultasEmDivida(float multasEmDivida) {
+        this.multasEmDivida = multasEmDivida;
+    }
+
+    public void setAnuidadesEmDivida(float anuidadesEmDivida) {
+        this.anuidadesEmDivida = anuidadesEmDivida;
     }
 }

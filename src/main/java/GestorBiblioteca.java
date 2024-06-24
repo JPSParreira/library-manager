@@ -6,7 +6,7 @@ import Titulo.Exemplar.*;
 import java.util.LinkedList;
 
 public class GestorBiblioteca {
-    // Id counters
+    /* Globals */
     private static int socioIdCounter = 0;
     private static int emprestimoIdCounter = 0;
     private static int reservaIdCounter = 0;
@@ -30,11 +30,12 @@ public class GestorBiblioteca {
     private LinkedList<Estante> estantes;
     private LinkedList<Emprestimo> emprestimos;
     private LinkedList<Reserva> reservas;
-
     private LinkedList<Socio> socios;
 
+    /* Singleton */
     public static final GestorBiblioteca instance = new GestorBiblioteca();
 
+    /* Construtor */
     private GestorBiblioteca() {
         maximoDiasEmprestimo = 15;
         valorMultaPorDia = 1f;
@@ -63,6 +64,7 @@ public class GestorBiblioteca {
         socios = populateSocios();
     }
 
+    /* Globals */
     public int getSocioidCounter() {
         return socioIdCounter;
     }
@@ -87,6 +89,7 @@ public class GestorBiblioteca {
         reservaIdCounter++;
     }
 
+    /* Configurações */
     public int getMaxDias() {
         return maximoDiasEmprestimo;
     }
@@ -117,11 +120,6 @@ public class GestorBiblioteca {
 
     public void setValorAnuidade(float valorAnuidade) {
         this.valorAnuidade = valorAnuidade;
-    }
-
-    //Emprestimos
-    public LinkedList<Emprestimo> getListaEmprestimos() {
-        return emprestimos;
     }
 
     //Generos
@@ -358,6 +356,15 @@ public class GestorBiblioteca {
             }
         }
         return null;
+    }
+
+
+    //Emprestimos
+    public LinkedList<Emprestimo> populateEmprestimos() {
+        return emprestimos;
+    }
+    public LinkedList<Emprestimo> getListaEmprestimos() {
+        return emprestimos;
     }
 }
 
