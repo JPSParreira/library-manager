@@ -4,17 +4,17 @@ public class Emprestimo {
     private static int emprestimoIdCounter = 0;
     private int idEmprestimo;
     private int idSocio;
-    private long ISBN;
+    private String idExemplar;
     private Date dataEmprestimo;
     private Date dataDevolucao;
     private boolean devolvido;
     private float multa;
 
-    public Emprestimo(int id, int idSocio, long ISBN) {
+    public Emprestimo(int id, int idSocio, String idExemplar) {
         emprestimoIdCounter++;
         this.idEmprestimo = emprestimoIdCounter;
         this.idSocio = idSocio;
-        this.ISBN = ISBN;
+        this.idExemplar = idExemplar;
         this.dataEmprestimo = new Date();
         this.dataDevolucao = null;
         this.devolvido = false;
@@ -29,8 +29,8 @@ public class Emprestimo {
         return idSocio;
     }
 
-    public long getISBN() {
-        return ISBN;
+    public String getIdExemplar() {
+        return idExemplar;
     }
 
     public Date getDataEmprestimo() {

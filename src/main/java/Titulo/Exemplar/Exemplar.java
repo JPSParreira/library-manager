@@ -20,6 +20,7 @@ public class Exemplar {
         this.distribuidor = distribuidor;
         this.id = titulo.countExemplares() + "#" + ISBN;
     }
+
     public String getId() {
         return id;
     }

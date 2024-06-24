@@ -4,15 +4,15 @@ public class Reserva {
     private static int reservaIdCounter = 0;
     private int idReserva;
     private int idSocio;
-    private long ISBN;
+    private String idExemplar;
     private Date dataReserva;
     private boolean ativa;
 
-    public Reserva(int idSocio, long ISBN) {
+    public Reserva(int idSocio, String idExemplar) {
         reservaIdCounter++;
         this.idReserva = reservaIdCounter;
         this.idSocio = idSocio;
-        this.ISBN = ISBN;
+        this.idExemplar = idExemplar;
         this.dataReserva = new Date();
         this.ativa = true;
     }
@@ -25,8 +25,8 @@ public class Reserva {
         return idSocio;
     }
 
-    public long getISBN() {
-        return ISBN;
+    public String getIdExemplar() {
+        return idExemplar;
     }
 
     public Date getDataReserva() {
