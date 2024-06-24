@@ -1,3 +1,5 @@
+package Biblioteca;
+
 public class Estante {
     private int numero;
     private Prateleira[] prateleiras;
@@ -20,22 +22,5 @@ public class Estante {
 
     public Prateleira getPrateleira(int numero) {
         return prateleiras[numero - 1];
-    }
-
-    private class Prateleira {
-        private int numero;
-        private boolean ocupada;
-
-        public Prateleira(int numero) {
-            this.numero = numero;
-        }
-
-        public int getNumero() {
-            return numero;
-        }
-
-        public boolean isOcupada() {
-            return ocupada;
-        }
     }
 }

@@ -1,25 +1,28 @@
+import Biblioteca.Estante;
+import Biblioteca.Prateleira;
 import Titulo.*;
 import Titulo.Exemplar.*;
 
 import java.util.LinkedList;
 
 public class GestorBiblioteca {
-    /* Configs */
+
+    // Configurações
     private int maximoDiasEmprestimo;
     private float valorMultaPorDia;
     private int maximoLivrosEmprestados;
     private float valorAnuidade;
 
-    /* Titulo */
+    //Titulo
     private LinkedList<Titulo> titulos;
     private LinkedList<Autor> autores;
     private LinkedList<Genero> generos;
 
-    /* Exemplar */
+    // Exemplar
     private LinkedList<Editora> editoras;
     private LinkedList<Distribuidor> fornecedores;
 
-    /* Biblioteca */
+    // Biblioteca
     private LinkedList<Estante> estantes;
     private LinkedList<Emprestimo> emprestimos;
     private LinkedList<Reserva> reservas;
@@ -54,6 +57,45 @@ public class GestorBiblioteca {
         socios = new LinkedList<>();
     }
 
+    //Configurações
+    public int getMaxDias() {
+        return maximoDiasEmprestimo;
+    }
+
+    public void setMaxDias(int maximoDiasEmprestimo) {
+        this.maximoDiasEmprestimo = maximoDiasEmprestimo;
+    }
+
+    public float getValorMulta() {
+        return valorMultaPorDia;
+    }
+
+    public void setValorMulta(float valorMultaPorDia) {
+        this.valorMultaPorDia = valorMultaPorDia;
+    }
+
+    public int getMaxEmprestimos() {
+        return maximoLivrosEmprestados;
+    }
+
+    public void setMaxEmprestimos(int maximoLivrosEmprestados) {
+        this.maximoLivrosEmprestados = maximoLivrosEmprestados;
+    }
+
+    public float getValorAnuidade() {
+        return valorAnuidade;
+    }
+
+    public void setValorAnuidade(float valorAnuidade) {
+        this.valorAnuidade = valorAnuidade;
+    }
+
+    //Emprestimos
+    public LinkedList<Emprestimo> getListaEmprestimos() {
+        return emprestimos;
+    }
+
+    //Generos
     public LinkedList<Genero> fillGeneros() {
         LinkedList<Genero> listaGeneros = new LinkedList<>();
 
@@ -144,42 +186,6 @@ public class GestorBiblioteca {
         return listaGeneros;
     }
 
-    public int getMaxDias() {
-        return maximoDiasEmprestimo;
-    }
-
-    public void setMaxDias(int maximoDiasEmprestimo) {
-        this.maximoDiasEmprestimo = maximoDiasEmprestimo;
-    }
-
-    public float getValorMulta() {
-        return valorMultaPorDia;
-    }
-
-    public void setValorMulta(float valorMultaPorDia) {
-        this.valorMultaPorDia = valorMultaPorDia;
-    }
-
-    public int getMaxEmprestimos() {
-        return maximoLivrosEmprestados;
-    }
-
-    public void setMaxEmprestimos(int maximoLivrosEmprestados) {
-        this.maximoLivrosEmprestados = maximoLivrosEmprestados;
-    }
-
-    public float getValorAnuidade() {
-        return valorAnuidade;
-    }
-
-    public void setValorAnuidade(float valorAnuidade) {
-        this.valorAnuidade = valorAnuidade;
-    }
-
-    public LinkedList<Emprestimo> getListaEmprestimos() {
-        return emprestimos;
-    }
-
     public LinkedList<Genero> getGeneros() {
         return generos;
     }
@@ -193,12 +199,23 @@ public class GestorBiblioteca {
         return null;
     }
 
+    //Autores
+    public LinkedList<Autor> getAutores() {
+        return autores;
+    }
+
+    //Titulo
     public LinkedList<Titulo> getTitulos() {
         return titulos;
     }
 
-    public LinkedList<Autor> getAutores() {
-        return autores;
+    public Titulo getTitulo(String t) {
+        for (Titulo titulo : titulos) {
+            if (titulo.getTitulo().equalsIgnoreCase(t)) {
+                return titulo;
+            }
+        }
+        return null;
     }
 
     public void addTitulo(String titulo, String autor, Genero genero, Subgenero subGenero) {
@@ -221,29 +238,9 @@ public class GestorBiblioteca {
         newAutor.addTitulo(newTitle);
     }
 
+    //Editora
     public LinkedList<Editora> getEditoras() {
         return editoras;
-    }
-
-    public LinkedList<Distribuidor> getDistribuidores() {
-        return fornecedores;
-    }
-
-    public void addDistribuidor(Distribuidor d) {
-        fornecedores.add(d);
-    }
-
-    public void addEditora(Editora e) {
-        editoras.add(e);
-    }
-
-    public Titulo getTitulo(String t) {
-        for (Titulo titulo : titulos) {
-            if (titulo.getTitulo().equalsIgnoreCase(t)) {
-                return titulo;
-            }
-        }
-        return null;
     }
 
     public Editora getEditora(String textEditora) {
@@ -255,10 +252,59 @@ public class GestorBiblioteca {
         return null;
     }
 
+    public void addEditora(Editora e) {
+        editoras.add(e);
+    }
+
+    //Distribuidor
+    public LinkedList<Distribuidor> getDistribuidores() {
+        return fornecedores;
+    }
+
     public Distribuidor getDistribuidor(String textDistribuidor) {
         for (Distribuidor d : fornecedores) {
             if (d.getNome().equalsIgnoreCase(textDistribuidor)) {
                 return d;
+            }
+        }
+        return null;
+    }
+
+    public void addDistribuidor(Distribuidor d) {
+        fornecedores.add(d);
+    }
+
+    //Biblioteca.Estante / Biblioteca.Prateleira
+    public int getPrateleirasOcupadas(Estante e) {
+        if (e == null) {
+            return 0;
+        }
+
+        int count = 0;
+        for (Prateleira p : e.getPrateleiras()) {
+            if (p.isOcupada()) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    public Estante getEstanteLivre() {
+        for (Estante e : estantes) {
+            if (getPrateleirasOcupadas(e) < e.getPrateleiras().length) {
+                return e;
+            }
+        }
+        return null;
+    }
+
+    public Prateleira getPrateleiraLivre(Estante e) {
+        if (e == null) {
+            return null;
+        }
+        for (Prateleira p : e.getPrateleiras()) {
+            if (!p.isOcupada()) {
+                return p;
             }
         }
         return null;

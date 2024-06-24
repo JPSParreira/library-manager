@@ -40,16 +40,14 @@ CAMINHOS ALTERNATIVOS:
     4.6.1. O sistema apresenta a mensagem de erro ERR_ANO_03.
 4.7. O campo "Edição" não está preenchido.
    4.7.1. O sistema apresenta a mensagem de erro ERR_EDICAO_01.
-4.8. O campo "Edição" tem menos de 3 caracteres.
+4.8. O campo "Edição" tem mais de 30 caracteres.
    4.8.1. O sistema apresenta a mensagem de erro ERR_EDICAO_02.
-4.9. O campo "Edição" tem mais de 30 caracteres.
-   4.9.1. O sistema apresenta a mensagem de erro ERR_EDICAO_03.
-4.10. O campo "ISBN" não está preenchido.
-   4.10.1. O sistema apresenta a mensagem de erro ERR_ISBN_01.
-4.11. O campo "ISBN" não é um inteiro positivo.
-   4.11.1. O sistema apresenta a mensagem de erro ERR_ISBN_02.
-4.12. O campo "ISBN" não tem 13 dígitos.
-    4.12.1. O sistema apresenta a mensagem de erro ERR_ISBN_03.
+4.9. O campo "ISBN" não está preenchido.
+   4.9.1. O sistema apresenta a mensagem de erro ERR_ISBN_01.
+4.10. O campo "ISBN" não é um inteiro positivo.
+   4.10.1. O sistema apresenta a mensagem de erro ERR_ISBN_02.
+4.11. O campo "ISBN" não tem 13 dígitos.
+    4.11.1. O sistema apresenta a mensagem de erro ERR_ISBN_03.
 
 MENSAGENS DO SISTEMA:
 S01: Exemplar <Título> adicionado com sucesso.
@@ -61,13 +59,12 @@ ERR_ANO_01: O campo "Ano" é mandatório.
 ERR_ANO_02: O campo "Ano" não é válido.
 ERR_ANO_03: O campo "Ano" deve ter 4 dígitos.
 ERR_EDICAO_01: O campo "Edição" é mandatório.
-ERR_EDICAO_02: O campo "Edição" deve ter no mínimo 3 caracteres.
-ERR_EDICAO_03: O campo "Edição" deve ter no máximo 30 caracteres.
+ERR_EDICAO_02: O campo "Edição" deve ter no máximo 30 caracteres.
 ERR_ISBN_01: O campo "ISBN" é mandatório.
 ERR_ISBN_02: O campo "ISBN" deve ser um inteiro positivo.
 ERR_ISBN_03: O campo "ISBN" deve ter 13 dígitos.
 
-Criar titulo [DONE]
+Criar titulo
 ===============================
 CAMINHO PRINCIPAL:
 1. O utilizador clica no botão "Adicionar Título" da "Janela Principal".
@@ -96,17 +93,15 @@ CAMINHOS ALTERNATIVOS:
 4.4. O campo "Título" já existe no sistema.
     4.4.1 O sistema apresenta a mensagem de erro ERR_TITULO_04.
 4.5. O campo "Autor" não está preenchido.
-    4.4.1. O sistema apresenta a mensagem de erro ERR_AUTOR_01.
+    4.5.1. O sistema apresenta a mensagem de erro ERR_AUTOR_01.
 4.6. O campo "Autor" tem menos de 3 caracteres.
-    4.5.1. O sistema apresenta a mensagem de erro ERR_AUTOR_02.
+    4.6.1. O sistema apresenta a mensagem de erro ERR_AUTOR_02.
 4.7. O campo "Autor" tem mais de 50 caracteres.
-    4.6.1. O sistema apresenta a mensagem de erro ERR_AUTOR_03.
+    4.7.1. O sistema apresenta a mensagem de erro ERR_AUTOR_03.
 4.8. O campo "Género" não está preenchido.
-    4.7.1. O sistema apresenta a mensagem de erro ERR_GENERO_01.
+    4.8.1. O sistema apresenta a mensagem de erro ERR_GENERO_01.
 4.9. O campo "Subgénero" não está preenchido.
-    4.8.1. O sistema apresenta a mensagem de erro ERR_SUBGENER_01.
-4.10 O campo "Título" já existe no sistema.
-    4.9.1 O sistema apresenta a mensagem de erro ERR_TITULO_04.
+    4.9.1. O sistema apresenta a mensagem de erro ERR_SUBGENER_01.
 
 MENSAGENS DO SISTEMA:
 S01: Título <Título> adicionado com sucesso.
