@@ -72,6 +72,9 @@ public class JanelaPrincipal extends JFrame {
     }
 
     public void estatisticasButtonActionPerformed(ActionEvent e) {
+        var janelaEstatisticas = new JanelaEstatisticas("Estatísticas");
+        janelaEstatisticas.setModal(true);
+        janelaEstatisticas.setVisible(true);
     }
 
     public void adicionarExemplarButtonActionPerformed(ActionEvent e) {
