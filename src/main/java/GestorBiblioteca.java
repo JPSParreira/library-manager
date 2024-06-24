@@ -122,10 +122,6 @@ public class GestorBiblioteca {
         }
     }
 
-    public void incrementReservaIdCounter() {
-        reservaIdCounter++;
-    }
-
     /* Configurações */
     public int getMaxDias() {
         return maximoDiasEmprestimo;
