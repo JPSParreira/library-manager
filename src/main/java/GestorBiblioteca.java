@@ -1,7 +1,12 @@
 import Biblioteca.Estante;
 import Biblioteca.Prateleira;
-import Titulo.*;
-import Titulo.Exemplar.*;
+import Titulo.Autor;
+import Titulo.Exemplar.Distribuidor;
+import Titulo.Exemplar.Editora;
+import Titulo.Exemplar.Exemplar;
+import Titulo.Genero;
+import Titulo.Subgenero;
+import Titulo.Titulo;
 
 import java.util.LinkedList;
 
@@ -43,9 +48,9 @@ public class GestorBiblioteca {
         fornecedores = new LinkedList<>();
         generos = new LinkedList<>();
         estantes = new LinkedList<>();
+        socios = new LinkedList<>();
         emprestimos = new LinkedList<>();
         reservas = new LinkedList<>();
-        socios = new LinkedList<>();
 
         seedApp();
     }
@@ -204,6 +209,22 @@ public class GestorBiblioteca {
             }
         }
         //endregion
+
+        //region Seed Socios
+        Socio socio1 = new Socio("João", "Rua do João", "joao@mail.pt", 123456789, 912345677);
+        Socio socio2 = new Socio("Maria", "Rua da Maria", "maria@mail.pt", 987654321, 987654321);
+        Socio socio3 = new Socio("Manuel", "Rua do Manuel", "manuel@mail.pt", 128456789, 912345678);
+        Socio socio4 = new Socio("Ana", "Rua da Ana", "ana@mail.pt", 987654321, 987654321);
+        Socio socio5 = new Socio("Rui", "Rua do Rui", "rui@mail.pt", 125456789, 912345679);
+        Socio socio6 = new Socio("Marta", "Rua da Marta", "marta@mail.pt", 984554321, 989854321);
+
+        socios.add(socio1);
+        socios.add(socio2);
+        socios.add(socio3);
+        socios.add(socio4);
+        socios.add(socio5);
+        socios.add(socio6);
+        //endregion
     }
 
     /* Configurações */
@@ -240,14 +261,6 @@ public class GestorBiblioteca {
     }
 
     //Generos
-    public LinkedList<Genero> fillGeneros() {
-        LinkedList<Genero> listaGeneros = new LinkedList<>();
-
-
-
-        return listaGeneros;
-    }
-
     public LinkedList<Genero> getGeneros() {
         return generos;
     }
@@ -269,6 +282,15 @@ public class GestorBiblioteca {
     //Titulo
     public LinkedList<Titulo> getTitulos() {
         return titulos;
+    }
+
+    public Titulo getTitulo(String t) {
+        for (Titulo titulo : titulos) {
+            if (titulo.getTitulo().equalsIgnoreCase(t)) {
+                return titulo;
+            }
+        }
+        return null;
     }
 
     public void addTitulo(String titulo, String autor, Genero genero, Subgenero subGenero) {
@@ -294,19 +316,6 @@ public class GestorBiblioteca {
     //Editora
     public LinkedList<Editora> getEditoras() {
         return editoras;
-    }
-
-    public void addDistribuidor(Distribuidor d) {
-        fornecedores.add(d);
-    }
-
-    public Titulo getTitulo(String t) {
-        for (Titulo titulo : titulos) {
-            if (titulo.getTitulo().equalsIgnoreCase(t)) {
-                return titulo;
-            }
-        }
-        return null;
     }
 
     public Editora getEditora(String textEditora) {
@@ -336,25 +345,8 @@ public class GestorBiblioteca {
         return null;
     }
 
-    private LinkedList<Socio> populateSocios() {
-        LinkedList<Socio> socios = new LinkedList<>();
-        Socio socio1 = new Socio("João", "Rua do João", "joao@mail.pt", 123456789, 912345677);
-        Socio socio2 = new Socio("Maria", "Rua da Maria", "maria@mail.pt", 987654321, 987654321);
-        Socio socio3 = new Socio("Manuel", "Rua do Manuel", "manuel@mail.pt", 128456789, 912345678);
-        Socio socio4 = new Socio("Ana", "Rua da Ana", "ana@mail.pt", 987654321, 987654321);
-        Socio socio5 = new Socio("Rui", "Rua do Rui", "rui@mail.pt", 125456789, 912345679);
-
-        socios.add(socio1);
-        socios.add(socio2);
-        socios.add(socio3);
-        socios.add(socio4);
-        socios.add(socio5);
-
-        return socios;
-    }
-
-    public LinkedList<Socio> getSocios() {
-        return socios;
+    public void addDistribuidor(Distribuidor d) {
+        fornecedores.add(d);
     }
 
     //Biblioteca.Estante / Biblioteca.Prateleira
@@ -393,15 +385,58 @@ public class GestorBiblioteca {
         return null;
     }
 
+    // Socios
+    public LinkedList<Socio> getSocios() {
+        return socios;
+    }
+
+    public Socio getSocio(int id) {
+        for (Socio s : socios) {
+            if (s.getIdSocio() == id) {
+                return s;
+            }
+        }
+        return null;
+    }
+
+    public void addSocio(Socio s) {
+        socios.add(s);
+    }
 
     //Emprestimos
-    //TODO
+    public LinkedList<Emprestimo> getEmprestimos() {
+        return emprestimos;
+    }
+
+    public Emprestimo getEmprestimo(int id) {
+        for (Emprestimo e : emprestimos) {
+            if (e.getIdEmprestimo() == id) {
+                return e;
+            }
+        }
+        return null;
+    }
+
+    public void addEmprestimo(Emprestimo e) {
+        emprestimos.add(e);
+    }
 
     //Reservas
-    //TODO
+    public LinkedList<Reserva> getReservas() {
+        return reservas;
+    }
 
-    //Socios
-    //TODO
+    public Reserva getReserva(int id) {
+        for (Reserva r : reservas) {
+            if (r.getIdReserva() == id) {
+                return r;
+            }
+        }
+        return null;
+    }
 
+    public void addReserva(Reserva r) {
+        reservas.add(r);
+    }
 }
 

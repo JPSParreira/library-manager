@@ -28,6 +28,7 @@ public class Exemplar {
         this.prateleira = null;
         this.estante = null;
     }
+
     public String getId() {
         return id;
     }
