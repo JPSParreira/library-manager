@@ -1,6 +1,6 @@
 import Titulo.Exemplar.Exemplar;
 import Titulo.Titulo;
-import java.awt.*;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 
@@ -17,7 +17,7 @@ public class JanelaCriarEmprestimo extends JDialog {
     public JanelaCriarEmprestimo(String title) {
         this.setTitle(title);
         setContentPane(janelaCriarEmprestimo);
-        setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(DISPOSE_ON_CLOSE);
         pack();
         setLocationRelativeTo(null);
 
@@ -53,16 +53,30 @@ public class JanelaCriarEmprestimo extends JDialog {
                 return;
             }
             if (!titulo.isDisponivel()) {
-                JOptionPane.showMessageDialog(this, "Não existem exemplares disponíveis para o título selecionado.");
+                int confirm = JOptionPane.showOptionDialog(
+                        this,
+                        "Não existem exemplares disponíveis para o título selecionado. Deseja fazer uma reserva?",
+                        "Confirmação",
+                        JOptionPane.YES_NO_OPTION,
+                        JOptionPane.QUESTION_MESSAGE,
+                        null,
+                        new Object[]{"Sim", "Não"},
+                        "Sim"
+                );
+
+//                if (confirm == JOptionPane.YES_OPTION) {
+//                    GestorBiblioteca.instance.criarReserva(socio.getIdSocio(), titulo.getId());
+//                    JOptionPane.showMessageDialog(this, "Reserva criada com sucesso.");
+//                }
                 return;
             }
-            if (socio.getNumEmprestimosAtivos() > GestorBiblioteca.instance.getMaxEmprestimos()) {
+            if (socio.getNumEmprestimosAtivos() >= GestorBiblioteca.instance.getMaxEmprestimos()) {
                 JOptionPane.showMessageDialog(this, "O sócio selecionado já atingiu o limite de empréstimos ativos.");
                 return;
             }
 
             Exemplar exemplar = titulo.getExemplarDisponivel();
-            GestorBiblioteca.instance.criarEmprestimo(socio.getIdSocio(), GestorBiblioteca.instance.getTitulo(titulo.getTitulo()), exemplar.getId());
+            GestorBiblioteca.instance.criarEmprestimo(socio.getIdSocio(), titulo, exemplar.getId());
             exemplar.setDisponivel(false);
             socio.incrementaNumEmprestimosAtivos();
             JOptionPane.showMessageDialog(this, "Empréstimo criado com sucesso.");
@@ -71,7 +85,7 @@ public class JanelaCriarEmprestimo extends JDialog {
             janelaEmprestimos.setVisible(true);
 
         } catch (Exception ex) {
-            JOptionPane.showMessageDialog(this, "Erro ao criar empréstimo: ");
+            JOptionPane.showMessageDialog(this, "Erro ao criar empréstimo.");
         }
     }
 
