@@ -14,7 +14,7 @@ public class Exemplar {
     private String id;
     private Estante estante;
     private Prateleira prateleira;
-    private boolean estado;
+    private boolean isDisponivel;
 
     public Exemplar(long ISBN, int ano, String edicao, Titulo titulo, Editora editora, Distribuidor distribuidor) {
         this.ISBN = ISBN;
@@ -24,7 +24,7 @@ public class Exemplar {
         this.editora = editora;
         this.distribuidor = distribuidor;
         this.id = titulo.countExemplares() + "#" + ISBN;
-        this.estado = true;
+        this.isDisponivel = true;
         this.prateleira = null;
         this.estante = null;
     }
@@ -73,11 +73,11 @@ public class Exemplar {
         return prateleira;
     }
 
-    public boolean getEstado() {
-        return estado;
+    public void setDisponivel(boolean disponivel) {
+        isDisponivel = disponivel;
     }
 
-    public void setEstado(boolean estado) {
-        this.estado = estado;
+    public boolean isDisponivel() {
+        return isDisponivel;
     }
 }

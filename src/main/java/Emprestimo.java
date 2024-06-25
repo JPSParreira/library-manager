@@ -10,7 +10,7 @@ public class Emprestimo {
     private boolean devolvido;
     private float multa;
 
-    public Emprestimo(int id, int idSocio, String idExemplar) {
+    public Emprestimo(int idSocio, String idExemplar) {
         emprestimoIdCounter++;
         this.idEmprestimo = emprestimoIdCounter;
         this.idSocio = idSocio;

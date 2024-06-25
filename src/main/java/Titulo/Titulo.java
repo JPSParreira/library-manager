@@ -63,4 +63,26 @@ public class Titulo {
     public int countExemplares() {
         return exemplares.size();
     }
+
+    public boolean isDisponivel() {
+        for (Exemplar exemplar : exemplares) {
+            if (exemplar.isDisponivel()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean isDisponivel(Exemplar exemplar) {
+        return exemplar.isDisponivel();
+    }
+
+    public Exemplar getExemplarDisponivel() {
+        for (Exemplar exemplar : exemplares) {
+            if (exemplar.isDisponivel()) {
+                return exemplar;
+            }
+        }
+        return null;
+    }
 }

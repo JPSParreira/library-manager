@@ -313,6 +313,18 @@ public class GestorBiblioteca {
         newAutor.addTitulo(newTitle);
     }
 
+    //Exemplar
+    public Exemplar getExemplar(String id) {
+        for (Titulo t : titulos) {
+            for (Exemplar e : t.getExemplares()) {
+                if (e.getId().equalsIgnoreCase(id)) {
+                    return e;
+                }
+            }
+        }
+        return null;
+    }
+
     //Editora
     public LinkedList<Editora> getEditoras() {
         return editoras;
@@ -417,7 +429,8 @@ public class GestorBiblioteca {
         return null;
     }
 
-    public void addEmprestimo(Emprestimo e) {
+    public void criarEmprestimo(int idSocio, String idExemplar) {
+        Emprestimo e = new Emprestimo(idSocio, idExemplar);
         emprestimos.add(e);
     }
 
