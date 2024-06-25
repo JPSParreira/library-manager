@@ -48,25 +48,27 @@ public class JanelaCriarEmprestimo extends JDialog {
             Titulo titulo = GestorBiblioteca.instance.getTitulo(nomeTitulo);
             Socio socio = GestorBiblioteca.instance.getSocio(nomeSocio);
 
+            if (!socio.isEmDivida()) {
+                JOptionPane.showMessageDialog(this, "O sócio selecionado tem dívidas por pagar.");
+                return;
+            }
             if (!titulo.isDisponivel()) {
                 JOptionPane.showMessageDialog(this, "Não existem exemplares disponíveis para o título selecionado.");
+                return;
             }
-            if (socio.getAnuidadesEmDivida() > 0) {
-                JOptionPane.showMessageDialog(this, "O sócio selecionado tem anuidades por pagar.");
-            }
-            if (socio.getMultasEmDivida() > 0) {
-                JOptionPane.showMessageDialog(this, "O sócio selecionado tem multas por pagar.");
-            }
-            if (socio.getNumEmprestimosAtivos() >= GestorBiblioteca.instance.getMaxEmprestimos()) {
+            if (socio.getNumEmprestimosAtivos() > GestorBiblioteca.instance.getMaxEmprestimos()) {
                 JOptionPane.showMessageDialog(this, "O sócio selecionado já atingiu o limite de empréstimos ativos.");
+                return;
             }
 
             Exemplar exemplar = titulo.getExemplarDisponivel();
-            GestorBiblioteca.instance.criarEmprestimo(socio.getIdSocio(), exemplar.getId());
+            GestorBiblioteca.instance.criarEmprestimo(socio.getIdSocio(), GestorBiblioteca.instance.getTitulo(titulo.getTitulo()), exemplar.getId());
             exemplar.setDisponivel(false);
-            socio.setNumEmprestimosAtivos(socio.getNumEmprestimosAtivos() + 1);
+            socio.incrementaNumEmprestimosAtivos();
             JOptionPane.showMessageDialog(this, "Empréstimo criado com sucesso.");
+            var janelaEmprestimos = new JanelaEmprestimos("Empréstimos");
             this.setVisible(false);
+            janelaEmprestimos.setVisible(true);
 
         } catch (Exception ex) {
             JOptionPane.showMessageDialog(this, "Erro ao criar empréstimo: ");
@@ -74,7 +76,9 @@ public class JanelaCriarEmprestimo extends JDialog {
     }
 
     public void voltarButtonActionPerformed(ActionEvent e) {
+        var janelaEmprestimos = new JanelaEmprestimos("Empréstimos");
         this.setVisible(false);
+        janelaEmprestimos.setVisible(true);
     }
 }
 

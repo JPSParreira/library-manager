@@ -17,15 +17,14 @@ public class JanelaEmprestimos extends JDialog {
         pack();
         setLocationRelativeTo(null);
 
-        String[] colunas = {"ID", "Sócio", "ID Exemplar", "Título", "Data de Empréstimo"};
+        String[] colunas = {"ID empréstimo", "Sócio", "Título", "Data de Empréstimo"};
         var model = new DefaultTableModel(colunas, 0);
 
         for (Emprestimo emprestimo : GestorBiblioteca.instance.getEmprestimos()) {
             model.addRow(new Object[] {
                 emprestimo.getIdEmprestimo(),
-                emprestimo.getIdSocio(),
-                emprestimo.getIdExemplar(),
-                GestorBiblioteca.instance.getExemplar(emprestimo.getIdExemplar()).getTitulo().getTitulo(),
+                GestorBiblioteca.instance.getSocio(emprestimo.getIdSocio()).toString(),
+                emprestimo.getTitulo().getTitulo(),
                 emprestimo.getDataEmprestimo()
             });
         }
@@ -44,7 +43,7 @@ public class JanelaEmprestimos extends JDialog {
 
     public void novoEmprestimoButtonActionPerformed(ActionEvent e) {
         var janelaCriarEmprestimo = new JanelaCriarEmprestimo("Novo Empréstimo");
-        janelaCriarEmprestimo.setModal(true);
+        this.setVisible(false);
         janelaCriarEmprestimo.setVisible(true);
     }
 

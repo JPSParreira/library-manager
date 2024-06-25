@@ -2,7 +2,6 @@ import Biblioteca.Estante;
 import Biblioteca.Prateleira;
 import Titulo.Exemplar.*;
 import Titulo.*;
-import org.jetbrains.annotations.NotNull;
 
 import java.util.Comparator;
 import java.util.LinkedList;
@@ -52,6 +51,7 @@ public class GestorBiblioteca {
 
         seedApp();
     }
+
     public void seedApp() {
         //region Seed Estantes / Prateleiras
         for (int i = 1; i <= 20; i++) {
@@ -414,8 +414,9 @@ public class GestorBiblioteca {
         }
         return null;
     }
-    public void criarEmprestimo(int idSocio, String idExemplar) {
-        Emprestimo e = new Emprestimo(idSocio, idExemplar);
+
+    public void criarEmprestimo(int idSocio,Titulo titulo, String idExemplar) {
+        Emprestimo e = new Emprestimo(idSocio, titulo, idExemplar);
         emprestimos.add(e);
     }
 

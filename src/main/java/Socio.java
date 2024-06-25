@@ -68,8 +68,11 @@ public class Socio {
         return anuidadesEmDivida;
     }
 
-    public void setNumEmprestimosAtivos(int numEmprestimosAtivos) {
-        this.numEmprestimosAtivos = numEmprestimosAtivos;
+    public void incrementaNumEmprestimosAtivos() {
+        this.numEmprestimosAtivos++;
+    }
+    public void decrementaNumEmprestimosAtivos() {
+        this.numEmprestimosAtivos--;
     }
 
     public void setMultasEmDivida(float multasEmDivida) {
@@ -78,5 +81,13 @@ public class Socio {
 
     public void setAnuidadesEmDivida(float anuidadesEmDivida) {
         this.anuidadesEmDivida = anuidadesEmDivida;
+    }
+
+    public boolean isEmDivida() {
+        return (this.multasEmDivida + this.anuidadesEmDivida == 0);
+    }
+
+    public String toString() {
+        return this.nome;
     }
 }
