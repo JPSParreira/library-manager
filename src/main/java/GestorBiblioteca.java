@@ -411,6 +411,15 @@ public class GestorBiblioteca {
         return null;
     }
 
+    public Socio getSocio(String nome) {
+        for (Socio s : socios) {
+            if (s.getNome().equalsIgnoreCase(nome)) {
+                return s;
+            }
+        }
+        return null;
+    }
+
     public void addSocio(Socio s) {
         socios.add(s);
     }

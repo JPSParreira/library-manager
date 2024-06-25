@@ -42,8 +42,11 @@ public class JanelaCriarEmprestimo extends JDialog {
 
     public void submeterButtonActionPerformed(ActionEvent e) {
         try {
-            Titulo titulo = (Titulo) comboBoxTitulo.getSelectedItem();
-            Socio socio = (Socio) comboBoxSocio.getSelectedItem();
+            String nomeTitulo = (String) comboBoxTitulo.getSelectedItem();
+            String nomeSocio = (String) comboBoxSocio.getSelectedItem();
+
+            Titulo titulo = GestorBiblioteca.instance.getTitulo(nomeTitulo);
+            Socio socio = GestorBiblioteca.instance.getSocio(nomeSocio);
 
             if (!titulo.isDisponivel()) {
                 JOptionPane.showMessageDialog(this, "Não existem exemplares disponíveis para o título selecionado.");
@@ -60,6 +63,8 @@ public class JanelaCriarEmprestimo extends JDialog {
 
             Exemplar exemplar = titulo.getExemplarDisponivel();
             GestorBiblioteca.instance.criarEmprestimo(socio.getIdSocio(), exemplar.getId());
+            exemplar.setDisponivel(false);
+            socio.setNumEmprestimosAtivos(socio.getNumEmprestimosAtivos() + 1);
             JOptionPane.showMessageDialog(this, "Empréstimo criado com sucesso.");
             this.setVisible(false);
 
