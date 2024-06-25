@@ -1,3 +1,4 @@
+import Titulo.Exemplar.Exemplar;
 import Titulo.Titulo;
 
 import java.util.Date;
@@ -5,20 +6,20 @@ import java.util.Date;
 public class Emprestimo {
     private static int emprestimoIdCounter = 0;
     private int idEmprestimo;
-    private int idSocio;
+    private Socio socio;
     private Titulo titulo;
-    private String idExemplar;
+    private Exemplar exemplar;
     private Date dataEmprestimo;
     private Date dataDevolucao;
     private boolean devolvido;
     private float multa;
 
-    public Emprestimo(int idSocio,Titulo titulo, String idExemplar) {
+    public Emprestimo(Socio socio, Titulo titulo, Exemplar exemplar) {
         emprestimoIdCounter++;
         this.idEmprestimo = emprestimoIdCounter;
-        this.idSocio = idSocio;
+        this.socio = socio;
         this.titulo = titulo;
-        this.idExemplar = idExemplar;
+        this.exemplar = exemplar;
         this.dataEmprestimo = new Date();
         this.dataDevolucao = null;
         this.devolvido = false;
@@ -30,16 +31,16 @@ public class Emprestimo {
         return idEmprestimo;
     }
 
-    public int getIdSocio() {
-        return idSocio;
+    public Socio getSocio() {
+        return socio;
     }
 
     public Titulo getTitulo() {
         return titulo;
     }
 
-    public String getIdExemplar() {
-        return idExemplar;
+    public Exemplar getExemplar() {
+        return exemplar;
     }
 
     public Date getDataEmprestimo() {

@@ -453,8 +453,8 @@ public class GestorBiblioteca {
         return null;
     }
 
-    public void criarEmprestimo(int idSocio, Titulo titulo, String idExemplar) {
-        Emprestimo e = new Emprestimo(idSocio, titulo, idExemplar);
+    public void criarEmprestimo(Socio socio, Titulo titulo, Exemplar exemplar) {
+        Emprestimo e = new Emprestimo(socio, titulo, exemplar);
         emprestimos.add(e);
     }
 
