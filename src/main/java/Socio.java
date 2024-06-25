@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.LinkedList;
 
 public class Socio {
     private static int socioIdCounter = 0;

@@ -21,12 +21,14 @@ public class JanelaEmprestimos extends JDialog {
         var model = new DefaultTableModel(colunas, 0);
 
         for (Emprestimo emprestimo : GestorBiblioteca.instance.getEmprestimos()) {
-            model.addRow(new Object[] {
-                emprestimo.getIdEmprestimo(),
-                GestorBiblioteca.instance.getSocio(emprestimo.getIdSocio()).toString(),
-                emprestimo.getTitulo().getTitulo(),
-                emprestimo.getDataEmprestimo()
-            });
+            if (!emprestimo.isDevolvido()){
+                model.addRow(new Object[] {
+                        emprestimo.getIdEmprestimo(),
+                        emprestimo.getSocio().getNome(),
+                        emprestimo.getTitulo().getTitulo(),
+                        emprestimo.getDataEmprestimo()
+                });
+            }
         }
 
         listaEmprestimos.setModel(model);
@@ -48,6 +50,8 @@ public class JanelaEmprestimos extends JDialog {
     }
 
     public void devolucaoButtonActionPerformed(ActionEvent e) {
-
+        var janelaDevolucao = new JanelaDevolucao("Nova Devolução");
+        this.setVisible(false);
+        janelaDevolucao.setVisible(true);
     }
 }
