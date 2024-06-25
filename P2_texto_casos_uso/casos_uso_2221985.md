@@ -78,7 +78,7 @@ N/A
 2. O utilizador clica no botão "Empréstimos".
 3. O sistema efetua o caso de uso "Listar Empréstimos" e apresenta a "Janela Empréstimos" com a "Lista de Empréstimos" e com os botões "Novo Empréstimo", "Devolução" e "Voltar".
 4. O utilizador clica no botão "Devolução".
-5. O sistema apresenta a "Janela Devolver Empréstimo" com o text field "ID do empréstimo" e os botões "Submeter" e "Voltar".
+5. O sistema apresenta a "Janela Devolução" com o comboBox "ID do empréstimo" e os botões "Submeter" e "Voltar".
 6. O utilizador introduz o código de empréstimo e clica no botão "Submeter".
 7. O sistema verifica que o empréstimo está a ser entregue dentro do prazo, grava a devolução, coloca o livro disponível para empréstimo e apresenta a messageBox com a mensagem "Devolução criada com sucesso!" e o botão "OK".
 8. O utilizador clica no botão "OK".
@@ -108,13 +108,16 @@ N/A
 
 - Mensagens de Sistema
   SUC_01: "Devolução criada com sucesso!"
+  SUC_02: "Pagamento efetuado com sucesso."
   ERR_01: 'O sócio 01224 entregou o livro com x dias de atraso. Valor da multa: x.xx€. Pretende efetuar o pagamento" e os botões "Sim" e "Não"'.
   ERR_02: "Erro ao efetuar a devolução."
 
 /--------------------/
 
 • - CRIAR RESERVA (Auxiliar) - •  
+
 Enquadramento: O utilizador tenta criar um empréstimo de um livro que existe, mas não está disponível e clica em "Sim" na messageBox.
+
 - Caminho Principal
 1. O sistema grava a reserva do livro junto com o sócio e apresenta a messageBox com a mensagem "Reserva criada com sucesso! Assim que o livro estiver disponível será avisado!" e o botão "OK".
 2. O utilizador clica no botão "OK".
