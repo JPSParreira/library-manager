@@ -17,7 +17,7 @@ public class JanelaEmprestimos extends JDialog {
         pack();
         setLocationRelativeTo(null);
 
-        String colunas[] = {"ID", "Sócio", "ID Exemplar", "Título", "Data de Empréstimo"};
+        String[] colunas = {"ID", "Sócio", "ID Exemplar", "Título", "Data de Empréstimo"};
         var model = new DefaultTableModel(colunas, 0);
 
         for (Emprestimo emprestimo : GestorBiblioteca.instance.getEmprestimos()) {
@@ -25,7 +25,7 @@ public class JanelaEmprestimos extends JDialog {
                 emprestimo.getIdEmprestimo(),
                 emprestimo.getIdSocio(),
                 emprestimo.getIdExemplar(),
-                GestorBiblioteca.instance.getExemplar(emprestimo.getIdExemplar()).getTitulo(),
+                GestorBiblioteca.instance.getExemplar(emprestimo.getIdExemplar()).getTitulo().getTitulo(),
                 emprestimo.getDataEmprestimo()
             });
         }
