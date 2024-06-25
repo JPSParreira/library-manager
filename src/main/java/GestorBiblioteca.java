@@ -2,6 +2,7 @@ import Biblioteca.Estante;
 import Biblioteca.Prateleira;
 import Titulo.Exemplar.*;
 import Titulo.*;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.Comparator;
 import java.util.LinkedList;
@@ -51,7 +52,6 @@ public class GestorBiblioteca {
 
         seedApp();
     }
-
     public void seedApp() {
         //region Seed Estantes / Prateleiras
         for (int i = 1; i <= 20; i++) {
@@ -228,31 +228,24 @@ public class GestorBiblioteca {
     public int getMaxDias() {
         return maximoDiasEmprestimo;
     }
-
     public void setMaxDias(int maximoDiasEmprestimo) {
         this.maximoDiasEmprestimo = maximoDiasEmprestimo;
     }
-
     public float getValorMulta() {
         return valorMultaPorDia;
     }
-
     public void setValorMulta(float valorMultaPorDia) {
         this.valorMultaPorDia = valorMultaPorDia;
     }
-
     public int getMaxEmprestimos() {
         return maximoLivrosEmprestados;
     }
-
     public void setMaxEmprestimos(int maximoLivrosEmprestados) {
         this.maximoLivrosEmprestados = maximoLivrosEmprestados;
     }
-
     public float getValorAnuidade() {
         return valorAnuidade;
     }
-
     public void setValorAnuidade(float valorAnuidade) {
         this.valorAnuidade = valorAnuidade;
     }
@@ -261,7 +254,6 @@ public class GestorBiblioteca {
     public LinkedList<Genero> getGeneros() {
         return generos;
     }
-
     public Genero getGenero(String nome) {
         for (Genero genero : generos) {
             if (genero.getNome().equals(nome)) {
@@ -280,7 +272,6 @@ public class GestorBiblioteca {
     public LinkedList<Titulo> getTitulos() {
         return titulos;
     }
-
     public Titulo getTitulo(String t) {
         for (Titulo titulo : titulos) {
             if (titulo.getTitulo().equalsIgnoreCase(t)) {
@@ -289,7 +280,6 @@ public class GestorBiblioteca {
         }
         return null;
     }
-
     public void addTitulo(String titulo, String autor, Genero genero, Subgenero subGenero) {
 
         Autor newAutor = null;
@@ -326,7 +316,6 @@ public class GestorBiblioteca {
     public LinkedList<Editora> getEditoras() {
         return editoras;
     }
-
     public Editora getEditora(String textEditora) {
         for (Editora e : editoras) {
             if (e.getNome().equalsIgnoreCase(textEditora)) {
@@ -335,7 +324,6 @@ public class GestorBiblioteca {
         }
         return null;
     }
-
     public void addEditora(Editora e) {
         editoras.add(e);
     }
@@ -344,7 +332,6 @@ public class GestorBiblioteca {
     public LinkedList<Distribuidor> getDistribuidores() {
         return fornecedores;
     }
-
     public Distribuidor getDistribuidor(String textDistribuidor) {
         for (Distribuidor d : fornecedores) {
             if (d.getNome().equalsIgnoreCase(textDistribuidor)) {
@@ -353,7 +340,6 @@ public class GestorBiblioteca {
         }
         return null;
     }
-
     public void addDistribuidor(Distribuidor d) {
         fornecedores.add(d);
     }
@@ -372,7 +358,6 @@ public class GestorBiblioteca {
         }
         return count;
     }
-
     public Estante getEstanteLivre() {
         for (Estante e : estantes) {
             if (getPrateleirasOcupadas(e) < e.getPrateleiras().length) {
@@ -381,7 +366,6 @@ public class GestorBiblioteca {
         }
         return null;
     }
-
     public Prateleira getPrateleiraLivre(Estante e) {
         if (e == null) {
             return null;
@@ -398,7 +382,6 @@ public class GestorBiblioteca {
     public LinkedList<Socio> getSocios() {
         return socios;
     }
-
     public Socio getSocio(int id) {
         for (Socio s : socios) {
             if (s.getIdSocio() == id) {
@@ -407,7 +390,6 @@ public class GestorBiblioteca {
         }
         return null;
     }
-
     public Socio getSocio(String nome) {
         for (Socio s : socios) {
             if (s.getNome().equalsIgnoreCase(nome)) {
@@ -416,7 +398,6 @@ public class GestorBiblioteca {
         }
         return null;
     }
-
     public void addSocio(Socio s) {
         socios.add(s);
     }
@@ -425,7 +406,6 @@ public class GestorBiblioteca {
     public LinkedList<Emprestimo> getEmprestimos() {
         return emprestimos;
     }
-
     public Emprestimo getEmprestimo(int id) {
         for (Emprestimo e : emprestimos) {
             if (e.getIdEmprestimo() == id) {
@@ -434,7 +414,6 @@ public class GestorBiblioteca {
         }
         return null;
     }
-
     public void criarEmprestimo(int idSocio, String idExemplar) {
         Emprestimo e = new Emprestimo(idSocio, idExemplar);
         emprestimos.add(e);
@@ -444,7 +423,6 @@ public class GestorBiblioteca {
     public LinkedList<Reserva> getReservas() {
         return reservas;
     }
-
     public Reserva getReserva(int id) {
         for (Reserva r : reservas) {
             if (r.getIdReserva() == id) {
@@ -453,96 +431,8 @@ public class GestorBiblioteca {
         }
         return null;
     }
-
     public void addReserva(Reserva r) {
         reservas.add(r);
-    }
-
-
-    // new methods
-    public LinkedList<Titulo> getTitulosMaisEmprestados() {
-        titulos.sort((Comparator<Titulo>) (o1, o2) -> -Integer.compare(o1.getEmprestimos(),o2.getEmprestimos()));
-
-        LinkedList<Titulo> titulosMaisEmprestados = new LinkedList<>();
-        for (int i = 0; i < 10; i++) {
-            Titulo titulo = titulos.get(i);
-            titulosMaisEmprestados.add(titulo);
-        }
-
-        return titulosMaisEmprestados;
-    }
-
-    public LinkedList<Titulo> getTitulosMaisEmprestados(Autor autor) {
-        if (autor == null) {
-            return getTitulosMaisEmprestados();
-        }
-
-        LinkedList<Titulo> autorTitulos = autor.getTitulos();
-        autorTitulos.sort((Comparator<Titulo>) (o1, o2) -> -Integer.compare(o1.getEmprestimos(),o2.getEmprestimos()));
-
-        if (autorTitulos.size() < 10) {
-            return autorTitulos;
-        }
-
-        LinkedList<Titulo> titulosMaisEmprestados = new LinkedList<>();
-        for (int i = 0; i < 10; i++) {
-            Titulo titulo = autorTitulos.get(i);
-            titulosMaisEmprestados.add(titulo);
-        }
-
-        return titulosMaisEmprestados;
-    }
-
-    public LinkedList<Titulo> getTitulosMaisEmprestados(Genero genero) {
-        if (genero == null) {
-            return getTitulosMaisEmprestados();
-        }
-
-        LinkedList<Titulo> generosTitulos = new LinkedList<>();
-        for (Titulo titulo : titulos) {
-            if (titulo.getGenero().equals(genero)) {
-                generosTitulos.add(titulo);
-            }
-        }
-        generosTitulos.sort((Comparator<Titulo>) (o1, o2) -> -Integer.compare(o1.getEmprestimos(),o2.getEmprestimos()));
-
-        if (generosTitulos.size() < 10) {
-            return generosTitulos;
-        }
-
-        LinkedList<Titulo> titulosMaisEmprestados = new LinkedList<>();
-        for (int i = 0; i < 10; i++) {
-            Titulo titulo = generosTitulos.get(i);
-            titulosMaisEmprestados.add(titulo);
-        }
-
-        return titulosMaisEmprestados;
-    }
-
-    public LinkedList<Titulo> getTitulosMaisEmprestados(Subgenero subgenero) {
-        if (subgenero == null) {
-            return getTitulosMaisEmprestados();
-        }
-
-        LinkedList<Titulo> subgenerosTitulos = new LinkedList<>();
-        for (Titulo titulo : titulos) {
-            if (titulo.getSubGenero().equals(subgenero)) {
-                subgenerosTitulos.add(titulo);
-            }
-        }
-        subgenerosTitulos.sort((Comparator<Titulo>) (o1, o2) -> -Integer.compare(o1.getEmprestimos(),o2.getEmprestimos()));
-
-        if (subgenerosTitulos.size() < 10) {
-            return subgenerosTitulos;
-        }
-
-        LinkedList<Titulo> titulosMaisEmprestados = new LinkedList<>();
-        for (int i = 0; i < 10; i++) {
-            Titulo titulo = subgenerosTitulos.get(i);
-            titulosMaisEmprestados.add(titulo);
-        }
-
-        return titulosMaisEmprestados;
     }
 
     public Subgenero getSubgenero(String subgenero) {
@@ -555,4 +445,62 @@ public class GestorBiblioteca {
         }
         return null;
     }
+
+
+    //Estatisticas
+    private LinkedList<Titulo> getTitulosSortedByEmprestimos(LinkedList<Titulo> titulos, int top) {
+        LinkedList<Titulo> temp = new LinkedList<>();
+
+        titulos.sort((Comparator<Titulo>) (o1, o2) -> -Integer.compare(o1.getEmprestimos(), o2.getEmprestimos()));
+
+        if (titulos.size() < 10) {
+            return titulos;
+        }
+
+        for (int i = 0; i < top; i++) {
+            Titulo titulo = titulos.get(i);
+            temp.add(titulo);
+        }
+
+        return temp;
+    }
+
+    public LinkedList<Titulo> getTop10() {
+        return getTitulosSortedByEmprestimos(titulos, 10);
+    }
+    public LinkedList<Titulo> getTop10(Autor autor) {
+        if (autor == null) {
+            return getTop10();
+        }
+
+        LinkedList<Titulo> autorTitulos = autor.getTitulos();
+        return getTitulosSortedByEmprestimos(autorTitulos, 10);
+    }
+    public LinkedList<Titulo> getTop10(Genero genero) {
+        if (genero == null) {
+            return getTop10();
+        }
+
+        LinkedList<Titulo> generosTitulos = new LinkedList<>();
+        for (Titulo titulo : titulos) {
+            if (titulo.getGenero().equals(genero)) {
+                generosTitulos.add(titulo);
+            }
+        }
+        return getTitulosSortedByEmprestimos(generosTitulos,10);
+    }
+    public LinkedList<Titulo> getTop10(Subgenero subgenero) {
+        if (subgenero == null) {
+            return getTop10();
+        }
+
+        LinkedList<Titulo> subgenerosTitulos = new LinkedList<>();
+        for (Titulo titulo : titulos) {
+            if (titulo.getSubGenero().equals(subgenero)) {
+                subgenerosTitulos.add(titulo);
+            }
+        }
+        return getTitulosSortedByEmprestimos(subgenerosTitulos,10);
+    }
+
 }
