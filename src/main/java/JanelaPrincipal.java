@@ -57,6 +57,9 @@ public class JanelaPrincipal extends JFrame {
     }
 
     public void reservasButtonActionPerformed(ActionEvent e) {
+        var janelaReservas = new JanelaReservas("Reservas");
+        janelaReservas.setModal(true);
+        janelaReservas.setVisible(true);
     }
 
     public void sociosButtonActionPerformed(ActionEvent e) {

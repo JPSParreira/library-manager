@@ -116,21 +116,26 @@ N/A
 
 • - CRIAR RESERVA (Auxiliar) - •  
 
-Enquadramento: O utilizador tenta criar um empréstimo de um livro que existe, mas não está disponível e clica em "Sim" na messageBox.
+Enquadramento: O utilizador tenta criar um empréstimo de um livro que existe, mas não está disponível e clica em "Sim" na messageBox " O livro que pretende encontra-se emprestado. Pretende reservar?".
 
 - Caminho Principal
 1. O sistema grava a reserva do livro junto com o sócio e apresenta a messageBox com a mensagem "Reserva criada com sucesso! Assim que o livro estiver disponível será avisado!" e o botão "OK".
 2. O utilizador clica no botão "OK".
-3. O caso de uso termina e volta à "Janela Empéstimos".
+3. O caso de uso termina e volta à "Janela Empréstimos".
 
 - Caminhos Alternativos  
-N/A
+0.1 - O utilizador clica em não quando o sistema pergunta se quer fazer uma reserva.
+0.2 - O sistema fecha a "JanelaCriarEmprestimo" e apresenta a "Janela de Empréstimos".
+
+- MENSAGENS DE SISTEMA
+SUC_01: "Reserva criada com sucesso".
+ERR_03: "O livro que pretende encontra-se emprestado. Pretende reservar?"
 
 /--------------------/
 
 • - ANULAR RESERVA - •
 - Caminho Principal
-1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Titulo.Titulo.Exemplar.Exemplar" e "Adicionar Título".
+1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Exemplar" e "Adicionar Título".
 2. O utilizador clica no botão "Reservas".
 3. O sistema efetua o caso de uso "Listar Reservas" e apresenta a "Janela de Reservas" com a "Lista de Reservas" e com os botões "Anular Reserva" e "Voltar".
 4. O utilizador clica no botão "Anular Reserva".
@@ -157,7 +162,7 @@ N/A
 • - MODIFICAR VALORES DE CONFIGURAÇÃO - •
 
 - Caminho Principal
-1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Titulo.Titulo.Exemplar.Exemplar" e "Adicionar Título".
+1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Exemplar" e "Adicionar Título".
 2. O utilizador clica no botão "Configurações".
 3. O sistema apresenta a "Janela de Configurações" com os campos "Máximo de dias para empréstimo", "Valor da multa diário", "Máximo de empréstimos ativos por sócio" e "Valor da anuidade" e com os botões "Submeter" e "Voltar".
 4. O utilizador altera os valores que pretende e clica no botão "Submeter".
