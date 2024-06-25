@@ -2,9 +2,6 @@ import Titulo.*;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.JTableHeader;
-import javax.swing.table.TableColumn;
-import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.util.LinkedList;
 
@@ -26,7 +23,7 @@ public class JanelaEstatisticas extends JDialog {
         pack();
         setLocationRelativeTo(null);
 
-        updateTable(gb.getTitulosMaisEmprestados());
+        updateTable(gb.getTop10());
 
         comboBoxAutores.addItem("-");
         comboBoxAutores.setSelectedItem("-");
@@ -65,6 +62,7 @@ public class JanelaEstatisticas extends JDialog {
         if(titulosMaisEmprestados.isEmpty()){
             JOptionPane.showMessageDialog(null, "Não existem titulos para mostrar", "Erro", JOptionPane.ERROR_MESSAGE);
         }
+
         DefaultTableModel model = new DefaultTableModel();
         model.addColumn("Titulos");
         model.addColumn("Emprestimos");
@@ -96,13 +94,13 @@ public class JanelaEstatisticas extends JDialog {
         String subgenero = (String) comboBoxSubGenero.getSelectedItem();
 
         if (autor.equals("-") && genero.equals("-") && subgenero.equals("-")) {
-            updateTable(gb.getTitulosMaisEmprestados());
+            updateTable(gb.getTop10());
         }
 
         if (!autor.equals("-") && genero.equals("-") && subgenero.equals("-")) {
             for (Autor a : gb.getAutores()) {
                 if (a.getNome().equalsIgnoreCase(autor)) {
-                    updateTable(gb.getTitulosMaisEmprestados(a));
+                    updateTable(gb.getTop10(a));
                 }
             }
         }
@@ -110,7 +108,7 @@ public class JanelaEstatisticas extends JDialog {
         if (autor.equals("-") && !genero.equals("-") && subgenero.equals("-")) {
             for (Genero g : gb.getGeneros()) {
                 if (g.getNome().equalsIgnoreCase(genero)) {
-                    updateTable(gb.getTitulosMaisEmprestados(g));
+                    updateTable(gb.getTop10(g));
                 }
             }
         }
@@ -118,7 +116,7 @@ public class JanelaEstatisticas extends JDialog {
         if (autor.equals("-") && !genero.equals("-") && !subgenero.equals("-")) {
             Subgenero sg = gb.getSubgenero(subgenero);
             if (sg.getNome().equalsIgnoreCase(subgenero)) {
-                    updateTable(gb.getTitulosMaisEmprestados(sg));
+                    updateTable(gb.getTop10(sg));
             }
         }
     }
