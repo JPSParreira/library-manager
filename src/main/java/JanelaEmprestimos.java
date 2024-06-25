@@ -1,13 +1,14 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
+import javax.swing.table.DefaultTableModel;
 
 public class JanelaEmprestimos extends JDialog {
     private JPanel janelaEmprestimos;
-    private JList<Emprestimo> listaEmprestimos;
     private JButton voltarButton;
     private JButton novoEmprestimoButton;
     private JButton devolucaoButton;
     private JScrollPane containerEmprestimos;
+    private JTable listaEmprestimos;
 
     public JanelaEmprestimos(String title) {
         this.setTitle(title);
@@ -16,14 +17,21 @@ public class JanelaEmprestimos extends JDialog {
         pack();
         setLocationRelativeTo(null);
 
-//        DefaultListModel<Emprestimo> model = new DefaultListModel<>();
-//        for (Emprestimo emprestimo : GestorBiblioteca.instance.getListaEmprestimos()) {
-//            model.addElement(emprestimo);
-//        }
-//
-//        listaEmprestimos = new JList<>(model);
-//        listaEmprestimos.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
-//        containerEmprestimos.setViewportView(listaEmprestimos);
+        String colunas[] = {"ID", "Sócio", "ID Exemplar", "Título", "Data de Empréstimo"};
+        var model = new DefaultTableModel(colunas, 0);
+
+        for (Emprestimo emprestimo : GestorBiblioteca.instance.getEmprestimos()) {
+            model.addRow(new Object[] {
+                emprestimo.getIdEmprestimo(),
+                emprestimo.getIdSocio(),
+                emprestimo.getIdExemplar(),
+                GestorBiblioteca.instance.getExemplar(emprestimo.getIdExemplar()).getTitulo(),
+                emprestimo.getDataEmprestimo()
+            });
+        }
+
+        listaEmprestimos.setModel(model);
+        containerEmprestimos.setViewportView(listaEmprestimos);
 
         voltarButton.addActionListener(this::voltarButtonActionPerformed);
         novoEmprestimoButton.addActionListener(this::novoEmprestimoButtonActionPerformed);
