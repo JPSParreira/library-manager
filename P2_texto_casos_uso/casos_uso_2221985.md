@@ -38,24 +38,31 @@ N/A
     4.1.1 O caso de uso termina.  
 6.1 O utiliza clica no botão "Voltar".  
     6.1.1 O caso de uso volta ao ponto 3.  
-7.1 O sistema verifica que o utilizador não existe.  
-    7.1.1 O sistema apresenta a messageBox com a mensagem "O sócio não existe!" e o botão "OK".  
-    7.1.2 O utilizador clica no botão "OK".  
-    7.1.3 O caso de uso volta ao ponto 5.  
-7.2 O sistema verifica que o utilizador tem dívidas.  
-    7.2.1 O sistema apresenta a messageBox com a mensagem "O sócio tem dívidas!" e o botão "OK".  
-    7.2.2 O utilizador clica no botão "OK".  
-    7.2.3 O caso de uso volta ao ponto 5.  
-7.3 O sistema verifica que o livro que pretende emprestar não existe.  
-    7.3.1 O sistema apresenta a messageBox com a mensagem "O livro que pretende emprestar não existe." e o botão "OK".  
-    7.3.2 O utilizador clica no botão "OK".  
-    7.3.3 O caso de uso volta ao ponto 5.  
-7.4 O sistema verifica que o livro que pretende emprestar não está disponível.  
-    7.4.1 O sistema apresenta a messageBox com a mensagem "O livro que pretende emprestar não está disponível!" e os botões "Sim" e Não.  
-    7.4.2.1 O utilizador clica no botão "Sim".  
-        7.4.2.1.1 O caso de uso passa ao ponto 1 do caso de uso "Criar Reserva".  
-    7.4.2.2 O utilizador clica no botão "Não".  
-        7.4.2.2.1 O caso de uso volta ao ponto 5.  
+7.1 O sistema verifica que o utilizador tem dívidas.  
+  7.1.1 O sistema apresenta a messageBox com a mensagem "O sócio tem dívidas!" e o botão "OK".  
+  7.1.2 O utilizador clica no botão "OK".  
+  7.1.3 O caso de uso volta ao ponto 5.
+7.2 O sistema verifica que o sócio atingiu o máximo de empréstimos definidos em sistema.  
+  7.2.1 O sistema apresenta a messageBox com a mensagem "O sócio selecionado já atingiu o limite de empréstimos ativos." e o botão "OK".  
+  7.2.2 O utilizador clica no botão "OK".  
+  7.2.3 O caso de uso volta ao ponto 5.
+7.3 O sistema verifica que o livro que pretende emprestar não está disponível.  
+  7.3.1 O sistema apresenta a messageBox com a mensagem "O livro que pretende emprestar encontra-se emprestado. Pretende reservar" e os botões "Sim" e Não.  
+  7.3.2.1 O utilizador clica no botão "Sim".  
+  7.3.2.1.1 O caso de uso passa ao ponto 1 do caso de uso "Criar Reserva".  
+  7.3.2.2 O utilizador clica no botão "Não".  
+  7.3.2.2.1 O caso de uso volta ao ponto 5.
+7.4 O sistema não consegue processar a informarção das comboBox.
+  7.4.1 O sistema apresenta a messageBox com a mensagem "Erro ao criar empréstimo." e o botão "OK".  
+  7.4.2 O utilizador clica no botão "OK".  
+  7.4.3 O caso de uso volta ao ponto 5.
+
+MENSAGENS DO SISTEMA:
+  SUC_01: "Empréstimo criado com sucesso."
+  ERR_01: "O sócio selecionado tem dívidas por pagar."
+  ERR_02: "O sócio selecionado já atingiu o limite de empréstimos ativos."
+  ERR_03: "Não existem exemplares disponíveis para o título selecionado. Deseja fazer uma reserva?"
+  ERR_04: "Erro ao criar empréstimo."
 
 /--------------------/
 
