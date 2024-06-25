@@ -23,6 +23,8 @@
             <constraints/>
             <properties>
               <autoResizeMode value="4"/>
+              <enabled value="true"/>
+              <rowHeight value="30"/>
             </properties>
           </component>
         </children>

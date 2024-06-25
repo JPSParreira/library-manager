@@ -42,22 +42,6 @@ public class JanelaEstatisticas extends JDialog {
         comboBoxAutores.addActionListener(this::comboBoxAutoresActionPerformed);
     }
 
-    private void comboBoxAutoresActionPerformed(ActionEvent actionEvent) {
-        if (comboBoxAutores.getSelectedItem().equals("-")) {
-            comboBoxGenero.setEnabled(true);
-            comboBoxSubGenero.setEnabled(true);
-        } else {
-            comboBoxGenero.setSelectedItem("-");
-            comboBoxSubGenero.setSelectedItem("-");
-            comboBoxGenero.setEnabled(false);
-            comboBoxSubGenero.setEnabled(false);
-        }
-    }
-
-    private void btnVoltarActionPerformed(ActionEvent actionEvent) {
-        this.setVisible(false);
-    }
-
     private void updateTable(LinkedList<Titulo> titulosMaisEmprestados) {
         if(titulosMaisEmprestados.isEmpty()){
             JOptionPane.showMessageDialog(null, "Não existem titulos para mostrar", "Erro", JOptionPane.ERROR_MESSAGE);
@@ -73,7 +57,20 @@ public class JanelaEstatisticas extends JDialog {
         table.setModel(model);
     }
 
-
+    private void comboBoxAutoresActionPerformed(ActionEvent actionEvent) {
+        if (comboBoxAutores.getSelectedItem().equals("-")) {
+            comboBoxGenero.setEnabled(true);
+            comboBoxSubGenero.setEnabled(true);
+        } else {
+            comboBoxGenero.setSelectedItem("-");
+            comboBoxSubGenero.setSelectedItem("-");
+            comboBoxGenero.setEnabled(false);
+            comboBoxSubGenero.setEnabled(false);
+        }
+    }
+    private void btnVoltarActionPerformed(ActionEvent actionEvent) {
+        this.setVisible(false);
+    }
     private void comboBoxGeneroActionPerformed(ActionEvent actionEvent) {
         comboBoxSubGenero.removeAllItems();
         comboBoxSubGenero.addItem("-");
@@ -87,7 +84,6 @@ public class JanelaEstatisticas extends JDialog {
             comboBoxAutores.setEnabled(true);
         }
     }
-
     private void btnProcurarActionPerformed(ActionEvent actionEvent) {
         String autor = (String) comboBoxAutores.getSelectedItem();
         String genero = (String) comboBoxGenero.getSelectedItem();
