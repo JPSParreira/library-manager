@@ -5,15 +5,15 @@ import java.util.Date;
 public class Reserva {
     private static int reservaIdCounter = 0;
     private int idReserva;
-    private int idSocio;
+    private Socio socio;
     private Titulo titulo;
     private Date dataReserva;
     private boolean ativa;
 
-    public Reserva(int idSocio, Titulo titulo) {
+    public Reserva(Socio socio, Titulo titulo) {
         reservaIdCounter++;
         this.idReserva = reservaIdCounter;
-        this.idSocio = idSocio;
+        this.socio = socio;
         this.titulo = titulo;
         this.dataReserva = new Date();
         this.ativa = true;
@@ -23,8 +23,8 @@ public class Reserva {
         return idReserva;
     }
 
-    public int getIdSocio() {
-        return idSocio;
+    public Socio getSocio() {
+        return socio;
     }
 
     public Titulo getTitulo() {

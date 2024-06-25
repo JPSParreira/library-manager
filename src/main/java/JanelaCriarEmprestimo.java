@@ -65,7 +65,7 @@ public class JanelaCriarEmprestimo extends JDialog {
                 );
 
                 if (confirm == JOptionPane.YES_OPTION) {
-                    GestorBiblioteca.instance.criarReserva(socio.getIdSocio(), titulo);
+                    GestorBiblioteca.instance.criarReserva(socio, titulo);
                     JOptionPane.showMessageDialog(this, "Reserva criada com sucesso.");
                 }
                 return;

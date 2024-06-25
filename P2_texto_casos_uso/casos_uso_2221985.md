@@ -74,7 +74,7 @@ N/A
 • - CRIAR DEVOLUÇÃO - •
 
 - Caminho Principal
-1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Titulo.Titulo.Exemplar.Exemplar" e "Adicionar Título".
+1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Exemplar" e "Adicionar Título".
 2. O utilizador clica no botão "Empréstimos".
 3. O sistema efetua o caso de uso "Listar Empréstimos" e apresenta a "Janela Empréstimos" com a "Lista de Empréstimos" e com os botões "Novo Empréstimo", "Devolução" e "Voltar".
 4. O utilizador clica no botão "Devolução".
