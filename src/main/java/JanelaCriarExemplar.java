@@ -52,17 +52,21 @@ public class JanelaCriarExemplar extends JDialog {
 
     private void btnNewEditoraActionPerformed(ActionEvent actionEvent) {
         String editora = JOptionPane.showInputDialog(null, "Nome da nova Editora: ");
+        try {
 
-        if (editora.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "O campo \"Editora\" é mandatório.", "Erro", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        if (editora.length() < 3) {
-            JOptionPane.showMessageDialog(null, "O campo \"Editora\" deve ter no mínimo 3 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        if (editora.length() > 50) {
-            JOptionPane.showMessageDialog(null, "O campo \"Editora\" deve ter no máximo 50 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
+            if (editora.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "O campo \"Editora\" é mandatório.", "Erro", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            if (editora.length() < 3) {
+                JOptionPane.showMessageDialog(null, "O campo \"Editora\" deve ter no mínimo 3 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            if (editora.length() > 50) {
+                JOptionPane.showMessageDialog(null, "O campo \"Editora\" deve ter no máximo 50 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+        } catch (NullPointerException e) {
             return;
         }
 
@@ -82,17 +86,20 @@ public class JanelaCriarExemplar extends JDialog {
 
     private void btnNewFornecedorActionPerformed(ActionEvent actionEvent) {
         String distribuidor = JOptionPane.showInputDialog(null, "Nome do novo fornecedor: ");
-
-        if (distribuidor.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "O campo \"Fornecedor\" é mandatório.", "Erro", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        if (distribuidor.length() < 3) {
-            JOptionPane.showMessageDialog(null, "O campo \"Fornecedor\" deve ter no mínimo 3 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        if (distribuidor.length() > 50) {
-            JOptionPane.showMessageDialog(null, "O campo \"Fornecedor\" deve ter no máximo 50 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
+        try {
+            if (distribuidor.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "O campo \"Fornecedor\" é mandatório.", "Erro", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            if (distribuidor.length() < 3) {
+                JOptionPane.showMessageDialog(null, "O campo \"Fornecedor\" deve ter no mínimo 3 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            if (distribuidor.length() > 50) {
+                JOptionPane.showMessageDialog(null, "O campo \"Fornecedor\" deve ter no máximo 50 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+        } catch (NullPointerException e) {
             return;
         }
 
