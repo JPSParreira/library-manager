@@ -26,6 +26,9 @@ public class Emprestimo {
         this.multa = 0.0f;
         titulo.addEmprestimo();
     }
+    public void setDataEmprestimo(Date dataEmprestimo) {
+        this.dataEmprestimo = dataEmprestimo;
+    }
 
     public int getIdEmprestimo() {
         return idEmprestimo;

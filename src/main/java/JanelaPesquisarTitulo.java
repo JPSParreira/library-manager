@@ -26,7 +26,7 @@ public class JanelaPesquisarTitulo extends JDialog {
         btnPesquisarTitulo.addActionListener(this::btnPesquisarTituloActionPerformed);
     }
 
-    private void btnPesquisarTituloActionPerformed(ActionEvent actionEvent) {
+    public void btnPesquisarTituloActionPerformed(ActionEvent actionEvent) {
         String titulo = textFieldTitulo.getText();
         try {
             if (titulo.length() < 3 || titulo.length() > 50) {
@@ -57,7 +57,7 @@ public class JanelaPesquisarTitulo extends JDialog {
         }
     }
 
-    private void updateTable(LinkedList<Exemplar> exemplares) {
+    public void updateTable(LinkedList<Exemplar> exemplares) {
         DefaultTableModel model = new DefaultTableModel();
         model.addColumn("Exemplar");
         model.addColumn("ISBN");
@@ -72,7 +72,7 @@ public class JanelaPesquisarTitulo extends JDialog {
         tablePesquisarTitulo.setModel(model);
     }
 
-    private void btnVoltarActionPerformed(ActionEvent actionEvent) {
+    public void btnVoltarActionPerformed(ActionEvent actionEvent) {
         this.setVisible(false);
     }
 }

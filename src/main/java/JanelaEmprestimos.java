@@ -1,5 +1,6 @@
 import javax.swing.*;
 import java.awt.event.ActionEvent;
+import java.text.SimpleDateFormat;
 import javax.swing.table.DefaultTableModel;
 
 public class JanelaEmprestimos extends JDialog {
@@ -20,13 +21,14 @@ public class JanelaEmprestimos extends JDialog {
         String[] colunas = {"ID empréstimo", "Sócio", "Título", "Data de Empréstimo"};
         var model = new DefaultTableModel(colunas, 0);
 
+        SimpleDateFormat format  = new SimpleDateFormat("yyyy-MM-dd");
         for (Emprestimo emprestimo : GestorBiblioteca.instance.getEmprestimos()) {
             if (!emprestimo.isDevolvido()){
                 model.addRow(new Object[] {
                         emprestimo.getIdEmprestimo(),
                         emprestimo.getSocio().getNome(),
                         emprestimo.getTitulo().getTitulo(),
-                        emprestimo.getDataEmprestimo()
+                        format.format(emprestimo.getDataEmprestimo())
                 });
             }
         }

@@ -40,7 +40,7 @@ public class JanelaEstatisticas extends JDialog {
         comboBoxAutores.addActionListener(this::comboBoxAutoresActionPerformed);
     }
 
-    private void updateTable(LinkedList<Titulo> titulosMaisEmprestados) {
+    public void updateTable(LinkedList<Titulo> titulosMaisEmprestados) {
         if(titulosMaisEmprestados.isEmpty()){
             JOptionPane.showMessageDialog(null, "Não existem titulos para mostrar", "Erro", JOptionPane.ERROR_MESSAGE);
         }
@@ -55,7 +55,7 @@ public class JanelaEstatisticas extends JDialog {
         table.setModel(model);
     }
 
-    private void comboBoxAutoresActionPerformed(ActionEvent actionEvent) {
+    public void comboBoxAutoresActionPerformed(ActionEvent actionEvent) {
         if (comboBoxAutores.getSelectedItem().equals("-")) {
             comboBoxGenero.setEnabled(true);
             comboBoxSubGenero.setEnabled(true);
@@ -66,10 +66,10 @@ public class JanelaEstatisticas extends JDialog {
             comboBoxSubGenero.setEnabled(false);
         }
     }
-    private void btnVoltarActionPerformed(ActionEvent actionEvent) {
+    public void btnVoltarActionPerformed(ActionEvent actionEvent) {
         this.setVisible(false);
     }
-    private void comboBoxGeneroActionPerformed(ActionEvent actionEvent) {
+    public void comboBoxGeneroActionPerformed(ActionEvent actionEvent) {
         comboBoxSubGenero.removeAllItems();
         comboBoxSubGenero.addItem("-");
         comboBoxSubGenero.setSelectedItem("-");
@@ -82,7 +82,7 @@ public class JanelaEstatisticas extends JDialog {
             comboBoxAutores.setEnabled(true);
         }
     }
-    private void btnProcurarActionPerformed(ActionEvent actionEvent) {
+    public void btnProcurarActionPerformed(ActionEvent actionEvent) {
         String autor = (String) comboBoxAutores.getSelectedItem();
         String genero = (String) comboBoxGenero.getSelectedItem();
         String subgenero = (String) comboBoxSubGenero.getSelectedItem();

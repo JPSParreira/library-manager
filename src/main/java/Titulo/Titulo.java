@@ -22,6 +22,10 @@ public class Titulo {
         emprestimos = 0;
     }
 
+    public void setEmprestimos(int emprestimos) {
+        this.emprestimos = emprestimos;
+    }
+
     public void addEmprestimo() {
         emprestimos++;
     }

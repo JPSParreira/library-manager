@@ -50,7 +50,7 @@ public class JanelaCriarExemplar extends JDialog {
         btnNewEditora.addActionListener(this::btnNewEditoraActionPerformed);
     }
 
-    private void btnNewEditoraActionPerformed(ActionEvent actionEvent) {
+    public void btnNewEditoraActionPerformed(ActionEvent actionEvent) {
         String editora = JOptionPane.showInputDialog(null, "Nome da nova Editora: ");
         try {
 
@@ -84,7 +84,7 @@ public class JanelaCriarExemplar extends JDialog {
         JOptionPane.showMessageDialog(null, "Editora " + editora + " adicionado com sucesso.", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
     }
 
-    private void btnNewFornecedorActionPerformed(ActionEvent actionEvent) {
+    public void btnNewFornecedorActionPerformed(ActionEvent actionEvent) {
         String distribuidor = JOptionPane.showInputDialog(null, "Nome do novo fornecedor: ");
         try {
             if (distribuidor.isEmpty()) {

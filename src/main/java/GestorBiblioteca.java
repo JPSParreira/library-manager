@@ -3,8 +3,8 @@ import Biblioteca.Prateleira;
 import Titulo.Exemplar.*;
 import Titulo.*;
 
-import java.util.Comparator;
-import java.util.LinkedList;
+import java.text.SimpleDateFormat;
+import java.util.*;
 
 public class GestorBiblioteca {
     /* Singleton */
@@ -53,6 +53,8 @@ public class GestorBiblioteca {
     }
 
     public void seedApp() {
+        Random r = new Random();
+
         //region Seed Estantes / Prateleiras
         for (int i = 1; i <= 20; i++) {
             estantes.add(new Estante(i, 50));
@@ -203,6 +205,10 @@ public class GestorBiblioteca {
             t.addExemplar(new Exemplar(1234567890129L, 2001, "1ª Edição", t, getEditora("Editora 8"), getDistribuidor("Distribuidor 8")));
             t.addExemplar(new Exemplar(1234567890110L, 2001, "5ª Edição", t, getEditora("Editora 9"), getDistribuidor("Distribuidor 9")));
         }
+
+        for (Titulo t : titulos) {
+            t.setEmprestimos(r.nextInt(0, 100));
+        }
         //endregion
 
         //region Seed Exemplares a Estantes / Prateleiras
@@ -233,6 +239,15 @@ public class GestorBiblioteca {
         socios.add(socio4);
         socios.add(socio5);
         socios.add(socio6);
+        //endregion
+
+        //region Seed Emprestimos
+        for (int i = 0; i < r.nextInt(10, 20); i++) {
+            Titulo t = titulos.get(r.nextInt(titulos.size()));
+            Exemplar e = t.getExemplares().get(r.nextInt(t.getExemplares().size()));
+            criarEmprestimo(socios.get(r.nextInt(socios.size())), t, e);
+            emprestimos.getLast().setDataEmprestimo(new GregorianCalendar(2024, r.nextInt(4,6), r.nextInt(30)).getTime());
+        }
         //endregion
     }
 
