@@ -284,7 +284,7 @@ public class GestorBiblioteca {
         if (autor == null) return titulos;
         return autor.getTitulos();
     }
-    public LinkedList<Titulo> getTitulos(Genero genero){
+    public LinkedList<Titulo> getTitulos(Genero genero) {
         if (genero == null) {
             return titulos;
         }
@@ -477,11 +477,15 @@ public class GestorBiblioteca {
 
     //Estatisticas
     private LinkedList<Titulo> getTitulosSortedByEmprestimos(LinkedList<Titulo> titulos, int top) {
+        if (titulos == null) {
+            return null;
+        }
+
         LinkedList<Titulo> temp = new LinkedList<>();
 
         titulos.sort((Comparator<Titulo>) (o1, o2) -> -Integer.compare(o1.getEmprestimos(), o2.getEmprestimos()));
 
-        if (titulos.size() < 10) {
+        if (titulos.size() < top) {
             return titulos;
         }
 
