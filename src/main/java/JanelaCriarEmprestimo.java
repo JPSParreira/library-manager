@@ -64,10 +64,10 @@ public class JanelaCriarEmprestimo extends JDialog {
                         "Sim"
                 );
 
-//                if (confirm == JOptionPane.YES_OPTION) {
-//                    GestorBiblioteca.instance.criarReserva(socio.getIdSocio(), titulo.getId());
-//                    JOptionPane.showMessageDialog(this, "Reserva criada com sucesso.");
-//                }
+                if (confirm == JOptionPane.YES_OPTION) {
+                    GestorBiblioteca.instance.criarReserva(socio.getIdSocio(), titulo);
+                    JOptionPane.showMessageDialog(this, "Reserva criada com sucesso.");
+                }
                 return;
             }
             if (socio.getNumEmprestimosAtivos() >= GestorBiblioteca.instance.getMaxEmprestimos()) {

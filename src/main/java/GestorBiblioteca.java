@@ -432,7 +432,8 @@ public class GestorBiblioteca {
         }
         return null;
     }
-    public void addReserva(Reserva r) {
+    public void criarReserva(int idSocio, Titulo idExemplar) {
+        Reserva r = new Reserva(idSocio, idExemplar);
         reservas.add(r);
     }
 

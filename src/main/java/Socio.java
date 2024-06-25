@@ -25,7 +25,7 @@ public class Socio {
         this.dataInscricao = new Date();
         this.numEmprestimosAtivos = 0;
         this.multasEmDivida = 0.0f;
-        this.anuidadesEmDivida = 0;
+        this.anuidadesEmDivida = 0.0f;
     }
 
     public int getIdSocio() {

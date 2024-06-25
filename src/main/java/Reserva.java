@@ -1,18 +1,20 @@
+import Titulo.Titulo;
+
 import java.util.Date;
 
 public class Reserva {
     private static int reservaIdCounter = 0;
     private int idReserva;
     private int idSocio;
-    private String idExemplar;
+    private Titulo titulo;
     private Date dataReserva;
     private boolean ativa;
 
-    public Reserva(int idSocio, String idExemplar) {
+    public Reserva(int idSocio, Titulo titulo) {
         reservaIdCounter++;
         this.idReserva = reservaIdCounter;
         this.idSocio = idSocio;
-        this.idExemplar = idExemplar;
+        this.titulo = titulo;
         this.dataReserva = new Date();
         this.ativa = true;
     }
@@ -25,8 +27,8 @@ public class Reserva {
         return idSocio;
     }
 
-    public String getIdExemplar() {
-        return idExemplar;
+    public Titulo getTitulo() {
+        return titulo;
     }
 
     public Date getDataReserva() {
