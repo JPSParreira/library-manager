@@ -22,4 +22,8 @@ public class Autor {
     public void addTitulo(Titulo titulo) {
         titulos.add(titulo);
     }
+
+    public LinkedList<Titulo> getTitulos() {
+        return titulos;
+    }
 }

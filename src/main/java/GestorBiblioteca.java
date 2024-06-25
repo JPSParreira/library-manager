@@ -1,13 +1,9 @@
 import Biblioteca.Estante;
 import Biblioteca.Prateleira;
-import Titulo.Autor;
-import Titulo.Exemplar.Distribuidor;
-import Titulo.Exemplar.Editora;
-import Titulo.Exemplar.Exemplar;
-import Titulo.Genero;
-import Titulo.Subgenero;
-import Titulo.Titulo;
+import Titulo.Exemplar.*;
+import Titulo.*;
 
+import java.util.Comparator;
 import java.util.LinkedList;
 
 public class GestorBiblioteca {
@@ -43,6 +39,7 @@ public class GestorBiblioteca {
         valorAnuidade = 20.0f;
 
         titulos = new LinkedList<>();
+
         autores = new LinkedList<>();
         editoras = new LinkedList<>();
         fornecedores = new LinkedList<>();
@@ -55,7 +52,7 @@ public class GestorBiblioteca {
         seedApp();
     }
 
-    public void seedApp(){
+    public void seedApp() {
         //region Seed Estantes / Prateleiras
         for (int i = 1; i <= 20; i++) {
             estantes.add(new Estante(i, 50));
@@ -196,16 +193,16 @@ public class GestorBiblioteca {
         //region Seed Exemplares
         for (Titulo t : titulos) {
             for (int i = 0; i < 10; i++) {
-                t.addExemplar(new Exemplar(1234567890123L, 2000, "1ª Edição", t, getEditora("Editora 0"), getDistribuidor("Distribuidor 0") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 1"), getDistribuidor("Distribuidor 1") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 2"), getDistribuidor("Distribuidor 2") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "3ª Edição", t, getEditora("Editora 3"), getDistribuidor("Distribuidor 3") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "2ª Edição", t, getEditora("Editora 4"), getDistribuidor("Distribuidor 4") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 5"), getDistribuidor("Distribuidor 5") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 6"), getDistribuidor("Distribuidor 6") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "4ª Edição", t, getEditora("Editora 7"), getDistribuidor("Distribuidor 7") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 8"), getDistribuidor("Distribuidor 8") ));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 9"), getDistribuidor("Distribuidor 9") ));
+                t.addExemplar(new Exemplar(1234567890123L, 2000, "1ª Edição", t, getEditora("Editora 0"), getDistribuidor("Distribuidor 0")));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 1"), getDistribuidor("Distribuidor 1")));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 2"), getDistribuidor("Distribuidor 2")));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "3ª Edição", t, getEditora("Editora 3"), getDistribuidor("Distribuidor 3")));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "2ª Edição", t, getEditora("Editora 4"), getDistribuidor("Distribuidor 4")));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 5"), getDistribuidor("Distribuidor 5")));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 6"), getDistribuidor("Distribuidor 6")));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "4ª Edição", t, getEditora("Editora 7"), getDistribuidor("Distribuidor 7")));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 8"), getDistribuidor("Distribuidor 8")));
+                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 9"), getDistribuidor("Distribuidor 9")));
             }
         }
         //endregion
@@ -438,5 +435,102 @@ public class GestorBiblioteca {
     public void addReserva(Reserva r) {
         reservas.add(r);
     }
-}
 
+
+    // new methods
+    public LinkedList<Titulo> getTitulosMaisEmprestados() {
+        titulos.sort((Comparator<Titulo>) (o1, o2) -> -Integer.compare(o1.getEmprestimos(),o2.getEmprestimos()));
+
+        LinkedList<Titulo> titulosMaisEmprestados = new LinkedList<>();
+        for (int i = 0; i < 10; i++) {
+            Titulo titulo = titulos.get(i);
+            titulosMaisEmprestados.add(titulo);
+        }
+
+        return titulosMaisEmprestados;
+    }
+
+    public LinkedList<Titulo> getTitulosMaisEmprestados(Autor autor) {
+        if (autor == null) {
+            return getTitulosMaisEmprestados();
+        }
+
+        LinkedList<Titulo> autorTitulos = autor.getTitulos();
+        autorTitulos.sort((Comparator<Titulo>) (o1, o2) -> -Integer.compare(o1.getEmprestimos(),o2.getEmprestimos()));
+
+        if (autorTitulos.size() < 10) {
+            return autorTitulos;
+        }
+
+        LinkedList<Titulo> titulosMaisEmprestados = new LinkedList<>();
+        for (int i = 0; i < 10; i++) {
+            Titulo titulo = autorTitulos.get(i);
+            titulosMaisEmprestados.add(titulo);
+        }
+
+        return titulosMaisEmprestados;
+    }
+
+    public LinkedList<Titulo> getTitulosMaisEmprestados(Genero genero) {
+        if (genero == null) {
+            return getTitulosMaisEmprestados();
+        }
+
+        LinkedList<Titulo> generosTitulos = new LinkedList<>();
+        for (Titulo titulo : titulos) {
+            if (titulo.getGenero().equals(genero)) {
+                generosTitulos.add(titulo);
+            }
+        }
+        generosTitulos.sort((Comparator<Titulo>) (o1, o2) -> -Integer.compare(o1.getEmprestimos(),o2.getEmprestimos()));
+
+        if (generosTitulos.size() < 10) {
+            return generosTitulos;
+        }
+
+        LinkedList<Titulo> titulosMaisEmprestados = new LinkedList<>();
+        for (int i = 0; i < 10; i++) {
+            Titulo titulo = generosTitulos.get(i);
+            titulosMaisEmprestados.add(titulo);
+        }
+
+        return titulosMaisEmprestados;
+    }
+
+    public LinkedList<Titulo> getTitulosMaisEmprestados(Subgenero subgenero) {
+        if (subgenero == null) {
+            return getTitulosMaisEmprestados();
+        }
+
+        LinkedList<Titulo> subgenerosTitulos = new LinkedList<>();
+        for (Titulo titulo : titulos) {
+            if (titulo.getSubGenero().equals(subgenero)) {
+                subgenerosTitulos.add(titulo);
+            }
+        }
+        subgenerosTitulos.sort((Comparator<Titulo>) (o1, o2) -> -Integer.compare(o1.getEmprestimos(),o2.getEmprestimos()));
+
+        if (subgenerosTitulos.size() < 10) {
+            return subgenerosTitulos;
+        }
+
+        LinkedList<Titulo> titulosMaisEmprestados = new LinkedList<>();
+        for (int i = 0; i < 10; i++) {
+            Titulo titulo = subgenerosTitulos.get(i);
+            titulosMaisEmprestados.add(titulo);
+        }
+
+        return titulosMaisEmprestados;
+    }
+
+    public Subgenero getSubgenero(String subgenero) {
+        for (Genero g : generos) {
+            for (Subgenero sg : g.getSubgeneros()) {
+                if (sg.getNome().equalsIgnoreCase(subgenero)) {
+                    return sg;
+                }
+            }
+        }
+        return null;
+    }
+}
