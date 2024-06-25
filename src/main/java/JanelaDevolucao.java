@@ -59,13 +59,7 @@ public class JanelaDevolucao extends JDialog {
                 if (confirm == JOptionPane.YES_OPTION) {
                     emprestimo.getSocio().setMultasEmDivida(emprestimo.getSocio().getMultasEmDivida() - valorMulta);
                     JOptionPane.showMessageDialog(this, "Pagamento efetuado com sucesso.");
-                    var janelaEmprestimos = new JanelaEmprestimos("Empréstimos");
-                    this.setVisible(false);
-                    janelaEmprestimos.setVisible(true);
                 }
-                var janelaEmprestimos = new JanelaEmprestimos("Empréstimos");
-                this.setVisible(false);
-                janelaEmprestimos.setVisible(true);
             }
 
             JOptionPane.showMessageDialog(this, "Devolução efetuada com sucesso.");
