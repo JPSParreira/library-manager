@@ -27,7 +27,7 @@ N/A
 4. O utilizador clica no botão "Novo Empréstimo".
 5. O sistema apresenta a "Janela Criar Empréstimo" com as combobox "Título" e "Sócio" e o botões "Submeter" e "Voltar".
 6. O utilizador seleciona um título e um sócio e clica no botão "Submeter".
-7. O sistema verifica que o utilizador existe, não tem dívidas e o livro que pretende emprestar existe em stock e está disponível, grava o empréstimo e apresenta a messageBox com a mensagem "Empréstimo criado com sucesso!" e o botão "OK".
+7. O sistema verifica que o utilizador não tem dívidas, o título que pretende emprestar tem um exemplar disponível e o sócio não excedeu o número máximo de empréstimos, grava o empréstimo e apresenta a messageBox com a mensagem "Empréstimo criado com sucesso!" e o botão "OK".
 8. O utilizador clica no botão "OK".
 9. O caso de uso volta ao ponto 3.
 
@@ -145,6 +145,7 @@ N/A
 4. O utilizador altera os valores que pretende e clica no botão "Submeter".
 5. O sistema valida que o "Máximo de dias para empréstimo" é um valor inteiro dentro do intervalo [7, 30], que o "Valor da multa diário" é um valor decimal dentro do intervalo [0.5, 2.5], que o "Máximo de empréstimos ativos por sócio" é um valor inteiro dentro do intervalo [1, 5] e que o "Valor da anuidade" é um valor decimal dentro do intervalo [10, 100], grava os valores alterados e apresenta a messageBox com a mensagem "Valores alterados com sucesso!" e o botão "OK".
 6. O utilizador clica no botão "OK".
+7. O sistema apresentas a mensagem "Configurações guardadas com sucesso." e o botão "OK".
 7. O caso de uso termina e volta à "Janela Principal".
 
 - Caminhos Alternativos  
@@ -167,4 +168,11 @@ N/A
     5.4.2 O utilizador clica no botão "OK".  
     5.4.3 O caso de uso volta ao ponto 3.  
 
-/--------------------/
+- Mensagens de Sistema
+1. S01: "Configurações guardadas com sucesso."
+2. E01: "O valor do 'Máximo de dias para empréstimo' tem de ser um valor inteiro dentro do intervalo [7, 30]."
+3. E02: "O valor do 'Valor da multa diário' tem de ser um valor decimal dentro do intervalo [0.5, 2.5]."
+4. E03: "O valor do 'Máximo de empréstimos ativos por sócio' tem de ser um valor inteiro dentro do intervalo [1, 5]."
+5. E04: "O valor do 'Valor da anuidade' tem de ser um valor decimal dentro do intervalo [10, 100]."
+
+/--------------------/ 

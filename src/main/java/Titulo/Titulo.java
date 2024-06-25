@@ -99,4 +99,5 @@ public class Titulo {
     public Subgenero getSubGenero() {
         return subgenero;
     }
+
 }
