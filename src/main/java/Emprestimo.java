@@ -23,6 +23,7 @@ public class Emprestimo {
         this.dataDevolucao = null;
         this.devolvido = false;
         this.multa = 0.0f;
+        titulo.addEmprestimo();
     }
 
     public int getIdEmprestimo() {

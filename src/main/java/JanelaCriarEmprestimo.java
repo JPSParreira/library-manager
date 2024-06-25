@@ -62,7 +62,7 @@ public class JanelaCriarEmprestimo extends JDialog {
             }
 
             Exemplar exemplar = titulo.getExemplarDisponivel();
-            GestorBiblioteca.instance.criarEmprestimo(socio.getIdSocio(), GestorBiblioteca.instance.getTitulo(titulo.getTitulo()), exemplar.getId());
+            GestorBiblioteca.instance.criarEmprestimo(socio.getIdSocio(), titulo, exemplar.getId());
             exemplar.setDisponivel(false);
             socio.incrementaNumEmprestimosAtivos();
             JOptionPane.showMessageDialog(this, "Empréstimo criado com sucesso.");

@@ -17,7 +17,11 @@
         <children>
           <component id="4c9f0" class="javax.swing.JTable" binding="listaEmprestimos">
             <constraints/>
-            <properties/>
+            <properties>
+              <autoResizeMode value="4"/>
+              <enabled value="true"/>
+              <rowHeight value="30"/>
+            </properties>
           </component>
         </children>
       </scrollpane>
