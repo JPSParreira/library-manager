@@ -245,8 +245,11 @@ public class GestorBiblioteca {
         for (int i = 0; i < r.nextInt(10, 20); i++) {
             Titulo t = titulos.get(r.nextInt(titulos.size()));
             Exemplar e = t.getExemplares().get(r.nextInt(t.getExemplares().size()));
-            criarEmprestimo(socios.get(r.nextInt(socios.size())), t, e);
+            Socio s = socios.get(r.nextInt(socios.size()));
+            criarEmprestimo(s, t, e);
             emprestimos.getLast().setDataEmprestimo(new GregorianCalendar(2024, r.nextInt(4,6), r.nextInt(30)).getTime());
+            e.setDisponivel(false);
+            s.incrementaNumEmprestimosAtivos();
         }
         //endregion
     }
