@@ -192,18 +192,16 @@ public class GestorBiblioteca {
 
         //region Seed Exemplares
         for (Titulo t : titulos) {
-            for (int i = 0; i < 10; i++) {
-                t.addExemplar(new Exemplar(1234567890123L, 2000, "1ª Edição", t, getEditora("Editora 0"), getDistribuidor("Distribuidor 0")));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 1"), getDistribuidor("Distribuidor 1")));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 2"), getDistribuidor("Distribuidor 2")));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "3ª Edição", t, getEditora("Editora 3"), getDistribuidor("Distribuidor 3")));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "2ª Edição", t, getEditora("Editora 4"), getDistribuidor("Distribuidor 4")));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 5"), getDistribuidor("Distribuidor 5")));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 6"), getDistribuidor("Distribuidor 6")));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "4ª Edição", t, getEditora("Editora 7"), getDistribuidor("Distribuidor 7")));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 8"), getDistribuidor("Distribuidor 8")));
-                t.addExemplar(new Exemplar(1234567890123L, 2001, "1ª Edição", t, getEditora("Editora 9"), getDistribuidor("Distribuidor 9")));
-            }
+            t.addExemplar(new Exemplar(1234567890121L, 2000, "1ª Edição", t, getEditora("Editora 10"), getDistribuidor("Distribuidor 10")));
+            t.addExemplar(new Exemplar(1234567890122L, 2001, "2ª Edição", t, getEditora("Editora 1"), getDistribuidor("Distribuidor 1")));
+            t.addExemplar(new Exemplar(1234567890123L, 2001, "3ª Edição", t, getEditora("Editora 2"), getDistribuidor("Distribuidor 2")));
+            t.addExemplar(new Exemplar(1234567890124L, 2001, "4ª Edição", t, getEditora("Editora 3"), getDistribuidor("Distribuidor 3")));
+            t.addExemplar(new Exemplar(1234567890125L, 2001, "1ª Edição", t, getEditora("Editora 4"), getDistribuidor("Distribuidor 4")));
+            t.addExemplar(new Exemplar(1234567890126L, 2001, "2ª Edição", t, getEditora("Editora 5"), getDistribuidor("Distribuidor 5")));
+            t.addExemplar(new Exemplar(1234567890127L, 2001, "3ª Edição", t, getEditora("Editora 6"), getDistribuidor("Distribuidor 6")));
+            t.addExemplar(new Exemplar(1234567890128L, 2001, "4ª Edição", t, getEditora("Editora 7"), getDistribuidor("Distribuidor 7")));
+            t.addExemplar(new Exemplar(1234567890129L, 2001, "1ª Edição", t, getEditora("Editora 8"), getDistribuidor("Distribuidor 8")));
+            t.addExemplar(new Exemplar(1234567890110L, 2001, "5ª Edição", t, getEditora("Editora 9"), getDistribuidor("Distribuidor 9")));
         }
         //endregion
 
@@ -258,6 +256,16 @@ public class GestorBiblioteca {
         for (Genero genero : generos) {
             if (genero.getNome().equals(nome)) {
                 return genero;
+            }
+        }
+        return null;
+    }
+    public Subgenero getSubgenero(String subgenero) {
+        for (Genero g : generos) {
+            for (Subgenero sg : g.getSubgeneros()) {
+                if (sg.getNome().equalsIgnoreCase(subgenero)) {
+                    return sg;
+                }
             }
         }
         return null;
@@ -344,7 +352,7 @@ public class GestorBiblioteca {
         fornecedores.add(d);
     }
 
-    //Biblioteca.Estante / Biblioteca.Prateleira
+    //Estante / Prateleira
     public int getPrateleirasOcupadas(Estante e) {
         if (e == null) {
             return 0;
@@ -415,7 +423,7 @@ public class GestorBiblioteca {
         return null;
     }
 
-    public void criarEmprestimo(int idSocio,Titulo titulo, String idExemplar) {
+    public void criarEmprestimo(int idSocio, Titulo titulo, String idExemplar) {
         Emprestimo e = new Emprestimo(idSocio, titulo, idExemplar);
         emprestimos.add(e);
     }
@@ -436,18 +444,6 @@ public class GestorBiblioteca {
         Reserva r = new Reserva(idSocio, idExemplar);
         reservas.add(r);
     }
-
-    public Subgenero getSubgenero(String subgenero) {
-        for (Genero g : generos) {
-            for (Subgenero sg : g.getSubgeneros()) {
-                if (sg.getNome().equalsIgnoreCase(subgenero)) {
-                    return sg;
-                }
-            }
-        }
-        return null;
-    }
-
 
     //Estatisticas
     private LinkedList<Titulo> getTitulosSortedByEmprestimos(LinkedList<Titulo> titulos, int top) {
@@ -489,7 +485,7 @@ public class GestorBiblioteca {
                 generosTitulos.add(titulo);
             }
         }
-        return getTitulosSortedByEmprestimos(generosTitulos,10);
+        return getTitulosSortedByEmprestimos(generosTitulos, 10);
     }
     public LinkedList<Titulo> getTop10(Subgenero subgenero) {
         if (subgenero == null) {
@@ -502,7 +498,7 @@ public class GestorBiblioteca {
                 subgenerosTitulos.add(titulo);
             }
         }
-        return getTitulosSortedByEmprestimos(subgenerosTitulos,10);
+        return getTitulosSortedByEmprestimos(subgenerosTitulos, 10);
     }
 
 }

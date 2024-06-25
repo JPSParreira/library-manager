@@ -205,18 +205,39 @@ Consultar top 10 por autor (auxiliar)
 ENQUADRAMENTO: O utilizador preenche o campo Autor e clica no botão "Procurar".
 
 CAMINHO PRINCIPAL:
-1. O sistema consulta a lista de titulos e seleciona apenas os titulos do autor introduzido. Posteriormente, verifica quais os 10 titulos mais emprestados dessa seleção, e atualiza a lista de titulos.
+1. O sistema a lista de titulos do autor introduzido. Posteriormente, verifica quais os 10 titulos mais emprestados dessa lista, e atualiza a lista de titulos.
+
+CAMINHOS ALTERNATIVOS:
+1.1 Não existem titulos do autor introduzido.
+    1.1.1 O sistema apresenta a mensagem de erro ERR_AUTOR_01.
+
+MENSAGENS DO SISTEMA:
+ERR_AUTOR_01: Não existem titulos do autor introduzido.
 
 Consultar top 10 por genero (auxiliar)
 ===============================
 ENQUADRAMENTO: O utilizador preenche o campo Género e clica no botão "Procurar".
 
 CAMINHO PRINCIPAL:
-1. O sistema consulta a lista de titulos e seleciona apenas os titulos do genero introduzido. Posteriormente, verifica quais os 10 titulos mais emprestados dessa seleção, e atualiza a lista de titulos.
+1. O sistema consulta a lista de titulos e seleciona apenas os titulos do genero introduzido. Posteriormente, verifica quais os 10 titulos mais emprestados dessa lista, e atualiza a lista de titulos.
+
+CAMINHOS ALTERNATIVOS:
+1.1 Não existem titulos do genero introduzido.
+    1.1.1 O sistema apresenta a mensagem de erro ERR_GENERO_01.
+
+MENSAGENS DO SISTEMA:
+ERR_GENERO_01: Não existem titulos do genero introduzido.
 
 Consultar top 10 por subgenero (auxiliar)
 ===============================
 ENQUADRAMENTO: O utilizador preenche o campo Subgénero e clica no botão "Procurar".
 
 CAMINHO PRINCIPAL:
-1. O sistema consulta a lista de titulos e seleciona apenas os titulos do subgenero introduzido. Posteriormente, verifica quais os 10 titulos mais emprestados dessa seleção, e atualiza a lista de titulos.
+1. O sistema consulta a lista de titulos e seleciona apenas os titulos do subgenero introduzido. Posteriormente, verifica quais os 10 titulos mais emprestados dessa lista, e atualiza a lista de titulos.
+
+CAMINHOS ALTERNATIVOS:
+1.1 Não existem titulos do subgenero introduzido.
+    1.1.1 O sistema apresenta a mensagem de erro ERR_SUBGENER_01.
+
+MENSAGENS DO SISTEMA:
+ERR_SUBGENER_01: Não existem titulos do subgenero introduzido.
