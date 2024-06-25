@@ -67,8 +67,16 @@ public class JanelaCriarEmprestimo extends JDialog {
                 if (confirm == JOptionPane.YES_OPTION) {
                     GestorBiblioteca.instance.criarReserva(socio, titulo);
                     JOptionPane.showMessageDialog(this, "Reserva criada com sucesso.");
+                    var janelaEmprestimos = new JanelaEmprestimos("Empréstimos");
+                    this.setVisible(false);
+                    janelaEmprestimos.setVisible(true);
+                    return;
+                } else {
+                    var janelaEmprestimos = new JanelaEmprestimos("Empréstimos");
+                    this.setVisible(false);
+                    janelaEmprestimos.setVisible(true);
+                    return;
                 }
-                return;
             }
             if (socio.getNumEmprestimosAtivos() >= GestorBiblioteca.instance.getMaxEmprestimos()) {
                 JOptionPane.showMessageDialog(this, "O sócio selecionado já atingiu o limite de empréstimos ativos.");
