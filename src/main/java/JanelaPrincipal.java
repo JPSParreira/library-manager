@@ -69,6 +69,9 @@ public class JanelaPrincipal extends JFrame {
     }
 
     public void pesquisarButtonActionPerformed(ActionEvent e) {
+        var janelaPesquisarTitulo = new JanelaPesquisarTitulo("Pesquisar Título");
+        janelaPesquisarTitulo.setModal(true);
+        janelaPesquisarTitulo.setVisible(true);
     }
 
     public void estatisticasButtonActionPerformed(ActionEvent e) {

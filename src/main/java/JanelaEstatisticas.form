@@ -135,6 +135,7 @@
             <constraints/>
             <properties>
               <autoCreateRowSorter value="true"/>
+              <autoResizeMode value="1"/>
               <fillsViewportHeight value="true"/>
               <intercellSpacing width="1" height="1"/>
               <rowHeight value="30"/>

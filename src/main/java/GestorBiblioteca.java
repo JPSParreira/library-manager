@@ -205,6 +205,20 @@ public class GestorBiblioteca {
         }
         //endregion
 
+        //region Seed Exemplares a Estantes / Prateleiras
+        for (Titulo t : titulos) {
+            for (Exemplar e : t.getExemplares()) {
+                Estante estante = getEstanteLivre();
+                Prateleira prateleira = getPrateleiraLivre(estante);
+
+                prateleira.addExemplar(e);
+
+                e.setEstante(estante);
+                e.setPrateleira(prateleira);
+            }
+        }
+        //endregion
+
         //region Seed Socios
         Socio socio1 = new Socio("João", "Rua do João", "joao@mail.pt", 123456789, 912345677);
         Socio socio2 = new Socio("Maria", "Rua da Maria", "maria@mail.pt", 987654321, 987654321);

@@ -34,4 +34,8 @@ public class Prateleira {
     public boolean isOcupada() {
         return ocupada;
     }
+
+    public int getNumero() {
+        return numero;
+    }
 }
