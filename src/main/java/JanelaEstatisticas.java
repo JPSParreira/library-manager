@@ -23,8 +23,6 @@ public class JanelaEstatisticas extends JDialog {
         pack();
         setLocationRelativeTo(null);
 
-        updateTable(gb.getTop10());
-
         comboBoxAutores.addItem("-");
         comboBoxAutores.setSelectedItem("-");
         gb.getAutores().forEach(autor -> comboBoxAutores.addItem(autor.getNome()));

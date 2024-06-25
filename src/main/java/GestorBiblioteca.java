@@ -280,6 +280,36 @@ public class GestorBiblioteca {
     public LinkedList<Titulo> getTitulos() {
         return titulos;
     }
+    public LinkedList<Titulo> getTitulos(Autor autor) {
+        if (autor == null) return titulos;
+        return autor.getTitulos();
+    }
+    public LinkedList<Titulo> getTitulos(Genero genero) {
+        if (genero == null) {
+            return titulos;
+        }
+
+        LinkedList<Titulo> titulosGenero = new LinkedList<>();
+        for (Titulo titulo : titulos) {
+            if (titulo.getGenero().equals(genero)) {
+                titulosGenero.add(titulo);
+            }
+        }
+        return titulosGenero;
+    }
+    public LinkedList<Titulo> getTitulos(Subgenero subgenero) {
+        if (subgenero == null) {
+            return titulos;
+        }
+
+        LinkedList<Titulo> subgenerosTitulos = new LinkedList<>();
+        for (Titulo titulo : titulos) {
+            if (titulo.getSubGenero().equals(subgenero)) {
+                subgenerosTitulos.add(titulo);
+            }
+        }
+        return subgenerosTitulos;
+    }
     public Titulo getTitulo(String t) {
         for (Titulo titulo : titulos) {
             if (titulo.getTitulo().equalsIgnoreCase(t)) {
@@ -447,11 +477,15 @@ public class GestorBiblioteca {
 
     //Estatisticas
     private LinkedList<Titulo> getTitulosSortedByEmprestimos(LinkedList<Titulo> titulos, int top) {
+        if (titulos == null) {
+            return null;
+        }
+
         LinkedList<Titulo> temp = new LinkedList<>();
 
         titulos.sort((Comparator<Titulo>) (o1, o2) -> -Integer.compare(o1.getEmprestimos(), o2.getEmprestimos()));
 
-        if (titulos.size() < 10) {
+        if (titulos.size() < top) {
             return titulos;
         }
 
@@ -467,38 +501,13 @@ public class GestorBiblioteca {
         return getTitulosSortedByEmprestimos(titulos, 10);
     }
     public LinkedList<Titulo> getTop10(Autor autor) {
-        if (autor == null) {
-            return getTop10();
-        }
-
-        LinkedList<Titulo> autorTitulos = autor.getTitulos();
-        return getTitulosSortedByEmprestimos(autorTitulos, 10);
+        return getTitulosSortedByEmprestimos(getTitulos(autor), 10);
     }
     public LinkedList<Titulo> getTop10(Genero genero) {
-        if (genero == null) {
-            return getTop10();
-        }
-
-        LinkedList<Titulo> generosTitulos = new LinkedList<>();
-        for (Titulo titulo : titulos) {
-            if (titulo.getGenero().equals(genero)) {
-                generosTitulos.add(titulo);
-            }
-        }
-        return getTitulosSortedByEmprestimos(generosTitulos, 10);
+        return getTitulosSortedByEmprestimos(getTitulos(genero), 10);
     }
     public LinkedList<Titulo> getTop10(Subgenero subgenero) {
-        if (subgenero == null) {
-            return getTop10();
-        }
-
-        LinkedList<Titulo> subgenerosTitulos = new LinkedList<>();
-        for (Titulo titulo : titulos) {
-            if (titulo.getSubGenero().equals(subgenero)) {
-                subgenerosTitulos.add(titulo);
-            }
-        }
-        return getTitulosSortedByEmprestimos(subgenerosTitulos, 10);
+        return getTitulosSortedByEmprestimos(getTitulos(subgenero), 10);
     }
 
 }
