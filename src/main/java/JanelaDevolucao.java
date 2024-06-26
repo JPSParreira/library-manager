@@ -2,6 +2,8 @@
  *    João Parreira Nº 2221985   *
  ********************************/
 
+import Socios.Emprestimo;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.util.Date;

@@ -2,6 +2,9 @@
  *    Diogo Abegão Nº 2222184   *
  ********************************/
 
+import Socios.Emprestimo;
+import Socios.Reserva;
+import Socios.Socio;
 import Titulo.Autor;
 import Titulo.Exemplar.Exemplar;
 import Titulo.Titulo;

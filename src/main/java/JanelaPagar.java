@@ -2,6 +2,8 @@
  *    Diogo Abegão Nº 2222184   *
  ********************************/
 
+import Socios.Socio;
+
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 

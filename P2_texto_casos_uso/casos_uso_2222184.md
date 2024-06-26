@@ -120,7 +120,7 @@ CAMINHO PRINCIPAL:
    Apresenta também uma tabela com lista de emprestimos realizados pelo Sócio, com os campos:
       Codigo, codigo identificador do emprestímo realizado.
       Título, do tipo texto.
-      Data Reserva, do tipo data.
+      Data Socios.Reserva, do tipo data.
       Data Entrega, do tipo data.
 
 3. O utilizador preenche o campo "Sócio" e clica no botão Procurar.

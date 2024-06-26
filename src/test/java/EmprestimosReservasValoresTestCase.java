@@ -2,6 +2,9 @@
  *    João Parreira Nº 2221985   *
  ********************************/
 
+import Socios.Emprestimo;
+import Socios.Reserva;
+import Socios.Socio;
 import Titulo.Autor;
 import Titulo.Exemplar.Exemplar;
 import Titulo.Titulo;

@@ -1,9 +1,8 @@
-/************************************************************************************
+package Socios; /************************************************************************************
  *    Diogo Abegão Nº 2222184, João Parreira Nº 2221985, Pedro Barbeiro Nº2221986   *
  ************************************************************************************/
 
 import java.util.Date;
-import java.util.LinkedList;
 
 public class Socio {
     private static int socioIdCounter = 0;

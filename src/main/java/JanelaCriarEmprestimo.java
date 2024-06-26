@@ -2,6 +2,7 @@
  *    João Parreira Nº 2221985   *
  ********************************/
 
+import Socios.Socio;
 import Titulo.Exemplar.Exemplar;
 import Titulo.Titulo;
 
@@ -70,7 +71,7 @@ public class JanelaCriarEmprestimo extends JDialog {
 
                 if (confirm == JOptionPane.YES_OPTION) {
                     GestorBiblioteca.instance.criarReserva(socio, titulo);
-                    JOptionPane.showMessageDialog(this, "Reserva criada com sucesso.");
+                    JOptionPane.showMessageDialog(this, "Socios.Reserva criada com sucesso.");
                     var janelaEmprestimos = new JanelaEmprestimos("Empréstimos");
                     this.setVisible(false);
                     janelaEmprestimos.setVisible(true);

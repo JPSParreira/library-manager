@@ -2,6 +2,8 @@
  *    João Parreira Nº 2221985   *
  ********************************/
 
+import Socios.Reserva;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
@@ -21,7 +23,7 @@ public class JanelaReservas extends JDialog {
         pack();
         setLocationRelativeTo(null);
 
-        String[] colunas = {"ID reserva", "Sócio", "Título", "Data de Reserva"};
+        String[] colunas = {"ID reserva", "Sócio", "Título", "Data de Socios.Reserva"};
         var model = new DefaultTableModel(colunas, 0);
         SimpleDateFormat format  = new SimpleDateFormat("yyyy-MM-dd");
         for (Reserva reserva : GestorBiblioteca.instance.getReservas()) {
@@ -47,7 +49,7 @@ public class JanelaReservas extends JDialog {
     }
 
     public void anularReservaButtonActionPerformed(ActionEvent e) {
-        var janelaAnularReserva = new JanelaAnularReserva("Anular Reserva");
+        var janelaAnularReserva = new JanelaAnularReserva("Anular Socios.Reserva");
         this.setVisible(false);
         janelaAnularReserva.setVisible(true);
     }

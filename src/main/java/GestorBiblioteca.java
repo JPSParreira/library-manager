@@ -4,10 +4,12 @@
 
 import Biblioteca.Estante;
 import Biblioteca.Prateleira;
+import Socios.Emprestimo;
+import Socios.Reserva;
+import Socios.Socio;
 import Titulo.Exemplar.*;
 import Titulo.*;
 
-import java.text.SimpleDateFormat;
 import java.util.*;
 
 public class GestorBiblioteca {

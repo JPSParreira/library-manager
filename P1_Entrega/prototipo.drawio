@@ -348,7 +348,7 @@
         <mxCell id="PDVYzoY3RleATE-HyURN-432" value="Voltar" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;mainText=;buttonStyle=round;fontSize=14;fontStyle=0;whiteSpace=wrap;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="PDVYzoY3RleATE-HyURN-430" vertex="1">
           <mxGeometry x="535" y="387" width="150" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="PDVYzoY3RleATE-HyURN-433" value="Anular Reserva" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;mainText=;buttonStyle=round;fontSize=14;fontStyle=0;whiteSpace=wrap;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="PDVYzoY3RleATE-HyURN-430" vertex="1">
+        <mxCell id="PDVYzoY3RleATE-HyURN-433" value="Anular Socios.Reserva" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;mainText=;buttonStyle=round;fontSize=14;fontStyle=0;whiteSpace=wrap;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="PDVYzoY3RleATE-HyURN-430" vertex="1">
           <mxGeometry x="535" y="41" width="150" height="50" as="geometry" />
         </mxCell>
         <mxCell id="PDVYzoY3RleATE-HyURN-435" value="" style="group" parent="PDVYzoY3RleATE-HyURN-430" connectable="0" vertex="1">
@@ -1042,7 +1042,7 @@
         <mxCell id="61" value="Voltar" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;mainText=;buttonStyle=round;fontSize=14;fontStyle=0;whiteSpace=wrap;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="59" vertex="1">
           <mxGeometry x="529.5" y="431" width="150" height="50" as="geometry" />
         </mxCell>
-        <mxCell id="63" value="&lt;span style=&quot;color: rgb(102, 102, 102); font-family: Helvetica; font-size: 17px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Socio&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=right;" parent="59" vertex="1">
+        <mxCell id="63" value="&lt;span style=&quot;color: rgb(102, 102, 102); font-family: Helvetica; font-size: 17px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 400; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; white-space: normal; background-color: rgb(255, 255, 255); text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; float: none; display: inline !important;&quot;&gt;Socios.Socio&lt;/span&gt;" style="text;whiteSpace=wrap;html=1;align=right;" parent="59" vertex="1">
           <mxGeometry x="15" y="63" width="120" height="30" as="geometry" />
         </mxCell>
         <mxCell id="64" value="Procurar" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.buttons.button;mainText=;buttonStyle=round;fontSize=14;fontStyle=0;whiteSpace=wrap;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" parent="59" vertex="1">
@@ -1094,7 +1094,7 @@
         <mxCell id="78" value="" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fillColor=#ffffff;" parent="59" vertex="1">
           <mxGeometry x="426" y="114" width="130" height="306" as="geometry" />
         </mxCell>
-        <mxCell id="79" value="Data Reserva" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#008cff;fontSize=17;fillColor=#ffffff;resizeWidth=1;whiteSpace=wrap;" parent="78" vertex="1">
+        <mxCell id="79" value="Data Socios.Reserva" style="strokeWidth=1;shadow=0;dashed=0;align=center;html=1;shape=mxgraph.mockup.forms.rrect;rSize=0;strokeColor=#999999;fontColor=#008cff;fontSize=17;fillColor=#ffffff;resizeWidth=1;whiteSpace=wrap;" parent="78" vertex="1">
           <mxGeometry width="130.00000000000003" height="30" relative="1" as="geometry">
             <mxPoint y="-1" as="offset" />
           </mxGeometry>
