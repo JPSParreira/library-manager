@@ -243,7 +243,7 @@ CAMINHOS ALTERNATIVOS:
 4.1. O campo "Valor" inserido é maior que o valor da dívida.
 4.1.1. O sistema apresenta a mensagem de erro ERR_PAGAR_04.
 
-4.2. O campo "Valor" inserido não é numérico.
+4.2. O campo "Valor" inserido não é numérico ou positivo.
 4.2.1. O sistema apresenta a mensagem de erro ERR_PAGAR_05.
 
 MENSAGENS DO SISTEMA:
@@ -253,7 +253,7 @@ ERR_PAGAR_01: O campo "Sócio" é mandatório.
 ERR_PAGAR_02: O campo "Tipo" é mandatório.
 ERR_PAGAR_03: O campo "Valor" é mandatório.
 ERR_PAGAR_04: O valor a ser pago deve ser inferior ou igual ao valor da dívida.
-ERR_PAGAR_05: O valor inserido deve ser numérico.
+ERR_PAGAR_05: O valor inserido deve ser numérico e positivo.
 
 Pagar anuidade 
 =============================
@@ -298,7 +298,7 @@ CAMINHOS ALTERNATIVOS:
 4.1. O campo "Valor" inserido é maior que o valor da dívida.
 4.1.1. O sistema apresenta a mensagem de erro ERR_PAGAR_04.
 
-4.2. O campo "Valor" inserido não é numérico.
+4.2. O campo "Valor" inserido não é numérico ou positivo.
 4.2.1. O sistema apresenta a mensagem de erro ERR_PAGAR_05.
 
 MENSAGENS DO SISTEMA:
@@ -308,4 +308,4 @@ ERR_PAGAR_01: O campo "Sócio" é mandatório.
 ERR_PAGAR_02: O campo "Tipo" é mandatório.
 ERR_PAGAR_03: O campo "Valor" é mandatório.
 ERR_PAGAR_04: O valor a ser pago deve ser inferior ou igual ao valor da dívida.
-ERR_PAGAR_05: O valor inserido deve ser numérico.
+ERR_PAGAR_05: O valor inserido deve ser numérico e positivo.
