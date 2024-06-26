@@ -83,6 +83,26 @@ public class Socio {
         this.multasEmDivida = multasEmDivida;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setMorada(String morada) {
+        this.morada = morada;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
+    public void setNif(long nif) {
+        this.nif = nif;
+    }
+
+    public void setTelemovel(long telemovel) {
+        this.telemovel = telemovel;
+    }
+
     public void setAnuidadesEmDivida(float anuidadesEmDivida) {
         this.anuidadesEmDivida = anuidadesEmDivida;
     }
