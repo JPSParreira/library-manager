@@ -254,6 +254,23 @@ public class GestorBiblioteca {
             s.incrementaNumEmprestimosAtivos();
         }
         //endregion
+
+        //region Seed Reservas
+        for (int i = 0; i < 5; i++) {
+            Titulo t = titulos.get(r.nextInt(titulos.size()));
+            Socio s = socios.get(r.nextInt(socios.size()));
+            criarReserva(s, t);
+        }
+        //endregion
+
+        //region Seed Multas / Anuidades
+        for (Socio s : socios) {
+            if (r.nextBoolean()) {
+                s.setAnuidadesEmDivida(15);
+                s.setMultasEmDivida(1.5f * r.nextInt(1, 10));
+            }
+        }
+        //endregion
     }
 
     /* Configurações */

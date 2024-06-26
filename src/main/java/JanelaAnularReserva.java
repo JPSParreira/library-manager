@@ -21,7 +21,7 @@ public class JanelaAnularReserva extends JDialog {
         pack();
         setLocationRelativeTo(null);
 
-        reservaLabel.setText("Socios.Reserva");
+        reservaLabel.setText("Reserva");
 
         for (Reserva reserva : GestorBiblioteca.instance.getReservas()) {
             if (reserva.isAtiva()) {
@@ -39,7 +39,7 @@ public class JanelaAnularReserva extends JDialog {
             int idReserva = (int) comboBoxReserva.getSelectedItem();
             Reserva reserva = GestorBiblioteca.instance.getReserva(idReserva);
             reserva.setAtiva(false);
-            JOptionPane.showMessageDialog(this, "Socios.Reserva anulada com sucesso.");
+            JOptionPane.showMessageDialog(this, "Reserva anulada com sucesso.");
             var janelaReservas = new JanelaReservas("Reservas");
             this.setVisible(false);
             janelaReservas.setVisible(true);

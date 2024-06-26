@@ -58,7 +58,7 @@
           </grid>
         </constraints>
         <properties>
-          <text value="Anular Socios.Reserva"/>
+          <text value="Anular Reserva"/>
         </properties>
       </component>
     </children>
