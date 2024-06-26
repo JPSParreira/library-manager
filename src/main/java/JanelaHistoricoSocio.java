@@ -9,10 +9,10 @@ import java.text.SimpleDateFormat;
 import java.util.LinkedList;
 
 public class JanelaHistoricoSocio extends JDialog{
-    private JPanel JanelaHistoricoSocio;
+    private JPanel janelaHistoricoSocio;
     private JButton btnVoltar;
     private JButton btnProcurarButton;
-    private JLabel Socio;
+    private JLabel socio;
     private JComboBox comboBoxNomeSocio;
     private JTable tabelaEmprestimosPorSocio;
 
@@ -21,9 +21,11 @@ public class JanelaHistoricoSocio extends JDialog{
     public JanelaHistoricoSocio(String title) {
         setTitle(title);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        setContentPane(JanelaHistoricoSocio);
+        setContentPane(janelaHistoricoSocio);
         pack();
         setLocationRelativeTo(null);
+
+        socio.setText("Sócio");
 
         comboBoxNomeSocio.addItem(null);
         comboBoxNomeSocio.setSelectedItem(null);
@@ -32,6 +34,7 @@ public class JanelaHistoricoSocio extends JDialog{
         btnVoltar.addActionListener(this::btnVoltarActionPerformed);
         btnProcurarButton.addActionListener(this::btnProcurarButtonActionPerformed);
     }
+
     private void btnProcurarButtonActionPerformed(ActionEvent actionEvent) {
         String nomeSocio = (String) comboBoxNomeSocio.getSelectedItem();
         if (nomeSocio == null) {
@@ -46,6 +49,7 @@ public class JanelaHistoricoSocio extends JDialog{
         }
         updateTable(emprestimos);
     }
+
     private void btnVoltarActionPerformed(ActionEvent actionEvent) {
         JanelaSocios janelaSocios = new JanelaSocios("Sócios");
         this.setVisible(false);

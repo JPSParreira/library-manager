@@ -9,7 +9,7 @@ import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
 import java.util.LinkedList;
 
-public class JanelaEstatisticas extends JDialog {
+public class  JanelaEstatisticas extends JDialog {
     private JPanel janelaEstatisticas;
     private JButton btnVoltar;
     private JButton btnProcurar;

@@ -6,7 +6,7 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 
 public class JanelaPagar extends JDialog {
-    private JPanel JanelaPagar;
+    private JPanel janelaPagar;
     private JButton btnVoltar;
     private JButton btnSubmeter;
     private JComboBox comboBoxNomeSocio;
@@ -18,7 +18,7 @@ public class JanelaPagar extends JDialog {
     public JanelaPagar(String title) {
         setTitle(title);
         setDefaultCloseOperation(DISPOSE_ON_CLOSE);
-        setContentPane(JanelaPagar);
+        setContentPane(janelaPagar);
         pack();
         setLocationRelativeTo(null);
 
@@ -34,6 +34,7 @@ public class JanelaPagar extends JDialog {
         comboBoxTipoPagamento.addActionListener(this::comboBoxTipoPagamentoActionPerformed);
         btnSubmeter.addActionListener(this::btnSubmeterActionPerformed);
     }
+
     private void btnSubmeterActionPerformed(ActionEvent actionEvent) {
         String nomeSocio = (String) comboBoxNomeSocio.getSelectedItem();
         String tipoPagamento = (String) comboBoxTipoPagamento.getSelectedItem();
@@ -112,7 +113,6 @@ public class JanelaPagar extends JDialog {
 
     }
 
-
     private void comboBoxTipoPagamentoActionPerformed(ActionEvent actionEvent) {
         String socio = (String) comboBoxNomeSocio.getSelectedItem();
         if (socio != null) {
@@ -155,6 +155,4 @@ public class JanelaPagar extends JDialog {
         janelaSocios.setModal(true);
         janelaSocios.setVisible(true);
     }
-
-
 }
