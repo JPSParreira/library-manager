@@ -38,6 +38,15 @@ public class SocioTestCase {
     }
 
     @Test
+    public void testConstrutor() {
+        assertEquals("João", socio.getNome());
+        assertEquals("Rua A", socio.getMorada());
+        assertEquals("joao@example.com", socio.getEmail());
+        assertEquals(987654321, socio.getTelemovel());
+        assertEquals(123456789, socio.getNif());
+    }
+
+    @Test
     public void testAtualizarDadosSocio() {
         socio.setNome("João Atualizado");
         socio.setMorada("Rua B");
