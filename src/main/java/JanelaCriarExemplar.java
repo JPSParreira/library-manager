@@ -1,3 +1,4 @@
+import Biblioteca.Estante;
 import Biblioteca.Prateleira;
 import Titulo.Exemplar.Editora;
 import Titulo.Exemplar.Distribuidor;
@@ -49,19 +50,23 @@ public class JanelaCriarExemplar extends JDialog {
         btnNewEditora.addActionListener(this::btnNewEditoraActionPerformed);
     }
 
-    private void btnNewEditoraActionPerformed(ActionEvent actionEvent) {
+    public void btnNewEditoraActionPerformed(ActionEvent actionEvent) {
         String editora = JOptionPane.showInputDialog(null, "Nome da nova Editora: ");
+        try {
 
-        if (editora.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "O campo \"Editora\" é mandatório.", "Erro", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        if (editora.length() < 3) {
-            JOptionPane.showMessageDialog(null, "O campo \"Editora\" deve ter no mínimo 3 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        if (editora.length() > 50) {
-            JOptionPane.showMessageDialog(null, "O campo \"Editora\" deve ter no máximo 50 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
+            if (editora.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "O campo \"Editora\" é mandatório.", "Erro", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            if (editora.length() < 3) {
+                JOptionPane.showMessageDialog(null, "O campo \"Editora\" deve ter no mínimo 3 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            if (editora.length() > 50) {
+                JOptionPane.showMessageDialog(null, "O campo \"Editora\" deve ter no máximo 50 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+        } catch (NullPointerException e) {
             return;
         }
 
@@ -79,19 +84,22 @@ public class JanelaCriarExemplar extends JDialog {
         JOptionPane.showMessageDialog(null, "Editora " + editora + " adicionado com sucesso.", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
     }
 
-    private void btnNewFornecedorActionPerformed(ActionEvent actionEvent) {
+    public void btnNewFornecedorActionPerformed(ActionEvent actionEvent) {
         String distribuidor = JOptionPane.showInputDialog(null, "Nome do novo fornecedor: ");
-
-        if (distribuidor.isEmpty()) {
-            JOptionPane.showMessageDialog(null, "O campo \"Fornecedor\" é mandatório.", "Erro", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        if (distribuidor.length() < 3) {
-            JOptionPane.showMessageDialog(null, "O campo \"Fornecedor\" deve ter no mínimo 3 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        if (distribuidor.length() > 50) {
-            JOptionPane.showMessageDialog(null, "O campo \"Fornecedor\" deve ter no máximo 50 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
+        try {
+            if (distribuidor.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "O campo \"Fornecedor\" é mandatório.", "Erro", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            if (distribuidor.length() < 3) {
+                JOptionPane.showMessageDialog(null, "O campo \"Fornecedor\" deve ter no mínimo 3 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+            if (distribuidor.length() > 50) {
+                JOptionPane.showMessageDialog(null, "O campo \"Fornecedor\" deve ter no máximo 50 caracteres.", "Erro", JOptionPane.ERROR_MESSAGE);
+                return;
+            }
+        } catch (NullPointerException e) {
             return;
         }
 
@@ -176,8 +184,13 @@ public class JanelaCriarExemplar extends JDialog {
         Exemplar exemplar = new Exemplar(isbn, ano, edicao, titulo, editora, distribuidor);
         titulo.addExemplar(exemplar);
 
-        Prateleira prateleiraLivre = gb.getPrateleiraLivre(gb.getEstanteLivre());
+        Estante estanteLivre = gb.getEstanteLivre();
+        Prateleira prateleiraLivre = gb.getPrateleiraLivre(estanteLivre);
+
         prateleiraLivre.addExemplar(exemplar);
+
+        exemplar.setEstante(estanteLivre);
+        exemplar.setPrateleira(prateleiraLivre);
 
         JOptionPane.showMessageDialog(null, "Exemplar adicionado com sucesso.", "Sucesso", JOptionPane.INFORMATION_MESSAGE);
         this.setVisible(false);

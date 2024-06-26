@@ -183,11 +183,11 @@ Consultar top 10 geral
 CAMINHO PRINCIPAL:
 
 1. O utilizador clica no botão "Estatisticas" na "Janela Principal".
-2. O sistema cria e apresenta a janela "Estatisticas" com um lista com a informação dos 10 titulos mais empresados e ainda com os seguintes campos:
-    Autor, do tipo lista.
-    Género, do tipo lista.
-    Subgénero, do tipo lista.
-3. O utilizador clica no botão "Procurar", sem qualquer campo preenchido para obter o top 10 de titulos mais emprestados.
+2. O sistema cria e apresenta a janela "Estatisticas" com um lista com a informação dos 10 titulos mais emprestados e ainda com os seguintes campos:
+   Autor, do tipo dropdown, pre-preenchido com os autores do sistema.
+   Género, do tipo dropdown, pré preenchido com os géneros do sistema.
+   Subgénero, do tipo dropdown, pré preenchido com os subgeneros do género selecionado no dropdown Género.
+3. O utilizador clica no botão "Procurar", sem qualquer dropdown preenchido para obter o top 10 de titulos mais emprestados.
 4. O sistema consulta a lista de titulos e verifica quais os 10 titulos mais emprestados, e atualiza a lista de titulos.
 
 CAMINHOS ALTERNATIVOS:
@@ -199,24 +199,50 @@ CAMINHOS ALTERNATIVOS:
     3.3.1 É executado o caso de uso "Consultar top 10 por genero".
 3.4 O utilizador preenche o campo Subgénero e clica no botão "Procurar".
     3.4.1 É executado o caso de uso "Consultar top 10 por subgenero".
+4.1 Não existem titulos.
+    4.1.1 O sistema apresenta a mensagem de erro ERR_TITULO_01.
+
+MENSAGENS DO SISTEMA:
+ERR_TITULO_01: Não existem titulos para mostrar.
 
 Consultar top 10 por autor (auxiliar)
 ===============================
 ENQUADRAMENTO: O utilizador preenche o campo Autor e clica no botão "Procurar".
 
 CAMINHO PRINCIPAL:
-1. O sistema consulta a lista de titulos e seleciona apenas os titulos do autor introduzido. Posteriormente, verifica quais os 10 titulos mais emprestados dessa seleção, e atualiza a lista de titulos.
+1. O sistema a lista de titulos do autor introduzido. Posteriormente, verifica quais os 10 titulos mais emprestados dessa lista, e atualiza a lista de titulos.
+
+CAMINHOS ALTERNATIVOS:
+1.1 Não existem titulos do autor introduzido.
+    1.1.1 O sistema apresenta a mensagem de erro ERR_AUTOR_01.
+
+MENSAGENS DO SISTEMA:
+ERR_AUTOR_01: Não existem titulos para mostrar.
 
 Consultar top 10 por genero (auxiliar)
 ===============================
 ENQUADRAMENTO: O utilizador preenche o campo Género e clica no botão "Procurar".
 
 CAMINHO PRINCIPAL:
-1. O sistema consulta a lista de titulos e seleciona apenas os titulos do genero introduzido. Posteriormente, verifica quais os 10 titulos mais emprestados dessa seleção, e atualiza a lista de titulos.
+1. O sistema consulta a lista de titulos e seleciona apenas os titulos do genero introduzido. Posteriormente, verifica quais os 10 titulos mais emprestados dessa lista, e atualiza a lista de titulos.
+
+CAMINHOS ALTERNATIVOS:
+1.1 Não existem titulos do genero introduzido.
+    1.1.1 O sistema apresenta a mensagem de erro ERR_GENERO_01.
+
+MENSAGENS DO SISTEMA:
+ERR_GENERO_01: Não existem titulos para mostrar.
 
 Consultar top 10 por subgenero (auxiliar)
 ===============================
 ENQUADRAMENTO: O utilizador preenche o campo Subgénero e clica no botão "Procurar".
 
 CAMINHO PRINCIPAL:
-1. O sistema consulta a lista de titulos e seleciona apenas os titulos do subgenero introduzido. Posteriormente, verifica quais os 10 titulos mais emprestados dessa seleção, e atualiza a lista de titulos.
+1. O sistema consulta a lista de titulos e seleciona apenas os titulos do subgenero introduzido. Posteriormente, verifica quais os 10 titulos mais emprestados dessa lista, e atualiza a lista de titulos.
+
+CAMINHOS ALTERNATIVOS:
+1.1 Não existem titulos do subgenero introduzido.
+    1.1.1 O sistema apresenta a mensagem de erro ERR_SUBGENER_01.
+
+MENSAGENS DO SISTEMA:
+ERR_SUBGENER_01: Não existem titulos para mostrar.

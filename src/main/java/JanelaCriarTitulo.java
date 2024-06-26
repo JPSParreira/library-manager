@@ -35,7 +35,7 @@ public class JanelaCriarTitulo extends JDialog {
 
     }
 
-    private void btnSubmeterActionPerformed(ActionEvent actionEvent) {
+    public void btnSubmeterActionPerformed(ActionEvent actionEvent) {
         String titulo = textTitulo.getText();
         String autor = textAutor.getText();
         String genero = (String) comboGenero.getSelectedItem();

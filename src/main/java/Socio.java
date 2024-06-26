@@ -1,4 +1,5 @@
 import java.util.Date;
+import java.util.LinkedList;
 
 public class Socio {
     private static int socioIdCounter = 0;
@@ -25,7 +26,7 @@ public class Socio {
         this.dataInscricao = new Date();
         this.numEmprestimosAtivos = 0;
         this.multasEmDivida = 0.0f;
-        this.anuidadesEmDivida = 0;
+        this.anuidadesEmDivida = 0.0f;
     }
 
     public int getIdSocio() {
@@ -68,8 +69,11 @@ public class Socio {
         return anuidadesEmDivida;
     }
 
-    public void setNumEmprestimosAtivos(int numEmprestimosAtivos) {
-        this.numEmprestimosAtivos = numEmprestimosAtivos;
+    public void incrementaNumEmprestimosAtivos() {
+        this.numEmprestimosAtivos++;
+    }
+    public void decrementaNumEmprestimosAtivos() {
+        this.numEmprestimosAtivos--;
     }
 
     public void setMultasEmDivida(float multasEmDivida) {
@@ -78,5 +82,13 @@ public class Socio {
 
     public void setAnuidadesEmDivida(float anuidadesEmDivida) {
         this.anuidadesEmDivida = anuidadesEmDivida;
+    }
+
+    public boolean isEmDivida() {
+        return (this.multasEmDivida + this.anuidadesEmDivida == 0);
+    }
+
+    public String toString() {
+        return this.nome;
     }
 }

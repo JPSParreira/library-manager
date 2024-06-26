@@ -11,6 +11,7 @@ public class Titulo {
     private Genero genero;
     private Subgenero subgenero;
     private LinkedList<Exemplar> exemplares;
+    private int emprestimos;
 
     public Titulo(String nome, Autor autor, Genero genero, Subgenero subgenero) {
         this.titulo = nome;
@@ -18,6 +19,19 @@ public class Titulo {
         this.genero = genero;
         this.subgenero = subgenero;
         exemplares = new LinkedList<>();
+        emprestimos = 0;
+    }
+
+    public void setEmprestimos(int emprestimos) {
+        this.emprestimos = emprestimos;
+    }
+
+    public void addEmprestimo() {
+        emprestimos++;
+    }
+
+    public int getEmprestimos() {
+        return emprestimos;
     }
 
     public String getTitulo() {
@@ -63,4 +77,31 @@ public class Titulo {
     public int countExemplares() {
         return exemplares.size();
     }
+
+    public boolean isDisponivel() {
+        for (Exemplar exemplar : exemplares) {
+            if (exemplar.isDisponivel()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public boolean isDisponivel(Exemplar exemplar) {
+        return exemplar.isDisponivel();
+    }
+
+    public Exemplar getExemplarDisponivel() {
+        for (Exemplar exemplar : exemplares) {
+            if (exemplar.isDisponivel()) {
+                return exemplar;
+            }
+        }
+        return null;
+    }
+
+    public Subgenero getSubGenero() {
+        return subgenero;
+    }
+
 }

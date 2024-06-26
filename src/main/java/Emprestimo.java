@@ -1,36 +1,49 @@
+import Titulo.Exemplar.Exemplar;
+import Titulo.Titulo;
+
 import java.util.Date;
 
 public class Emprestimo {
     private static int emprestimoIdCounter = 0;
     private int idEmprestimo;
-    private int idSocio;
-    private long ISBN;
+    private Socio socio;
+    private Titulo titulo;
+    private Exemplar exemplar;
     private Date dataEmprestimo;
     private Date dataDevolucao;
     private boolean devolvido;
     private float multa;
 
-    public Emprestimo(int id, int idSocio, long ISBN) {
+    public Emprestimo(Socio socio, Titulo titulo, Exemplar exemplar) {
         emprestimoIdCounter++;
         this.idEmprestimo = emprestimoIdCounter;
-        this.idSocio = idSocio;
-        this.ISBN = ISBN;
+        this.socio = socio;
+        this.titulo = titulo;
+        this.exemplar = exemplar;
         this.dataEmprestimo = new Date();
         this.dataDevolucao = null;
         this.devolvido = false;
         this.multa = 0.0f;
+        titulo.addEmprestimo();
+    }
+    public void setDataEmprestimo(Date dataEmprestimo) {
+        this.dataEmprestimo = dataEmprestimo;
     }
 
     public int getIdEmprestimo() {
         return idEmprestimo;
     }
 
-    public int getIdSocio() {
-        return idSocio;
+    public Socio getSocio() {
+        return socio;
     }
 
-    public long getISBN() {
-        return ISBN;
+    public Titulo getTitulo() {
+        return titulo;
+    }
+
+    public Exemplar getExemplar() {
+        return exemplar;
     }
 
     public Date getDataEmprestimo() {
