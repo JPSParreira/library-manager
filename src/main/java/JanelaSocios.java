@@ -33,6 +33,20 @@ public class JanelaSocios extends JDialog {
         btnFiltrarSociosDividas.addActionListener(this::btnFiltrarSociosDividasActionPerformed);
         btnNotificarSocio.addActionListener(this::btnNotificarSocioActionPerformed);
         btnAdicionarSocio.addActionListener(this::btnAdicionarSocioActionPerformed);
+        btnHistoricoSocio.addActionListener(this::btnHistoricoSocioActionPerformed);
+        btnPagamentos.addActionListener(this::btnPagamentosActionPerformed);
+    }
+    private void btnPagamentosActionPerformed(ActionEvent actionEvent) {
+        JanelaPagar janelaPagar = new JanelaPagar("Pagamentos");
+        this.setVisible(false);
+        janelaPagar.setModal(true);
+        janelaPagar.setVisible(true);
+    }
+    private void btnHistoricoSocioActionPerformed(ActionEvent actionEvent) {
+        JanelaHistoricoSocio janelaHistoricoSocio = new JanelaHistoricoSocio("Histórico Sócio");
+        this.setVisible(false);
+        janelaHistoricoSocio.setModal(true);
+        janelaHistoricoSocio.setVisible(true);
     }
     private void btnAdicionarSocioActionPerformed(ActionEvent actionEvent) {
         JanelaCriarSocio janelaCriarSocio = new JanelaCriarSocio("Adicionar Sócio");

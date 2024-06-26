@@ -5,6 +5,7 @@
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;
+import java.text.SimpleDateFormat;
 
 public class JanelaReservas extends JDialog {
     private JPanel janelaReservas;
@@ -22,14 +23,14 @@ public class JanelaReservas extends JDialog {
 
         String[] colunas = {"ID reserva", "Sócio", "Título", "Data de Reserva"};
         var model = new DefaultTableModel(colunas, 0);
-
+        SimpleDateFormat format  = new SimpleDateFormat("yyyy-MM-dd");
         for (Reserva reserva : GestorBiblioteca.instance.getReservas()) {
             if (reserva.isAtiva()) {
                 model.addRow(new Object[]{
                         reserva.getIdReserva(),
                         reserva.getSocio().getNome(),
                         reserva.getTitulo().getTitulo(),
-                        reserva.getDataReserva()
+                        format.format(reserva.getDataReserva())
                 });
             }
         }

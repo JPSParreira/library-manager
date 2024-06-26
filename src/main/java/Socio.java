@@ -18,7 +18,6 @@ public class Socio {
     private float multasEmDivida;
     private float anuidadesEmDivida;
 
-
     public Socio(String nome, String morada, String email, long nif, long telemovel) {
         socioIdCounter++;
         this.idSocio = socioIdCounter;

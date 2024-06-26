@@ -25,6 +25,7 @@
               <autoCreateRowSorter value="true"/>
               <background color="-1"/>
               <gridColor color="-526345"/>
+              <rowHeight value="30"/>
               <showHorizontalLines value="true"/>
               <showVerticalLines value="false"/>
             </properties>
