@@ -21,7 +21,13 @@
         <children>
           <component id="1feb9" class="javax.swing.JTable" binding="listaReservas">
             <constraints/>
-            <properties/>
+            <properties>
+              <autoCreateRowSorter value="true"/>
+              <background color="-1"/>
+              <gridColor color="-526345"/>
+              <showHorizontalLines value="true"/>
+              <showVerticalLines value="false"/>
+            </properties>
           </component>
         </children>
       </scrollpane>

@@ -5,7 +5,10 @@
     <constraints>
       <xy x="20" y="20" width="1004" height="400"/>
     </constraints>
-    <properties/>
+    <properties>
+      <minimumSize width="1000" height="250"/>
+      <preferredSize width="1000" height="500"/>
+    </properties>
     <border type="none"/>
     <children>
       <scrollpane id="b74f3" binding="containerEmprestimos">
@@ -22,9 +25,14 @@
           <component id="4c9f0" class="javax.swing.JTable" binding="listaEmprestimos">
             <constraints/>
             <properties>
+              <autoCreateRowSorter value="true"/>
               <autoResizeMode value="1"/>
+              <background color="-1"/>
               <enabled value="true"/>
+              <gridColor color="-526345"/>
               <rowHeight value="30"/>
+              <showHorizontalLines value="true"/>
+              <showVerticalLines value="false"/>
             </properties>
           </component>
         </children>

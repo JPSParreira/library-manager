@@ -1,4 +1,6 @@
-import Titulo.Genero;
+/************************************************************************************
+ *    Diogo Abegão Nº 2222184, João Parreira Nº 2221985, Pedro Barbeiro Nº2221986   *
+ ************************************************************************************/
 
 import javax.swing.*;
 import java.awt.*;
@@ -63,6 +65,9 @@ public class JanelaPrincipal extends JFrame {
     }
 
     public void sociosButtonActionPerformed(ActionEvent e) {
+        var janelaSocios = new JanelaSocios("Sócios");
+        janelaSocios.setModal(true);
+        janelaSocios.setVisible(true);
     }
 
     public void configuracoesButtonActionPerformed(ActionEvent e) {

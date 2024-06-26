@@ -1,3 +1,7 @@
+/********************************
+ *  Pedro Barbeiro Nº 2221986   *
+ ********************************/
+
 import Titulo.Genero;
 import Titulo.Subgenero;
 import Titulo.Titulo;

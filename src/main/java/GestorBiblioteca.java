@@ -1,3 +1,7 @@
+/************************************************************************************
+ *    Diogo Abegão Nº 2222184, João Parreira Nº 2221985, Pedro Barbeiro Nº2221986   *
+ ************************************************************************************/
+
 import Biblioteca.Estante;
 import Biblioteca.Prateleira;
 import Titulo.Exemplar.*;
@@ -194,16 +198,9 @@ public class GestorBiblioteca {
 
         //region Seed Exemplares
         for (Titulo t : titulos) {
-            t.addExemplar(new Exemplar(1234567890121L, 2000, "1ª Edição", t, getEditora("Editora 10"), getDistribuidor("Distribuidor 10")));
+            t.addExemplar(new Exemplar(1234567890121L, 2000, "1ª Edição", t, getEditora("Editora 3"), getDistribuidor("Distribuidor 10")));
             t.addExemplar(new Exemplar(1234567890122L, 2001, "2ª Edição", t, getEditora("Editora 1"), getDistribuidor("Distribuidor 1")));
             t.addExemplar(new Exemplar(1234567890123L, 2001, "3ª Edição", t, getEditora("Editora 2"), getDistribuidor("Distribuidor 2")));
-            t.addExemplar(new Exemplar(1234567890124L, 2001, "4ª Edição", t, getEditora("Editora 3"), getDistribuidor("Distribuidor 3")));
-            t.addExemplar(new Exemplar(1234567890125L, 2001, "1ª Edição", t, getEditora("Editora 4"), getDistribuidor("Distribuidor 4")));
-            t.addExemplar(new Exemplar(1234567890126L, 2001, "2ª Edição", t, getEditora("Editora 5"), getDistribuidor("Distribuidor 5")));
-            t.addExemplar(new Exemplar(1234567890127L, 2001, "3ª Edição", t, getEditora("Editora 6"), getDistribuidor("Distribuidor 6")));
-            t.addExemplar(new Exemplar(1234567890128L, 2001, "4ª Edição", t, getEditora("Editora 7"), getDistribuidor("Distribuidor 7")));
-            t.addExemplar(new Exemplar(1234567890129L, 2001, "1ª Edição", t, getEditora("Editora 8"), getDistribuidor("Distribuidor 8")));
-            t.addExemplar(new Exemplar(1234567890110L, 2001, "5ª Edição", t, getEditora("Editora 9"), getDistribuidor("Distribuidor 9")));
         }
 
         for (Titulo t : titulos) {
@@ -242,12 +239,15 @@ public class GestorBiblioteca {
         //endregion
 
         //region Seed Emprestimos
-        for (int i = 0; i < r.nextInt(10, 20); i++) {
+        for (int i = 0; i < 10; i++) {
             Titulo t = titulos.get(r.nextInt(titulos.size()));
             Exemplar e = t.getExemplares().get(r.nextInt(t.getExemplares().size()));
-            Socio s = socios.get(r.nextInt(socios.size()));
+            Socio s;
+            do {
+                s = socios.get(r.nextInt(socios.size()));
+            } while (s.getNumEmprestimosAtivos()>maximoLivrosEmprestados);
             criarEmprestimo(s, t, e);
-            emprestimos.getLast().setDataEmprestimo(new GregorianCalendar(2024, r.nextInt(4,6), r.nextInt(30)).getTime());
+            emprestimos.getLast().setDataEmprestimo(new GregorianCalendar(2024, r.nextInt(4, 6), r.nextInt(30)).getTime());
             e.setDisponivel(false);
             s.incrementaNumEmprestimosAtivos();
         }
@@ -470,6 +470,15 @@ public class GestorBiblioteca {
     }
     public void addSocio(Socio s) {
         socios.add(s);
+    }
+    public LinkedList<Socio> getSociosComDividas() {
+        LinkedList<Socio> sociosEmDivida = new LinkedList<>();
+        for (Socio s : socios) {
+            if ((s.getMultasEmDivida() + s.getAnuidadesEmDivida()) > 0) {
+                sociosEmDivida.add(s);
+            }
+        }
+        return sociosEmDivida;
     }
 
     //Emprestimos

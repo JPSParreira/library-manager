@@ -1,5 +1,8 @@
-import javax.swing.*;
+/********************************
+ *    Diogo Abegão Nº 2222184   *
+ ********************************/
 
+import javax.swing.*;
 public class JanelaHistoricoSocio {
     private JPanel JanelaHistoricoSocio;
     private JButton btnVoltar;

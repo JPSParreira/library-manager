@@ -1,3 +1,7 @@
+/********************************
+ *  Pedro Barbeiro Nº 2221986   *
+ ********************************/
+
 import static org.junit.jupiter.api.Assertions.*;
 
 import Titulo.Exemplar.Distribuidor;

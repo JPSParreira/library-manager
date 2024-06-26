@@ -191,7 +191,7 @@ CAMINHOS ALTERNATIVOS:
 3.1.1. O sistema fecha a janela atual e retorna à janela anterior "Janela Principal".
 
 3.2. O utilizador clica no checkbox "Filtrar sócios com dívidas" ficando unchecked.
-3.2.1. O sistema esconde o botão "Notificar sócios" e apresenta alista completa de sócios.
+3.2.1. O sistema bloqueia o botão "Notificar sócios" e apresenta alista completa de sócios.
 
 4.1. O sistema encontra um erro ao enviar os emails (por exemplo, problema com o servidor de email).
 4.1.1. O sistema apresenta a mensagem de erro ERR_NOTIFICACAO_02.

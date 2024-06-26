@@ -1,3 +1,7 @@
+/********************************
+ *    Diogo Abegão Nº 2222184   *
+ ********************************/
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.ActionEvent;

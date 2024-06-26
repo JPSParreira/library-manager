@@ -68,13 +68,19 @@
         <constraints>
           <grid row="2" column="0" row-span="1" col-span="5" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
-        <properties/>
+        <properties>
+          <background color="-1"/>
+        </properties>
         <border type="none"/>
         <children>
           <component id="640f8" class="javax.swing.JTable" binding="tablePesquisarTitulo">
             <constraints/>
             <properties>
+              <background color="-1"/>
+              <gridColor color="-526345"/>
               <rowHeight value="30"/>
+              <showHorizontalLines value="true"/>
+              <showVerticalLines value="false"/>
             </properties>
           </component>
         </children>

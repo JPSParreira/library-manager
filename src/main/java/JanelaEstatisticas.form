@@ -136,11 +136,15 @@
             <properties>
               <autoCreateRowSorter value="true"/>
               <autoResizeMode value="1"/>
+              <background color="-1"/>
               <fillsViewportHeight value="true"/>
+              <gridColor color="-526345"/>
               <intercellSpacing width="1" height="1"/>
               <rowHeight value="30"/>
               <rowMargin value="1"/>
               <rowSelectionAllowed value="false"/>
+              <showHorizontalLines value="true"/>
+              <showVerticalLines value="false"/>
             </properties>
           </component>
         </children>

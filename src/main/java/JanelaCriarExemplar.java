@@ -1,3 +1,7 @@
+/********************************
+ *  Pedro Barbeiro Nº 2221986   *
+ ********************************/
+
 import Biblioteca.Estante;
 import Biblioteca.Prateleira;
 import Titulo.Exemplar.Editora;
