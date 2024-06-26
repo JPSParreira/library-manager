@@ -32,7 +32,7 @@ N/A
 4. O utilizador clica no botão "Novo Empréstimo".
 5. O sistema apresenta a "Janela Criar Empréstimo" com as combobox "Título" e "Sócio" e o botões "Submeter" e "Voltar".
 6. O utilizador seleciona um título e um sócio e clica no botão "Submeter".
-7. O sistema verifica que o utilizador não tem dívidas, o título que pretende emprestar tem um exemplar disponível e o sócio não excedeu o número máximo de empréstimos, grava o empréstimo e apresenta a messageBox com a mensagem "Empréstimo criado com sucesso!" e o botão "OK".
+7. O sistema verifica que o título e o sócio existem,  o utilizador não tem dívidas, o título que pretende emprestar tem um exemplar disponível e o sócio não excedeu o número máximo de empréstimos, grava o empréstimo e apresenta a messageBox com a mensagem "Empréstimo criado com sucesso!" e o botão "OK".
 8. O utilizador clica no botão "OK".
 9. O caso de uso volta ao ponto 3.
 
@@ -57,17 +57,17 @@ N/A
   7.3.2.1.1 O caso de uso passa ao ponto 1 do caso de uso "Criar Reserva".  
   7.3.2.2 O utilizador clica no botão "Não".  
   7.3.2.2.1 O caso de uso volta ao ponto 5.
-7.4 O sistema não consegue processar a informação das comboBox.
+7.4 O sistema não consegue processar a informação das comboBox (o título ou o sócio não existem).
   7.4.1 O sistema apresenta a messageBox com a mensagem "Erro ao criar empréstimo." e o botão "OK".  
   7.4.2 O utilizador clica no botão "OK".  
   7.4.3 O caso de uso volta ao ponto 5.
 
 - Mensagens de Sistema
-  SUC_01: "Empréstimo criado com sucesso."
-  ERR_01: "O sócio selecionado tem dívidas por pagar."
-  ERR_02: "O sócio selecionado já atingiu o limite de empréstimos ativos."
-  ERR_03: "Não existem exemplares disponíveis para o título selecionado. Deseja fazer uma reserva?"
-  ERR_04: "Erro ao criar empréstimo."
+SUC_01: "Empréstimo criado com sucesso."
+ERR_01: "O sócio selecionado tem dívidas por pagar."
+ERR_02: "O sócio selecionado já atingiu o limite de empréstimos ativos."
+ERR_03: "Não existem exemplares disponíveis para o título selecionado. Deseja fazer uma reserva?"
+ERR_04: "Erro ao criar empréstimo."
 
 /--------------------/
 
@@ -80,7 +80,7 @@ N/A
 4. O utilizador clica no botão "Devolução".
 5. O sistema apresenta a "Janela Devolução" com o comboBox "ID do empréstimo" e os botões "Submeter" e "Voltar".
 6. O utilizador introduz o código de empréstimo e clica no botão "Submeter".
-7. O sistema verifica que o empréstimo está a ser entregue dentro do prazo, grava a devolução, coloca o livro disponível para empréstimo e apresenta a messageBox com a mensagem "Devolução criada com sucesso!" e o botão "OK".
+7. O sistema verifica que o empréstimo e o sócio existem, o empréstimo está a ser entregue dentro do prazo, grava a devolução, coloca o livro disponível para empréstimo e apresenta a messageBox com a mensagem "Devolução criada com sucesso!" e o botão "OK".
 8. O utilizador clica no botão "OK".
 9. O caso de uso volta ao ponto 3.
 
@@ -100,17 +100,17 @@ N/A
     7.1.3 O utilizador clica no botão "Não".  
         7.1.3.1 O sistema grava a devolução, coloca o livro disponível para empréstimo e apresenta a messageBox com a mensagem "Devolução criada com sucesso!" e o botão "OK".  
         7.1.3.2 O utilizador clica no botão "OK".  
-        7.1.3.3 O caso de uso volta ao ponto 3.  
-7.2 O sistema não consegue processar a informação da comboBox.
+        7.1.3.3 O caso de uso volta ao ponto 3.   
+7.2 O sistema não consegue processar a informação da comboBox (o empréstimo ou o sócio não existem).
     7.2.1 O sistema apresenta a messageBox com a mensagem "Erro ao efetuar a devolução." e o botão "OK".
     7.2.2 O utilizador clica no botão "OK".  
     7.2.3 O caso de uso volta ao ponto 5.
 
 - Mensagens de Sistema
-  SUC_01: "Devolução criada com sucesso!"
-  SUC_02: "Pagamento efetuado com sucesso."
-  ERR_01: 'O sócio 01224 entregou o livro com x dias de atraso. Valor da multa: x.xx€. Pretende efetuar o pagamento" e os botões "Sim" e "Não"'.
-  ERR_02: "Erro ao efetuar a devolução."
+SUC_01: "Devolução criada com sucesso!"
+SUC_02: "Pagamento efetuado com sucesso."
+ERR_01: 'O sócio 01224 entregou o livro com x dias de atraso. Valor da multa: x.xx€. Pretende efetuar o pagamento" e os botões "Sim" e "Não"'.
+ERR_02: "Erro ao efetuar a devolução."
 
 /--------------------/
 
@@ -129,7 +129,7 @@ Enquadramento: O utilizador tenta criar um empréstimo de um livro que existe, m
 
 - MENSAGENS DE SISTEMA
 SUC_01: "Reserva criada com sucesso".
-ERR_03: "O livro que pretende encontra-se emprestado. Pretende reservar?"
+ERR_01: "O livro que pretende encontra-se emprestado. Pretende reservar?"
 
 /--------------------/
 
@@ -139,7 +139,7 @@ ERR_03: "O livro que pretende encontra-se emprestado. Pretende reservar?"
 2. O utilizador clica no botão "Reservas".
 3. O sistema efetua o caso de uso "Listar Reservas" e apresenta a "Janela de Reservas" com a "Lista de Reservas" e com os botões "Anular Reserva" e "Voltar".
 4. O utilizador clica no botão "Anular Reserva".
-5. O sistema apresenta a "Janela Anular Reservas" com o text field "Código da Reserva" e os botões "Submeter" e "Voltar".
+5. O sistema apresenta a "Janela Anular Reservas" com o comboBox "Código da Reserva" e os botões "Submeter" e "Voltar".
 6. O utilizador introduz o código de reserva e clica no botão "Submeter".
 7. O sistema verifica que o reserva existe, apaga a reserva e apresenta a messageBox com a mensagem "Reserva anulada com sucesso!" e o botão "OK".
 8. O utilizador clica no botão "OK".
@@ -153,9 +153,13 @@ ERR_03: "O livro que pretende encontra-se emprestado. Pretende reservar?"
 6.1 O utiliza clica no botão "Voltar".  
     6.1.1 O caso de uso volta ao ponto 3.  
 7.1 O sistema verifica que a reserva não existe.  
-    7.1.1 O sistema apresenta a messageBox com a mensagem "A reserva não existe!" e o botão "OK".  
+    7.1.1 O sistema apresenta a messageBox com a mensagem "Erro ao anular reserva." e o botão "OK".  
     7.1.2 O utilizador clica no botão "OK".  
-    7.1.3 O caso de uso volta ao ponto 5.  
+    7.1.3 O caso de uso volta ao ponto 5.
+
+- MENSAGENS DE SISTEMA
+SUC_01: "Reserva anulada com sucesso!".
+ERR_01: "Erro ao anular reserva."
 
 /--------------------/
 
@@ -192,10 +196,10 @@ ERR_03: "O livro que pretende encontra-se emprestado. Pretende reservar?"
     5.4.3 O caso de uso volta ao ponto 3.  
 
 - Mensagens de Sistema
-1. SUC_01: "Configurações guardadas com sucesso."
-2. ERR_01: "O valor do 'Máximo de dias para empréstimo' tem de ser um valor inteiro dentro do intervalo [7, 30]."
-3. ERR_02: "O valor do 'Valor da multa diário' tem de ser um valor decimal dentro do intervalo [0.5, 2.5]."
-4. ERR_03: "O valor do 'Máximo de empréstimos ativos por sócio' tem de ser um valor inteiro dentro do intervalo [1, 5]."
-5. ERR_04: "O valor do 'Valor da anuidade' tem de ser um valor decimal dentro do intervalo [10, 100]."
+SUC_01: "Configurações guardadas com sucesso."
+ERR_01: "O valor do 'Máximo de dias para empréstimo' tem de ser um valor inteiro dentro do intervalo [7, 30]."
+ERR_02: "O valor do 'Valor da multa diário' tem de ser um valor decimal dentro do intervalo [0.5, 2.5]."
+ERR_03: "O valor do 'Máximo de empréstimos ativos por sócio' tem de ser um valor inteiro dentro do intervalo [1, 5]."
+ERR_04: "O valor do 'Valor da anu idade' tem de ser um valor decimal dentro do intervalo [10, 100]."
 
 /--------------------/ 
