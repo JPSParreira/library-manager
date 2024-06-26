@@ -113,6 +113,7 @@ ERR_LISTA_SOCIOS_01: Não existem sócios registados.
 
 Consultar historico de emprestimos de sócio
 ===============================
+CAMINHO PRINCIPAL:
 1. Na "JanelaSocios", o utilizador clica no botão "Histórico Sócio"
 2. O sistema cria e apresenta a janela "JanelaHistóricoSocio" com os seguintes campos:
       Sócio, mandatório, do tipo dropdown, com lista de sócios.
@@ -139,6 +140,7 @@ ERR_HISTORICO_02: O sócio selecionado não possui histórico de empréstimos.
 
 Pesquisar por livro
 ===============================
+CAMINHO PRINCIPAL:
 1. Na "Janela Principal", o utilizador clica no botão "Pesquisar"
 2. O sistema cria e apresenta a janela "JanelaPesquisarTitulo" com o seguinte campo:
        Titulo, mandatório, do tipo texto.
@@ -175,6 +177,7 @@ ERR_PESQUISA_LIVRO_04: Não foram encontrados exemplares correspondentes ao "Tit
 
 Notificar por email sócio com dívidas
 ===============================
+CAMINHO PRINCIPAL:
 1. Na "JanelaSocios", o utilizador clica no checkbox "Filtrar sócios com dívidas".
 2. O sistema apresenta o botão "Notificar sócios" e filtra a tabela para apenas apresentar os "Sócios" com valores em dívida.
 3. O utilizador clica no botão "Notificar sócios".
