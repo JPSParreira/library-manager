@@ -16,7 +16,7 @@ N/A
 Enquadramento: O utilizador clica no botão "Reservas" na "Janela Principal".
 
 - Caminho Principal
-1. O sistema percorre a lista de reservas e apresenta a "Janela de Reservas" com a "Lista de Reservas" e com os botões "Anular Socios.Reserva" e "Voltar".
+1. O sistema percorre a lista de reservas e apresenta a "Janela de Reservas" com a "Lista de Reservas" e com os botões "Anular Reserva" e "Voltar".
 
 - Caminhos Alternativos  
 N/A
@@ -54,7 +54,7 @@ N/A
 7.3 O sistema verifica que o livro que pretende emprestar não está disponível.  
   7.3.1 O sistema apresenta a messageBox com a mensagem "O livro que pretende emprestar encontra-se emprestado. Pretende reservar" e os botões "Sim" e Não.  
   7.3.2.1 O utilizador clica no botão "Sim".  
-  7.3.2.1.1 O caso de uso passa ao ponto 1 do caso de uso "Criar Socios.Reserva".  
+  7.3.2.1.1 O caso de uso passa ao ponto 1 do caso de uso "Criar Reserva".  
   7.3.2.2 O utilizador clica no botão "Não".  
   7.3.2.2.1 O caso de uso volta ao ponto 5.
 7.4 O sistema não consegue processar a informação das comboBox (o título ou o sócio não existem).
@@ -119,7 +119,7 @@ ERR_02: "Erro ao efetuar a devolução."
 Enquadramento: O utilizador tenta criar um empréstimo de um livro que existe, mas não está disponível e clica em "Sim" na messageBox " O livro que pretende encontra-se emprestado. Pretende reservar?".
 
 - Caminho Principal
-1. O sistema grava a reserva do livro junto com o sócio e apresenta a messageBox com a mensagem "Socios.Reserva criada com sucesso! Assim que o livro estiver disponível será avisado!" e o botão "OK".
+1. O sistema grava a reserva do livro junto com o sócio e apresenta a messageBox com a mensagem "Reserva criada com sucesso! Assim que o livro estiver disponível será avisado!" e o botão "OK".
 2. O utilizador clica no botão "OK".
 3. O caso de uso termina e volta à "Janela Empréstimos".
 
@@ -128,7 +128,7 @@ Enquadramento: O utilizador tenta criar um empréstimo de um livro que existe, m
 0.2 - O sistema fecha a "JanelaCriarEmprestimo" e apresenta a "Janela de Empréstimos".
 
 - MENSAGENS DE SISTEMA
-SUC_01: "Socios.Reserva criada com sucesso".
+SUC_01: "Reserva criada com sucesso".
 ERR_01: "O livro que pretende encontra-se emprestado. Pretende reservar?"
 
 /--------------------/
@@ -137,11 +137,11 @@ ERR_01: "O livro que pretende encontra-se emprestado. Pretende reservar?"
 - Caminho Principal
 1. O sistema apresenta a "Janela Principal" com os botões "Empréstimos", "Reservas", "Sócios", "Configurações", "Pesquisar", "Estatísticas", "Adicionar Exemplar" e "Adicionar Título".
 2. O utilizador clica no botão "Reservas".
-3. O sistema efetua o caso de uso "Listar Reservas" e apresenta a "Janela de Reservas" com a "Lista de Reservas" e com os botões "Anular Socios.Reserva" e "Voltar".
-4. O utilizador clica no botão "Anular Socios.Reserva".
-5. O sistema apresenta a "Janela Anular Reservas" com o comboBox "Código da Socios.Reserva" e os botões "Submeter" e "Voltar".
+3. O sistema efetua o caso de uso "Listar Reservas" e apresenta a "Janela de Reservas" com a "Lista de Reservas" e com os botões "Anular Reserva" e "Voltar".
+4. O utilizador clica no botão "Anular Reserva".
+5. O sistema apresenta a "Janela Anular Reservas" com o comboBox "Código da Reserva" e os botões "Submeter" e "Voltar".
 6. O utilizador introduz o código de reserva e clica no botão "Submeter".
-7. O sistema verifica que o reserva existe, apaga a reserva e apresenta a messageBox com a mensagem "Socios.Reserva anulada com sucesso!" e o botão "OK".
+7. O sistema verifica que o reserva existe, apaga a reserva e apresenta a messageBox com a mensagem "Reserva anulada com sucesso!" e o botão "OK".
 8. O utilizador clica no botão "OK".
 9. O caso de uso volta ao ponto 3.
 
@@ -158,7 +158,7 @@ ERR_01: "O livro que pretende encontra-se emprestado. Pretende reservar?"
     7.1.3 O caso de uso volta ao ponto 5.
 
 - MENSAGENS DE SISTEMA
-SUC_01: "Socios.Reserva anulada com sucesso!".
+SUC_01: "Reserva anulada com sucesso!".
 ERR_01: "Erro ao anular reserva."
 
 /--------------------/
